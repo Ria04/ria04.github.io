@@ -1,0 +1,475 @@
+:root {
+  --text-color:#333;
+  --accent-color:rgb(187, 19, 51);
+  --middle-shade-color:rgb(216, 28, 59);
+  --shade-color:rgb(247, 3, 3);
+  --white-color:rgb(255, 255, 255);
+  --light-grey:rgb(172, 178, 179);
+  --light-blue:rgb(173, 217, 247);
+  --golden-color:rgb(255,215,0);
+  --light-red:rgb(255, 241, 243);
+  --background-grey:rgb(230, 232, 232);
+  --black-color:rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: BoldFont;
+  src: url("../fonts/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: LightFont;
+  src: url("../fonts/Nunito-Light.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: LightFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0rem;
+  font-family: BoldFont;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+@media only screen and (min-device-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.125;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.05;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h1 {
+    font-size: 2.7rem;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625rem;
+  line-height: 1.25;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h2 {
+    font-size: 1.625rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.33;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.375rem;
+  line-height: 1.13;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.13;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h4 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.13;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h5 {
+    font-size: 1rem;
+    line-height: 1.13;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h5 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h5 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h5 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.13;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h6 {
+    font-size: 1rem;
+    line-height: 1.13;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h6 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  h6 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  h6 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+}
+
+section {
+  padding: 1.5rem;
+}
+
+@media only screen and (min-width: 1224px) {
+  section {
+    padding: 3rem 0rem;
+  }
+}
+
+p, label {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
+  p, label {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  p, label {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  p, label {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  p, label {
+    font-size: 1.15rem;
+  }
+}
+
+ul > li {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.4rem;
+  list-style-type: none;
+}
+
+label {
+  font-family: BoldFont;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-family: BoldFont;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1024px) {
+  button {
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateX(-110%) rotate(45deg);
+          transform: translateX(-110%) rotate(45deg);
+  -webkit-transition: all 2s cubic-bezier(0.15, 1, 0.19, 1);
+  transition: all 2s cubic-bezier(0.15, 1, 0.19, 1);
+}
+
+button:hover {
+  border: 1px solid var(--shade-color);
+}
+
+button:hover::before {
+  background-color: #fff;
+  -webkit-transform: translate(115%, -10px) rotate(90deg);
+          transform: translate(115%, -10px) rotate(90deg);
+}
+
+.accent-button {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  color: var(--white-color);
+  border: 1px solid var(--accent-color);
+}
+
+input {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-family: BoldFont;
+  border: 1px solid var(--light-grey);
+}
+
+@media only screen and (min-width: 1024px) {
+  input {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+input:focus {
+  -webkit-box-shadow: 0px 0px 10px -2px  skyblue;
+          box-shadow: 0px 0px 10px -2px  skyblue;
+  border: 1px solid skyblue;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: var(--light-grey);
+}
+
+input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: var(--light-grey);
+}
+
+input::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: var(--light-grey);
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+  color: var(--light-grey);
+}
+
+@media only screen and (min-width: 1024px) {
+  input::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input::placeholder {
+    font-size: 1.2rem;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.round-icon-images img {
+  border-radius: 100%;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 9px 3px var(--light-grey);
+          box-shadow: 0px 0px 9px 3px var(--light-grey);
+}
+
+.button-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .button-component {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25rem;
+  }
+  .button-component .shrink-button-component {
+    width: 50%;
+    display: block;
+  }
+}
+
+.button-component input {
+  display: none;
+}
+
+.button-component button {
+  width: 100%;
+}
+
+.button-component .shrink-button-component {
+  width: 100%;
+  display: block;
+}
+
+.button-component i {
+  padding: 0.7rem;
+  background: transparent;
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .container {
+    max-width: 1300px;
+    margin: 0rem auto;
+  }
+}
+/*# sourceMappingURL=theme.css.map */

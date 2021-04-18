@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../scss/reset.css">
+    <link rel="stylesheet" href="../scss/theme.css">
+    <link rel="stylesheet" href="../scss/style.css">
+
+
+
+</head>
+
+<body>
+
+
+
+<header>
+    <nav>
+        <figure>
+            <img onclick="displayVideo()" src="../images/play icom.png">
+        </figure>
+        <i class="fas fa-bars"></i>
+
+    </nav>
+
+</header>
+
+<main>
+    <div class="popupVideo" id="popupVideo" onclick="hideVideo()">
+        <iframe src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    <section class="hero-section">
+        <div class="container">
+            <article>
+                <div class="video-button-wrap">
+                    <h1>Full Stack Web Development</h1>
+                    <figure class="mobie-play-button">
+                        <img onclick="displayVideo()" src="../images/play icom.png">
+                    </figure>
+                </div>
+                <p>Intensive online coding courses, curated by our team from IIT Delhi. Trusted by our growing community of students and graduates from IIT, DTU, NIT, Amity, DU and more.No coding background required.</p>
+                <ul>
+                    <li><span>9</span> months</li>
+                    <li><span>600+</span> problems</li>
+                    <li id="students-enrolled"><span>13k+</span> students enrolled</li>
+                </ul>
+            </article>
+            <figure class="hero-image">
+                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                <figcaption>
+                    <ul>
+                        <li>Placed with Fanatix</li>
+                        <li>Salary : 22LPA</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <div class="rating-component">
+                <ul>
+                    <li>4.8</li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star-half"></i></li>
+                    <li>(2K + ratings)</li>
+                </ul>
+            </div>
+            <form>
+                <div class="button-component" id="button-component" onclick="openInput()">
+                    <input class="button-item" type="text" placeholder="Enter Email">
+                    <button type="button"  class="button-item accent-button">
+                        Apply now
+                    </button>
+                    <i class="fas fa-times" id="close-button" onclick="closeInput()"></i>
+                </div>
+            </form>
+            
+
+            <div class="button-div">
+                <button class="accent-button">Apply Now</button>
+                <figure class="mobie-play-button">
+                    <img onclick="displayVideo()" src="../images/play icom.png">
+                </figure>
+                
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="key-highlights">
+        <div class="banner">
+            <ul>
+                <li><span>Free Trial</span><h4>3 Days</h4></li>
+                <li><span>certification</span><h4>certification</h4></li>
+                <li><span>career assistance</span><h4>In -built career services</h4></li>
+                <li><span>next batch</span><h4>April 24</h4></li>
+                <li><span>fee structure(emi)</span><h4>6000/month</h4></li>
+                <li><span>fee structure</span><h4>27,000</h4></li>
+            </ul>
+
+        </div>
+        <div class="container">
+            <article>
+                <h2>Key Highlights of the Full Stack Developer Program</h2>
+                <p>Succeed as a new-age Full-Stack Developer with our comprehensive project-based learning program. Upskill yourself in JavaScript, React, Express, NodeJS, MongoDB and more through </p>
+            </article>
+            <div class="highlights">
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum">
+        <div class="contai">
+
+        </div>
+    </section>
+</main>
+
+<script src="../scripts/index.js"></script>
+</body>
+
+</html>
