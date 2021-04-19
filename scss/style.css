@@ -258,4 +258,537 @@ nav i {
   width: 100%;
   margin: 0rem 1rem;
 }
+
+.curriculum .curriculum-banner {
+  margin-top: 1rem;
+  position: unset;
+  width: 100%;
+}
+
+.curriculum .curriculum-banner div {
+  padding: 1rem 0rem;
+}
+
+.curriculum .curriculum-banner div h2, .curriculum .curriculum-banner div p {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.curriculum .curriculum-banner .banner-head {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.curriculum .curriculum-banner .button-div button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-banner .button-div h4 {
+  text-align: center;
+}
+
+.curriculum .curriculum-banner .button-div .grey-head {
+  color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-banner ul li span, .curriculum .curriculum-banner ul li h4 {
+  color: var(--text-color);
+}
+
+.curriculum .curriculum-details {
+  margin-top: 2rem;
+}
+
+.curriculum .curriculum-details .curriculum-item {
+  background-color: var(--background-grey);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .info h6 {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div figure {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div h4 {
+  margin-bottom: 0.5rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description {
+  display: none;
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description p {
+  margin-top: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description .tags h6 {
+  padding: 0.3rem 1.5rem;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description ul li i {
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  color: var(--accent-color);
+}
+
+.curriculum .curriculum-details .curriculum-item .curriculum-description ul li p {
+  margin-top: 0rem;
+}
+
+.technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.technologies .technology-parent .technology-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  -webkit-animation: cA 3s forwards;
+  animation: cA 3s forwards;
+}
+
+@keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.technologies .technology-parent .technology-wrap .technology {
+  width: 30%;
+}
+
+.technologies .technology-parent .technology-wrap .technology figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.technologies .technology-parent .technology-wrap .technology figure img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.technologies .technology-parent .technology-wrap .technology figure figcaption {
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.technologies .carousel-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.technologies .carousel-parent span {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0rem 0.3rem;
+  background-color: var(--light-grey);
+  border-radius: 100%;
+}
+
+.technologies .carousel-parent .active {
+  background-color: var(--accent-color);
+}
+
+.projects {
+  background-color: var(--light-red);
+}
+
+.projects .projects-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .projects-wrap div {
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 0px 10px -2px var(--light-grey);
+          box-shadow: 0px 0px 10px -2px var(--light-grey);
+  width: 48%;
+  margin-top: 1rem;
+}
+
+.projects .projects-wrap div figure {
+  height: 5rem;
+  margin-bottom: 0.7rem;
+}
+
+.projects .projects-wrap div article {
+  padding: 0.5rem;
+}
+
+.projects .projects-wrap div h4 {
+  margin-bottom: 0.7rem;
+}
+
+.career-assistance {
+  padding-top: 1.5rem;
+}
+
+.career-assistance #free-learning {
+  margin-top: 0.5rem;
+}
+
+.download-curriculum {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+}
+
+.download-curriculum .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download-curriculum h2, .download-curriculum p {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.download-curriculum button i {
+  margin-right: 0.5rem;
+}
+
+.support-system .banner {
+  position: unset;
+  width: 100%;
+  padding-bottom: 0rem;
+}
+
+.support-system .banner ul li {
+  margin-top: 0rem;
+  padding: 1rem 0rem;
+}
+
+.support-system .banner ul li .list-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.support-system .banner ul li .list-head div {
+  width: 90%;
+}
+
+.support-system .banner ul li .list-head i {
+  font-size: 1.2rem;
+}
+
+.support-system .banner ul li p {
+  margin-bottom: 0rem;
+}
+
+.support-system .banner ul li h4 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.support-system .banner ul li .wrap-faculty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 1rem;
+  margin-top: 2rem;
+  overflow-x: scroll;
+  background-color: var(--light-red);
+}
+
+.support-system .banner ul li .wrap-faculty div {
+  min-width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+  padding: 2rem 1rem;
+  background-color: var(--white-color);
+}
+
+.support-system .banner ul li .wrap-faculty div figure {
+  width: 6rem;
+  height: 6rem;
+}
+
+.support-system .banner ul li .wrap-faculty div h6 {
+  margin-top: 0.5rem;
+}
+
+.support-system .banner ul li .wrap-mentors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.support-system .banner ul li .wrap-mentors figure {
+  margin-top: 2rem;
+  width: 100%;
+  height: 15rem;
+}
+
+.support-system .banner ul li .wrap-mentors ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0rem;
+}
+
+.support-system .banner ul li .wrap-mentors ul li i {
+  margin-right: 1rem;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.support-system .banner ul li .inner-item {
+  display: none;
+}
+
+.faq ul li {
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.faq ul li .faq-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq ul li .faq-head h4 {
+  line-height: 2rem;
+  color: var(--grey);
+}
+
+.faq ul li .faq-head i {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: var(--grey);
+}
+
+.faq ul li .faq-answer {
+  display: none;
+  margin-top: 1rem;
+}
+
+.faq ul li .faq-answer p {
+  margin-bottom: 0rem;
+}
 /*# sourceMappingURL=style.css.map */

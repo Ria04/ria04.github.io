@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    
     <link rel="stylesheet" href="../scss/reset.css">
     <link rel="stylesheet" href="../scss/theme.css">
     <link rel="stylesheet" href="../scss/style.css">
@@ -18,116 +21,549 @@
 
 
 
-<header>
-    <nav>
-        <figure>
-            <img onclick="displayVideo()" src="../images/play icom.png">
-        </figure>
-        <i class="fas fa-bars"></i>
-
-    </nav>
-
-</header>
-
-<main>
-    <div class="popupVideo" id="popupVideo" onclick="hideVideo()">
-        <iframe src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-    </div>
-    <section class="hero-section">
-        <div class="container">
-            <article>
-                <div class="video-button-wrap">
-                    <h1>Full Stack Web Development</h1>
-                    <figure class="mobie-play-button">
-                        <img onclick="displayVideo()" src="../images/play icom.png">
-                    </figure>
-                </div>
-                <p>Intensive online coding courses, curated by our team from IIT Delhi. Trusted by our growing community of students and graduates from IIT, DTU, NIT, Amity, DU and more.No coding background required.</p>
-                <ul>
-                    <li><span>9</span> months</li>
-                    <li><span>600+</span> problems</li>
-                    <li id="students-enrolled"><span>13k+</span> students enrolled</li>
-                </ul>
-            </article>
-            <figure class="hero-image">
-                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
-                <figcaption>
-                    <ul>
-                        <li>Placed with Fanatix</li>
-                        <li>Salary : 22LPA</li>
-                    </ul>
-                </figcaption>
+    <header>
+        <nav>
+            <figure>
+                <img onclick="displayVideo()" src="../images/play icom.png">
             </figure>
-            <div class="rating-component">
-                <ul>
-                    <li>4.8</li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star-half"></i></li>
-                    <li>(2K + ratings)</li>
-                </ul>
-            </div>
-            <form>
+            <i class="fas fa-bars"></i>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="popupVideo" id="popupVideo" onclick="hideVideo()">
+            <iframe src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+        </div>
+
+        <section class="hero-section">
+            <div class="container">
+                <article>
+                    <div class="video-button-wrap">
+                        <h1>Full Stack Web Development</h1>
+                        <figure class="mobie-play-button">
+                            <img onclick="displayVideo()" src="../images/play icom.png">
+                        </figure>
+                    </div>
+                    <p>Intensive online coding courses, curated by our team from IIT Delhi. Trusted by our growing
+                        community of students and graduates from IIT, DTU, NIT, Amity, DU and more.No coding background
+                        required.</p>
+                    <ul>
+                        <li><span>9</span> months</li>
+                        <li><span>600+</span> problems</li>
+                        <li id="students-enrolled"><span>13k+</span> students enrolled</li>
+                    </ul>
+                </article>
+                <figure class="hero-image">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    <figcaption>
+                        <ul>
+                            <li>Placed with Fanatix</li>
+                            <li>Salary : 22LPA</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <div class="rating-component">
+                    <ul>
+                        <li>4.8</li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half"></i></li>
+                        <li>(2K + ratings)</li>
+                    </ul>
+                </div>
+                <!--<form>
                 <div class="button-component" id="button-component" onclick="openInput()">
                     <input class="button-item" type="text" placeholder="Enter Email">
                     <button type="button"  class="button-item accent-button">
                         Apply now
                     </button>
-                    <i class="fas fa-times" id="close-button" onclick="closeInput()"></i>
                 </div>
+                <i class="fas fa-times" id="close-button" onclick="closeInput()"></i>
+
+            </form>-->
+
+
+                <div class="button-div">
+                    <button class="accent-button">Apply Now</button>
+                    <figure class="mobie-play-button">
+                        <img onclick="displayVideo()" src="../images/play icom.png">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="key-highlights">
+            <div class="banner">
+                <ul>
+                    <li><span>Free Trial</span>
+                        <h4>3 Days</h4>
+                    </li>
+                    <li><span>certification</span>
+                        <h4>certification</h4>
+                    </li>
+                    <li><span>career assistance</span>
+                        <h4>In -built career services</h4>
+                    </li>
+                    <li><span>next batch</span>
+                        <h4>April 24</h4>
+                    </li>
+                    <li><span>fee structure(emi)</span>
+                        <h4>6000/month</h4>
+                    </li>
+                    <li><span>fee structure</span>
+                        <h4>27,000</h4>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="container">
+                <article>
+                    <h2>Key Highlights of the Full Stack Developer Program</h2>
+                    <p>Succeed as a new-age Full-Stack Developer with our comprehensive project-based learning program.
+                        Upskill yourself in JavaScript, React, Express, NodeJS, MongoDB and more through </p>
+                </article>
+                <div class="highlights">
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                </div>
+            </div>
+            <form class="button-component-form">
+                <div class="button-component" id="button-component1" onclick="openInput('1')">
+                    <input class="button-item" type="text" placeholder="Enter Email">
+                    <button type="button"  class="button-item accent-button">
+                        Apply now
+                    </button>
+                </div>
+                <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
             </form>
-            
+        </section>
 
-            <div class="button-div">
-                <button class="accent-button">Apply Now</button>
-                <figure class="mobie-play-button">
-                    <img onclick="displayVideo()" src="../images/play icom.png">
-                </figure>
-                
+        <section class="curriculum">
+            <div class="container">
+                <article>
+                    <h2>Immersive Project-based Learning Journey</h2>
+                    <p>Ace your next interview or excel in your current role by mastering in-demand Full-Stack developer
+                        skills through our carefully curated hands-on project-based learning journey.</p>
+                </article>
+                <div class="flex-div">
+                    <div class="banner curriculum-banner">
+                        <div class="banner-head">
+                            <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
+                            <p>for 6 months</p>
+                        </div>
+                        <ul>
+                            <li><span>Free Trial</span>
+                                <h4>3 Days</h4>
+                            </li>
+                            <li><span>certification</span>
+                                <h4>certification</h4>
+                            </li>
+                            <li><span>career assistance</span>
+                                <h4>In -built career services</h4>
+                            </li>
+                            <li><span>next batch</span>
+                                <h4>April 24</h4>
+                            </li>
+
+                        </ul>
+                        <div class="button-div">
+                            <button class="border-button">Chat with us</button>
+                            <button class="accent-button">Apply and start for free</button>
+                            <h4 class="grey-head">Prerequisites</h4>
+                            <h4>Basic programming in any language</h4>
+                        </div>
+                    </div>
+                    <div class="curriculum-details">
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('1')"><i class="fas fa-arrow-down" id="icon1"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="1">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('2')"><i class="fas fa-arrow-down" id="icon2"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="2">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('3')"><i class="fas fa-arrow-down" id="icon3"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="3">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('4')"><i class="fas fa-arrow-down" id="icon4"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="4">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-   
-
-    <section class="key-highlights">
-        <div class="banner">
-            <ul>
-                <li><span>Free Trial</span><h4>3 Days</h4></li>
-                <li><span>certification</span><h4>certification</h4></li>
-                <li><span>career assistance</span><h4>In -built career services</h4></li>
-                <li><span>next batch</span><h4>April 24</h4></li>
-                <li><span>fee structure(emi)</span><h4>6000/month</h4></li>
-                <li><span>fee structure</span><h4>27,000</h4></li>
-            </ul>
-
-        </div>
-        <div class="container">
+        <section class="technologies">
+            <div class="container">
             <article>
-                <h2>Key Highlights of the Full Stack Developer Program</h2>
-                <p>Succeed as a new-age Full-Stack Developer with our comprehensive project-based learning program. Upskill yourself in JavaScript, React, Express, NodeJS, MongoDB and more through </p>
+                <h2>Technologies you will master hands-on</h2>
             </article>
-            <div class="highlights">
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
-                <div><figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure><p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and LinkedIn badges, to impress recruiters.</p></div>
+            <div class="technology-parent" id="technology-parent">
+                <div class="technology-wrap">
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                </div>
+                <div class="technology-wrap">
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                </div>
+                <div class="technology-wrap">
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                </div>
+                <div class="technology-wrap">
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                </div>
+            </div>
+            <div class="carousel-parent" id="carousel">
+                <span class="active" onclick="currentSlide(0)"></span>
+                <span onclick="currentSlide(1)"></span>
+                <span onclick="currentSlide(2)"></span>
+                <span onclick="currentSlide(3)"></span>
+            </div>
+            <form class="button-component-form">
+                <div class="button-component" id="button-component2" onclick="openInput('2')">
+                    <input class="button-item" type="text" placeholder="Enter Email">
+                    <button type="button"  class="button-item accent-button">
+                        Apply now
+                    </button>
+                </div>
+                <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
+            </form>
+        </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+            <h2>Projects I will build</h2>
+            <div class="projects-wrap">
+                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Tvastra</h4><p>Build and style a music player like Spotify/Youtube Music using HTML and CSS</p></article></div>
+                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Tvastra</h4><p>Build and style a music player like Spotify/Youtube Music using HTML and CSS</p></article></div>
+                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Tvastra</h4><p>Build and style a music player like Spotify/Youtube Music using HTML and CSS</p></article></div>
+                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Tvastra</h4><p>Build and style a music player like Spotify/Youtube Music using HTML and CSS</p></article></div>
             </div>
         </div>
-    </section>
+        </section>
 
-    <section class="curriculum">
-        <div class="contai">
+        <section class="key-highlights career-assistance">
+            <div class="container">
+                <article>
+                    <h2>Konfinity career assistance</h2>
+                    <p>Get ready to apply all the skills you learn through our Full-Stack program to ace interviews and land your dream career as a coveted Full-Stack developer.</p>
+                </article>
+                <div class="highlights">
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                    <div>
+                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
+                        <p><span>Project-backed portfolio on GitHub</span>, in addition to completion certificates and
+                            LinkedIn badges, to impress recruiters.</p>
+                    </div>
+                </div>
+                <form class="button-component-form">
+                    <div class="button-component" id="button-component3" onclick="openInput('3')">
+                        <input class="button-item" type="text" placeholder="Enter Email">
+                        <button type="button"  class="button-item accent-button">
+                            Apply now
+                        </button>
+                    </div>
+                    <i class="fas fa-times" id="close-button3" onclick="closeInput('3')"></i>
+                </form>
+                <p id="free-learning">First 3 days of learning is free</p>
 
-        </div>
-    </section>
-</main>
+            </div>
+        </section>
 
-<script src="../scripts/index.js"></script>
+        <section class="download-curriculum">
+            <div class="container">
+                <article>
+                    <h2>Program Curriculum</h2>
+                    <p>Get a detailed breakdown of courses per semester, credits and our personalised learning tracks.</p>
+                </article>
+                <button class="border-button"><i class="fas fa-arrow-down"></i>download-curriculum</button>
+            </div>
+        </section>
+
+        <section class="support-system">
+            <div class="container">
+                <div class="banner">
+                    <ul>
+                        <li>
+                            <div class="list-head">
+                                <div>
+                                    <h4>Faculty</h4>
+                                    <p> Reputed faculty from the industry </p>
+                                </div>
+                                <i id="iconitem1" class="fas fa-angle-down" onclick="showInnerItem('item1')"></i>
+                            </div>
+                            <div class="wrap-faculty inner-item" id="item1">
+                                <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                                <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                                <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                                <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-head">
+                                <div>
+                                    <h4>Mentors</h4>
+                                    <p>  Shaping your future into the right direction  </p>
+                                </div>
+                                <i id="iconitem2" class="fas fa-angle-down" onclick="showInnerItem('item2')"></i>
+                            </div>
+                            <div class="wrap-mentors inner-item" id="item2">
+                               <figure>
+                                   <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                               </figure>
+                               <ul>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                               </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-head">
+                                <div>
+                                    <h4>Placement Coach</h4>
+                                    <p> A dedicated guide cum expert to get you through your placement rounds </p>
+                                </div>
+                                <i id="iconitem3" class="fas fa-angle-down" onclick="showInnerItem('item3')"></i>
+                            </div>
+                            <div class="wrap-mentors inner-item" id="item3">
+                               <figure>
+                                   <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                               </figure>
+                               <ul>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                               </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-head">
+                                <div>
+                                    <h4>Teaching Assistance</h4>
+                                    <p>  Dedicated Mentors to solve your doubts real time </p>
+                                </div>
+                                <i id="iconitem4" class="fas fa-angle-down" onclick="showInnerItem('item4')"></i>
+                            </div>
+                            <div class="wrap-mentors inner-item" id="item4">
+                               <figure>
+                                   <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                               </figure>
+                               <ul>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                                   <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                               </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <ul>
+                    <li><div class="faq-head"><i id="iconfaq1" onclick="showFaq('faq1')" class="fas fa-angle-down"></i> <h4>  How do I get my doubts resolved? </h4></div><div class="faq-answer" id="faq1"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
+                    <li><div class="faq-head"><i id="iconfaq2" onclick="showFaq('faq2')" class="fas fa-angle-down"></i> <h4> What exactly are premium courses?</h4></div><div class="faq-answer" id="faq2"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
+                    <li><div class="faq-head"><i id="iconfaq3" onclick="showFaq('faq3')" class="fas fa-angle-down"></i> <h4>  Where will the classes be conducted? What are the course timings? </h4></div><div class="faq-answer" id="faq3"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
+                    <li><div class="faq-head"><i id="iconfaq4" onclick="showFaq('faq4')" class="fas fa-angle-down"></i> <h4> What exactly are premium courses?</h4></div><div class="faq-answer" id="faq4"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
