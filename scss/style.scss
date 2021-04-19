@@ -547,3 +547,45 @@ nav{
 	}
 }
 
+
+.jumpstart{
+	.card{
+		.left-div{
+			background-color: var(--light-red);
+			padding: 1.5rem;
+			input{
+				width: 100%;
+			}
+			button{
+				width: 100%;
+				margin-top: 1rem;
+				i{
+					margin-left: 1rem;
+				}
+			}
+		}
+		.right-div{
+			background:linear-gradient(to right ,var(--accent-color),var(--shade-color));
+			padding:1.5rem;
+			h2,p{
+				color: var(--white-color);
+			}
+			p{
+				margin-bottom: 0rem;
+			}
+			ul{
+				li{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					margin-bottom: 1rem;
+					i{
+						margin-right: 1rem;
+						color: var(--white-color);
+					}
+				}
+			}
+		}
+	}
+}
+

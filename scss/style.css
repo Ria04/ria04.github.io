@@ -791,4 +791,55 @@ nav i {
 .faq ul li .faq-answer p {
   margin-bottom: 0rem;
 }
+
+.jumpstart .card .left-div {
+  background-color: var(--light-red);
+  padding: 1.5rem;
+}
+
+.jumpstart .card .left-div input {
+  width: 100%;
+}
+
+.jumpstart .card .left-div button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.jumpstart .card .left-div button i {
+  margin-left: 1rem;
+}
+
+.jumpstart .card .right-div {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  padding: 1.5rem;
+}
+
+.jumpstart .card .right-div h2, .jumpstart .card .right-div p {
+  color: var(--white-color);
+}
+
+.jumpstart .card .right-div p {
+  margin-bottom: 0rem;
+}
+
+.jumpstart .card .right-div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.jumpstart .card .right-div ul li i {
+  margin-right: 1rem;
+  color: var(--white-color);
+}
 /*# sourceMappingURL=style.css.map */
