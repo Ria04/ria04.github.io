@@ -52,6 +52,7 @@
                 </form>
             </div>
         </div>
+        
         <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hideCertificate()">
             <figure>
                 <img src="../images/certificate.jpeg">
@@ -60,6 +61,7 @@
 
         <section class="hero-section">
             <div class="container">
+                <div class="left-hero-div">
                 <article>
                     <div class="video-button-wrap">
                         <h1>Full Stack Web Development</h1>
@@ -76,15 +78,6 @@
                         <li id="students-enrolled"><span>13k+</span> students enrolled</li>
                     </ul>
                 </article>
-                <figure class="hero-image">
-                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
-                    <figcaption>
-                        <ul>
-                            <li>Placed with Fanatix</li>
-                            <li>Salary : 22LPA</li>
-                        </ul>
-                    </figcaption>
-                </figure>
                 <div class="rating-component">
                     <ul>
                         <li>4.8</li>
@@ -110,11 +103,21 @@
 
                 <div class="button-div">
                     <button class="accent-button">Apply Now</button>
-                    <figure class="mobie-play-button">
+                    <figure class="desktop-play-button">
                         <img onclick="displayVideo()" src="../images/play icom.png">
                     </figure>
 
                 </div>
+            </div>
+                <figure class="hero-image">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    <figcaption>
+                        <ul>
+                            <li>Placed with Fanatix</li>
+                            <li>Salary : 22LPA</li>
+                        </ul>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
@@ -180,7 +183,6 @@
                             LinkedIn badges, to impress recruiters.</p>
                     </div>
                 </div>
-            </div>
             <form class="button-component-form">
                 <div class="button-component" id="button-component1" onclick="openInput('1')">
                     <input class="button-item" type="text" placeholder="Enter Email">
@@ -190,6 +192,8 @@
                 </div>
                 <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
             </form>
+        </div>
+
         </section>
 
         <section class="curriculum">
@@ -366,12 +370,14 @@
         </section>
 
         <section class="salary-report">
+            <div class="container">
             <h2>salary report</h2>
             <div class="fig-div">
                 <figure>
                     <img src="../images/salary_report_2.jpg">
                 </figure>
             </div>
+        </div>
         </section>
 
         <section class="certificate">
@@ -588,6 +594,85 @@
                         </li>
 
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-system desktop-support-system">
+            <div class="container">
+                <div class="banner">
+                    <ul>
+                        <li id="small-head">
+                            <div class="list-head">
+                                <div onclick="showInnerItemDesktop('ditem1')">
+                                    <h4>Faculty</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="small-head">
+                            <div class="list-head">
+                                <div onclick="showInnerItemDesktop('ditem2')">
+                                    <h4>Mentors</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="big-head">
+                            <div class="list-head">
+                                <div onclick="showInnerItemDesktop('ditem3')">
+                                    <h4>Placement Coach</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="big-head">
+                            <div class="list-head">
+                                <div onclick="showInnerItemDesktop('ditem4')">
+                                    <h4>Teaching Assistance</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-info">
+                    <div class="wrap-faculty inner-item" id="ditem1">
+                        <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                        <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                        <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                        <div><figure class="round-icon-images"><img src="../images/project_image.jpg"></figure><h6>Instructor & founder member</h6></div>
+                    </div>
+                    <div class="wrap-mentors inner-item" id="ditem2">
+                        <figure>
+                            <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                        </figure>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                        </ul>
+                     </div>
+                     <div class="wrap-mentors inner-item" id="ditem3">
+                        <figure>
+                            <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                        </figure>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                        </ul>
+                     </div>
+                     <div class="wrap-mentors inner-item" id="ditem4">
+                        <figure>
+                            <img src="https://files.codingninjas.in/mentors-6085.jpg">
+                        </figure>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>
+                            <li><i class="fas fa-check-circle"></i><p>100+ mentors currently associated with tech bigwigs like Amazon, Facebook, Microsoft, Google</p></li>                                
+                        </ul>
+                     </div>
+
                 </div>
             </div>
         </section>

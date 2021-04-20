@@ -27,6 +27,17 @@ nav {
 .hero-section {
   background-color: var(--light-red);
   padding-bottom: 16rem;
+  @media only screen and (min-width: 1024px) {
+    padding-bottom: 10rem;
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left-hero-div{
+      width: 60%;
+    }
+  }
+}
   .video-button-wrap {
     display: flex;
     flex-direction: column;
@@ -35,6 +46,9 @@ nav {
       margin-top: 1rem;
       width: 3rem;
       height: 100%;
+      @media only screen and (min-width: 1024px) {
+        display: none;
+      }
     }
     margin-bottom: 1rem;
   }
@@ -45,6 +59,9 @@ nav {
       flex-wrap: wrap;
       li {
         width: 50%;
+        @media only screen and (min-width: 1024px) {
+          width:20%;
+        }
         margin: 0.3rem 0rem;
 
         span {
@@ -53,12 +70,22 @@ nav {
       }
       #students-enrolled {
         width: 100%;
+        @media only screen and (min-width: 1024px) {
+          width:30%;
+        }
       }
     }
   }
   .hero-image {
     display: none;
+    @media only screen and (min-width: 1024px) {
+      display: block;
+      width:40%;
+      height:20rem;
+    
+    }
   }
+  
   .rating-component {
     margin-top: 1rem;
     ul {
@@ -75,11 +102,24 @@ nav {
   }
   .button-div {
     margin-top: 1.5rem;
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+    }
     figure {
       display: none;
+      @media only screen and (min-width: 1024px) {
+        display: block;
+        width: 3rem;
+      height: 100%;
+      }
     }
     button {
       width: 100%;
+      @media only screen and (min-width: 1024px) {
+        width: 20rem;
+        margin-right: 1rem;
+      }
     }
   }
 }
@@ -91,6 +131,10 @@ nav {
   justify-self: center;
   align-items: center;
   padding-top: 16rem;
+  @media only screen and (min-width: 1024px) {
+    padding-top: 8rem;
+   
+  }
   h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -100,10 +144,21 @@ nav {
     margin-bottom: 0rem;
   }
   .highlights {
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
     figure {
       width: 11rem;
       height: 3.5rem;
       margin-right: 1rem;
+      @media only screen and (min-width: 1024px) {
+        width: 4rem;
+
+      }
     }
     div {
       background-color: var(--background-grey);
@@ -113,11 +168,26 @@ nav {
       align-items: center;
       margin-top: 1rem;
       border-radius: 0.3rem;
+      @media only screen and (min-width: 1024px) {
+        flex-direction: column;
+        width:30%;
+        padding:1.5rem 1rem;
+      }
       p {
         text-align: left;
+        @media only screen and (min-width: 1024px) {
+          text-align: center;
+          margin-top: 1rem;
+        }
       }
     }
   }
+  @media only screen and (min-width: 1024px) {
+
+  .button-component{
+    align-items: center;
+  }
+}
 }
 
 //banner
@@ -131,7 +201,19 @@ nav {
   top: -14rem;
   background-color: var(--white-color);
   border-radius: 0.5rem;
+  @media only screen and (min-width: 1024px) {
+    max-width: 1200px;
+    padding:1.5rem 0rem;
+    padding-top: 1rem;
+    top: -4rem;
+
+  }
   ul {
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     li {
       margin-top: 1rem;
       span,
@@ -140,6 +222,10 @@ nav {
         width: 100%;
         text-align: center;
         color: var(--accent-color);
+        @media only screen and (min-width: 1024px) {
+          text-align: left;
+
+        }
       }
       span {
         margin-bottom: 0.5rem;
@@ -156,6 +242,10 @@ nav {
     height: 14rem;
     width: 100%;
     margin: 0rem 1rem;
+    @media only screen and (min-width: 1024px) {
+      width:40%;
+      height:25rem;
+    }
   }
 }
 
@@ -165,6 +255,10 @@ nav {
     height: 16rem;
     width: 100%;
     margin: 0rem 0.5rem;
+    @media only screen and (min-width: 1024px) {
+      height:40rem;
+      width:50%;
+    }
   }
 }
 
@@ -176,6 +270,7 @@ nav {
   );
   h2,p,i{
     color: var(--white-color);
+    text-align: center;
   }
   i{
     position: absolute;
@@ -188,10 +283,14 @@ nav {
     padding:1rem;
     margin:0rem 1rem;
     background: transparent;
+    @media only screen and (min-width: 1024px) {
+      width:40%;
+    }
 
   }
   form{
     width:100%;
+    
     input{
       margin-bottom: 1rem;
       width: 100%;;
@@ -212,10 +311,34 @@ nav {
 }
 
 .curriculum {
+  article{
+  p{
+    text-align: center;
+  }
+}
+  @media only screen and (min-device-width: 1200px){
+    .flex-div{
+      flex-direction: row-reverse;
+    }
+  }
   .curriculum-banner {
     margin-top: 1rem;
     position: unset;
     width: 100%;
+    height: fit-content;
+    @media only screen and (min-device-width: 1200px){
+      padding:1.5rem;
+      width:30%;
+      ul{
+        flex-direction: column;
+        align-items: center;
+        li{
+          p,span{
+            text-align: center;
+          }
+        }
+      }
+    }
     div {
       padding: 1rem 0rem;
       h2,
@@ -252,11 +375,18 @@ nav {
   }
   .curriculum-details {
     margin-top: 2rem;
+    @media only screen and (min-device-width: 1200px){
+    width:65%;
+    margin-top: 0rem;
+    }
     .curriculum-item {
       background-color: var(--background-grey);
       padding: 1rem;
       border-radius: 0.5rem;
       margin-top: 1rem;
+      @media only screen and (min-device-width: 1200px){
+    padding: 1.5rem;
+      }
       .wrap-head {
         display: flex;
         flex-direction: row;
@@ -345,7 +475,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   .technology-parent {
+    @media only screen and (min-device-width: 1200px){
+      margin: 2rem 0rem;
+    }
     .technology-wrap {
       display: flex;
       flex-direction: row;
@@ -428,13 +562,22 @@ nav {
       background-color: var(--white-color);
       box-shadow: 0px 0px 10px -2px var(--light-grey);
       width: 48%;
+      @media only screen and (min-device-width: 1200px){
+       width:23%;
+      }
       margin-top: 1rem;
       figure {
         height: 5rem;
+        @media only screen and (min-device-width: 1200px){
+          height:8rem;
+         }
         margin-bottom: 0.7rem;
       }
       article {
         padding: 0.5rem;
+        @media only screen and (min-device-width: 1200px){
+          padding:1rem;
+        }
       }
       h4 {
         margin-bottom: 0.7rem;
@@ -456,6 +599,13 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-device-width: 1200px){
+      flex-direction: row;
+      justify-content: space-between;
+      p,h2{
+        text-align: left;
+      }
+    }
   }
   background: linear-gradient(
     to right,
@@ -558,6 +708,85 @@ nav {
     }
   }
 }
+.desktop-support-system{
+  display: none;
+}
+@media only screen and (min-device-width: 1200px){
+  .support-system{
+    display: none;
+  }
+  .desktop-support-system{
+    display: block;
+    .banner{
+      padding:1rem;
+      margin-bottom: 2rem;
+      ul{
+        li{
+          width:24%;
+          cursor: pointer;
+          h4{
+            text-align: center;
+          }
+        }
+        #small-head{
+          width:10%;
+        }
+        #big-head{
+          width: 25%;
+        }
+       
+      }
+    }
+    .banner-info{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      .inner-item{
+        display: none;
+      }
+      .wrap-faculty{
+        justify-content: space-between;
+        width:80%;
+        div{
+          width:20%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          padding:1.5rem 1rem;
+          figure{
+            width:5rem;
+            height:5rem;
+            margin-bottom: 1rem;
+          }
+          h6{
+            text-align: center;
+          }
+        }
+      }
+      .wrap-mentors{
+        align-items: center;
+        width: 80%;
+        figure{
+          height:20rem;
+        }
+        ul{
+          margin-left: 2rem;
+          li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            i{
+              font-size: 1.5rem;
+              color: var(--accent-color);
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
 
 .salary-report{
 border-top: 1px solid var(--accent-color);
@@ -572,7 +801,18 @@ border-top: 1px solid var(--accent-color);
   .container{
     display: flex;
     flex-direction:column;
+    @media only screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
     article{
+      @media only screen and (min-width: 1024px) {
+        width:50%;
+        h2,p{
+          margin-bottom: 2rem;
+        }
+      }
       h2,p,li{
         color: var(--white-color);
       }
@@ -585,6 +825,10 @@ border-top: 1px solid var(--accent-color);
       }
     }
     figure{
+      cursor: pointer;
+      @media only screen and (min-width: 1024px) {
+        width:40%;
+      }
       margin-top: 1rem;
     }
   }
@@ -604,6 +848,9 @@ border-top: 1px solid var(--accent-color);
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media only screen and (min-device-width: 1200px){
+          justify-content: space-between;
+        }
         h4 {
           line-height: 2rem;
           color: var(--grey);
@@ -627,11 +874,21 @@ border-top: 1px solid var(--accent-color);
 
 .jumpstart {
   padding:0.5rem 0rem;
+ 
   .card {
+    @media only screen and (min-device-width: 1200px){
+      display: flex;
+      flex-direction: row;
+    }
     .left-div {
       background-color: var(--light-red);
       padding: 1.5rem;
-      
+      @media only screen and (min-device-width: 1200px){
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
      
     }
     .right-div {
@@ -640,6 +897,9 @@ border-top: 1px solid var(--accent-color);
         var(--accent-color),
         var(--shade-color)
       );
+      @media only screen and (min-device-width: 1200px){
+        width:50%;
+      }
       padding: 1.5rem;
       h2,
       p {

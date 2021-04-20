@@ -40,6 +40,27 @@ nav i {
   padding-bottom: 16rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section {
+    padding-bottom: 10rem;
+  }
+  .hero-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .container .left-hero-div {
+    width: 60%;
+  }
+}
+
 .hero-section .video-button-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +76,12 @@ nav i {
   margin-top: 1rem;
   width: 3rem;
   height: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section .video-button-wrap figure {
+    display: none;
+  }
 }
 
 .hero-section article ul {
@@ -74,6 +101,12 @@ nav i {
   margin: 0.3rem 0rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section article ul li {
+    width: 20%;
+  }
+}
+
 .hero-section article ul li span {
   font-family: BoldFont;
 }
@@ -82,8 +115,22 @@ nav i {
   width: 100%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section article ul #students-enrolled {
+    width: 30%;
+  }
+}
+
 .hero-section .hero-image {
   display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section .hero-image {
+    display: block;
+    width: 40%;
+    height: 20rem;
+  }
 }
 
 .hero-section .rating-component {
@@ -113,12 +160,39 @@ nav i {
   margin-top: 1.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section .button-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .hero-section .button-div figure {
   display: none;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section .button-div figure {
+    display: block;
+    width: 3rem;
+    height: 100%;
+  }
+}
+
 .hero-section .button-div button {
   width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section .button-div button {
+    width: 20rem;
+    margin-right: 1rem;
+  }
 }
 
 .key-highlights {
@@ -137,6 +211,12 @@ nav i {
   padding-top: 16rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .key-highlights {
+    padding-top: 8rem;
+  }
+}
+
 .key-highlights h2 {
   text-align: center;
   margin-bottom: 1rem;
@@ -147,10 +227,34 @@ nav i {
   margin-bottom: 0rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .key-highlights .highlights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+}
+
 .key-highlights .highlights figure {
   width: 11rem;
   height: 3.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .key-highlights .highlights figure {
+    width: 4rem;
+  }
 }
 
 .key-highlights .highlights div {
@@ -170,8 +274,34 @@ nav i {
   border-radius: 0.3rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .key-highlights .highlights div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+    padding: 1.5rem 1rem;
+  }
+}
+
 .key-highlights .highlights div p {
   text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+  .key-highlights .highlights div p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .key-highlights .button-component {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .banner {
@@ -186,6 +316,29 @@ nav i {
   border-radius: 0.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .banner {
+    max-width: 1200px;
+    padding: 1.5rem 0rem;
+    padding-top: 1rem;
+    top: -4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .banner ul li {
   margin-top: 1rem;
 }
@@ -196,6 +349,13 @@ nav i {
   width: 100%;
   text-align: center;
   color: var(--accent-color);
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner ul li span,
+  .banner ul li h4 {
+    text-align: left;
+  }
 }
 
 .banner ul li span {
@@ -212,6 +372,13 @@ nav i {
   margin: 0rem 1rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .videoComponent iframe {
+    width: 40%;
+    height: 25rem;
+  }
+}
+
 .certificateComponent {
   background-color: rgba(1, 1, 1, 0.7);
 }
@@ -222,6 +389,13 @@ nav i {
   margin: 0rem 0.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .certificateComponent figure {
+    height: 40rem;
+    width: 50%;
+  }
+}
+
 .formComponent {
   background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
   background: linear-gradient(to right, var(--accent-color), var(--shade-color));
@@ -229,6 +403,7 @@ nav i {
 
 .formComponent h2, .formComponent p, .formComponent i {
   color: var(--white-color);
+  text-align: center;
 }
 
 .formComponent i {
@@ -242,6 +417,12 @@ nav i {
   padding: 1rem;
   margin: 0rem 1rem;
   background: transparent;
+}
+
+@media only screen and (min-width: 1024px) {
+  .formComponent div {
+    width: 40%;
+  }
 }
 
 .formComponent form {
@@ -265,10 +446,45 @@ nav i {
   float: right;
 }
 
+.curriculum article p {
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .flex-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .curriculum .curriculum-banner {
   margin-top: 1rem;
   position: unset;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .curriculum-banner {
+    padding: 1.5rem;
+    width: 30%;
+  }
+  .curriculum .curriculum-banner ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .curriculum .curriculum-banner ul li p, .curriculum .curriculum-banner ul li span {
+    text-align: center;
+  }
 }
 
 .curriculum .curriculum-banner div {
@@ -309,11 +525,24 @@ nav i {
   margin-top: 2rem;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .curriculum-details {
+    width: 65%;
+    margin-top: 0rem;
+  }
+}
+
 .curriculum .curriculum-details .curriculum-item {
   background-color: var(--background-grey);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .curriculum-details .curriculum-item {
+    padding: 1.5rem;
+  }
 }
 
 .curriculum .curriculum-details .curriculum-item .wrap-head {
@@ -460,6 +689,12 @@ nav i {
           align-items: center;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .technologies .technology-parent {
+    margin: 2rem 0rem;
+  }
+}
+
 .technologies .technology-parent .technology-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,13 +819,31 @@ nav i {
   margin-top: 1rem;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .projects .projects-wrap div {
+    width: 23%;
+  }
+}
+
 .projects .projects-wrap div figure {
   height: 5rem;
   margin-bottom: 0.7rem;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .projects .projects-wrap div figure {
+    height: 8rem;
+  }
+}
+
 .projects .projects-wrap div article {
   padding: 0.5rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .projects .projects-wrap div article {
+    padding: 1rem;
+  }
 }
 
 .projects .projects-wrap div h4 {
@@ -624,6 +877,21 @@ nav i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .download-curriculum .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .download-curriculum .container p, .download-curriculum .container h2 {
+    text-align: left;
+  }
 }
 
 .download-curriculum h2,
@@ -757,6 +1025,108 @@ nav i {
   display: none;
 }
 
+.desktop-support-system {
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .support-system {
+    display: none;
+  }
+  .desktop-support-system {
+    display: block;
+  }
+  .desktop-support-system .banner {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .desktop-support-system .banner ul li {
+    width: 24%;
+    cursor: pointer;
+  }
+  .desktop-support-system .banner ul li h4 {
+    text-align: center;
+  }
+  .desktop-support-system .banner ul #small-head {
+    width: 10%;
+  }
+  .desktop-support-system .banner ul #big-head {
+    width: 25%;
+  }
+  .desktop-support-system .banner-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .desktop-support-system .banner-info .inner-item {
+    display: none;
+  }
+  .desktop-support-system .banner-info .wrap-faculty {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+  .desktop-support-system .banner-info .wrap-faculty div {
+    width: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .desktop-support-system .banner-info .wrap-faculty div figure {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+  .desktop-support-system .banner-info .wrap-faculty div h6 {
+    text-align: center;
+  }
+  .desktop-support-system .banner-info .wrap-mentors {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .desktop-support-system .banner-info .wrap-mentors figure {
+    height: 20rem;
+  }
+  .desktop-support-system .banner-info .wrap-mentors ul {
+    margin-left: 2rem;
+  }
+  .desktop-support-system .banner-info .wrap-mentors ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktop-support-system .banner-info .wrap-mentors ul li i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+  }
+}
+
 .salary-report {
   border-top: 1px solid var(--accent-color);
 }
@@ -776,6 +1146,30 @@ nav i {
           flex-direction: column;
 }
 
+@media only screen and (min-width: 1024px) {
+  .certificate .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .certificate .container article {
+    width: 50%;
+  }
+  .certificate .container article h2, .certificate .container article p {
+    margin-bottom: 2rem;
+  }
+}
+
 .certificate .container article h2, .certificate .container article p, .certificate .container article li {
   color: var(--white-color);
 }
@@ -790,7 +1184,14 @@ nav i {
 }
 
 .certificate .container figure {
+  cursor: pointer;
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .certificate .container figure {
+    width: 40%;
+  }
 }
 
 .faq h2 {
@@ -822,6 +1223,14 @@ nav i {
           align-items: center;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .faq ul li .faq-head {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .faq ul li .faq-head h4 {
   line-height: 2rem;
   color: var(--grey);
@@ -846,15 +1255,49 @@ nav i {
   padding: 0.5rem 0rem;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .jumpstart .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .jumpstart .card .left-div {
   background-color: var(--light-red);
   padding: 1.5rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .jumpstart .card .left-div {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .jumpstart .card .right-div {
   background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
   background: linear-gradient(to right, var(--accent-color), var(--shade-color));
   padding: 1.5rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .jumpstart .card .right-div {
+    width: 50%;
+  }
 }
 
 .jumpstart .card .right-div h2,

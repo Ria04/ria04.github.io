@@ -88,6 +88,13 @@ function showInnerItem(id) {
     icon.classList.replace("fa-angle-up", "fa-angle-down");
   }
 }
+function showInnerItemDesktop(id) {
+  for(var i=1;i<5;i++){
+    document.getElementById("ditem"+i).style.display="none";
+  }
+ document.getElementById(id).style.display="flex";
+ 
+}
 
 function showFaq(id) {
   var element = document.getElementById(id);
@@ -101,7 +108,8 @@ function showFaq(id) {
   }
 }
 
-const popUpForm = document.querySelector('#popupForm');
+
+/*const popUpForm = document.querySelector('#popupForm');
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
   const maxHeight = document.body.scrollHeight;
@@ -109,10 +117,7 @@ function onScroll(event) {
   if (current > maxHeight * 0.8 && current < maxHeight * 0.9) {
     popUpForm.style.display="flex";
   }
-  else{
-    popUpForm.style.display="none";
 
-  }
 }
 
-window.addEventListener('scroll', event => onScroll(event));
+window.addEventListener('scroll', event => onScroll(event));*/

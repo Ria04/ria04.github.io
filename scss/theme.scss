@@ -338,6 +338,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   i {
     padding: 0.7rem;
@@ -348,7 +349,7 @@ img {
 
 @media only screen and (min-device-width: 1200px) {
   .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0rem auto;
   }
 }
