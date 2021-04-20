@@ -1200,6 +1200,7 @@ nav i {
 
 .faq ul li {
   padding: 2rem 1rem;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
