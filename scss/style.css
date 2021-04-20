@@ -854,6 +854,12 @@ nav i {
   padding-top: 1.5rem;
 }
 
+@media only screen and (min-device-width: 1200px) {
+  .career-assistance {
+    padding-top: 3rem;
+  }
+}
+
 .career-assistance #free-learning {
   margin-top: 0.5rem;
 }
