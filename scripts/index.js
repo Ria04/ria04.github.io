@@ -100,3 +100,19 @@ function showFaq(id) {
     icon.classList.replace("fa-angle-up", "fa-angle-down");
   }
 }
+
+const popUpForm = document.querySelector('#popupForm');
+function onScroll(event) {
+  const current = document.documentElement.scrollTop;
+  const maxHeight = document.body.scrollHeight;
+
+  if (current > maxHeight * 0.8 && current < maxHeight * 0.9) {
+    popUpForm.style.display="flex";
+  }
+  else{
+    popUpForm.style.display="none";
+
+  }
+}
+
+window.addEventListener('scroll', event => onScroll(event));

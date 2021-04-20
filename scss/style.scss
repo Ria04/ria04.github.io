@@ -169,15 +169,25 @@ nav {
 }
 
 .formComponent{
+   background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--shade-color)
+  );
+  h2,p,i{
+    color: var(--white-color);
+  }
   i{
     position: absolute;
-    top:1rem;
-    right:1rem;
+    top:1.5rem;
+    right:1.5rem;
+    font-size: 1.2rem;
   
   }
   div{
     padding:1rem;
     margin:0rem 1rem;
+    background: transparent;
 
   }
   form{
@@ -185,6 +195,17 @@ nav {
     input{
       margin-bottom: 1rem;
       width: 100%;;
+    }
+    button{
+      width: 100%;
+
+      i{
+        position:unset;
+        margin-left: 1rem;
+        color: var(--accent-color);
+        font-size: 1rem;
+        float: right;
+      }
     }
 
   }

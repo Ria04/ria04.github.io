@@ -383,25 +383,25 @@ input:focus {
 }
 
 input::-webkit-input-placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-grey);
   text-transform: capitalize;
 }
 
 input:-ms-input-placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-grey);
   text-transform: capitalize;
 }
 
 input::-ms-input-placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-grey);
   text-transform: capitalize;
 }
 
 input::placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-grey);
   text-transform: capitalize;
 }

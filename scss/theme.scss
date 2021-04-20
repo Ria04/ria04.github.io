@@ -275,7 +275,7 @@ input:focus {
   border: 1px solid skyblue;
 }
 input::placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-grey);
   text-transform: capitalize;
   @media only screen and (min-width: 1024px) {
