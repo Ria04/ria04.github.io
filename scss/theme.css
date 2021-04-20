@@ -1,16 +1,16 @@
 :root {
-  --text-color:#333;
-  --accent-color:rgb(187, 19, 51);
-  --middle-shade-color:rgb(216, 28, 59);
-  --shade-color:rgb(247, 3, 3);
-  --white-color:rgb(255, 255, 255);
-  --light-grey:rgb(172, 178, 179);
-  --grey:grey;
-  --light-blue:rgb(173, 217, 247);
-  --golden-color:rgb(255,215,0);
-  --light-red:rgb(255, 241, 243);
-  --background-grey:rgb(243,241,238);
-  --black-color:rgb(0, 0, 0);
+  --text-color: #333;
+  --accent-color: rgb(187, 19, 51);
+  --middle-shade-color: rgb(216, 28, 59);
+  --shade-color: rgb(247, 3, 3);
+  --white-color: rgb(255, 255, 255);
+  --light-grey: rgb(172, 178, 179);
+  --grey: grey;
+  --light-blue: rgb(173, 217, 247);
+  --golden-color: rgb(255, 215, 0);
+  --light-red: rgb(255, 241, 243);
+  --background-grey: rgb(243, 241, 238);
+  --black-color: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -259,7 +259,8 @@ section {
   }
 }
 
-p, label {
+p,
+label {
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-color);
@@ -267,25 +268,29 @@ p, label {
 }
 
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
-  p, label {
+  p,
+  label {
     font-size: 1rem;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  p, label {
+  p,
+  label {
     font-size: 1.15rem;
   }
 }
 
 @media only screen and (min-width: 1224px) {
-  p, label {
+  p,
+  label {
     font-size: 1.15rem;
   }
 }
 
 @media only screen and (min-width: 1824px) {
-  p, label {
+  p,
+  label {
     font-size: 1.15rem;
   }
 }
@@ -323,7 +328,7 @@ button {
 }
 
 button::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -372,29 +377,33 @@ input {
 }
 
 input:focus {
-  -webkit-box-shadow: 0px 0px 10px -2px  skyblue;
-          box-shadow: 0px 0px 10px -2px  skyblue;
+  -webkit-box-shadow: 0px 0px 10px -2px skyblue;
+          box-shadow: 0px 0px 10px -2px skyblue;
   border: 1px solid skyblue;
 }
 
 input::-webkit-input-placeholder {
   font-size: 0.8rem;
   color: var(--light-grey);
+  text-transform: capitalize;
 }
 
 input:-ms-input-placeholder {
   font-size: 0.8rem;
   color: var(--light-grey);
+  text-transform: capitalize;
 }
 
 input::-ms-input-placeholder {
   font-size: 0.8rem;
   color: var(--light-grey);
+  text-transform: capitalize;
 }
 
 input::placeholder {
   font-size: 0.8rem;
   color: var(--light-grey);
+  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -484,7 +493,8 @@ img {
           align-items: center;
 }
 
-.button-component-form button, .button-component-form input {
+.button-component-form button,
+.button-component-form input {
   width: 100%;
 }
 
@@ -535,6 +545,53 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+.popupComponent {
+  position: fixed;
+  background-color: var(--white-color);
+  top: auto;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: cA 1s forwards;
+  animation: cA 1s forwards;
+}
+
+@keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=theme.css.map */

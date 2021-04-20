@@ -139,7 +139,7 @@ nav i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15rem;
+  padding-top: 16rem;
 }
 
 .key-highlights h2 {
@@ -195,7 +195,8 @@ nav i {
   margin-top: 1rem;
 }
 
-.banner ul li span, .banner ul li h4 {
+.banner ul li span,
+.banner ul li h4 {
   display: block;
   width: 100%;
   text-align: center;
@@ -206,57 +207,44 @@ nav i {
   margin-bottom: 0.5rem;
 }
 
-.popupVideo {
-  position: fixed;
+.videoComponent {
   background-color: rgba(1, 1, 1, 0.7);
-  top: auto;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: cA 1s forwards;
-  animation: cA 1s forwards;
 }
 
-@keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.popupVideo iframe {
+.videoComponent iframe {
   height: 14rem;
   width: 100%;
   margin: 0rem 1rem;
+}
+
+.certificateComponent {
+  background-color: rgba(1, 1, 1, 0.7);
+}
+
+.certificateComponent figure {
+  height: 16rem;
+  width: 100%;
+  margin: 0rem 0.5rem;
+}
+
+.formComponent i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.formComponent div {
+  padding: 1rem;
+  margin: 0rem 1rem;
+}
+
+.formComponent form {
+  width: 100%;
+}
+
+.formComponent form input {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .curriculum .curriculum-banner {
@@ -269,7 +257,8 @@ nav i {
   padding: 1rem 0rem;
 }
 
-.curriculum .curriculum-banner div h2, .curriculum .curriculum-banner div p {
+.curriculum .curriculum-banner div h2,
+.curriculum .curriculum-banner div p {
   color: var(--accent-color);
   text-align: center;
   margin-bottom: 0rem;
@@ -293,7 +282,8 @@ nav i {
   margin-bottom: 1rem;
 }
 
-.curriculum .curriculum-banner ul li span, .curriculum .curriculum-banner ul li h4 {
+.curriculum .curriculum-banner ul li span,
+.curriculum .curriculum-banner ul li h4 {
   color: var(--text-color);
 }
 
@@ -530,7 +520,8 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -617,7 +608,8 @@ nav i {
           justify-content: center;
 }
 
-.download-curriculum h2, .download-curriculum p {
+.download-curriculum h2,
+.download-curriculum p {
   color: var(--white-color);
   text-align: center;
 }
@@ -747,6 +739,46 @@ nav i {
   display: none;
 }
 
+.salary-report {
+  border-top: 1px solid var(--accent-color);
+}
+
+.certificate {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+}
+
+.certificate .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.certificate .container article h2, .certificate .container article p, .certificate .container article li {
+  color: var(--white-color);
+}
+
+.certificate .container article ul {
+  padding-left: 1rem;
+  border-left: 1px solid var(--white-color);
+}
+
+.certificate .container article ul li {
+  margin: 0.5rem 0rem;
+}
+
+.certificate .container figure {
+  margin-top: 1rem;
+}
+
+.faq h2 {
+  margin-bottom: 0rem;
+}
+
 .faq ul li {
   padding: 2rem 1rem;
   display: -webkit-box;
@@ -779,7 +811,7 @@ nav i {
 
 .faq ul li .faq-head i {
   font-size: 2rem;
-  margin-right: 2rem;
+  margin-left: 2rem;
   color: var(--grey);
 }
 
@@ -792,22 +824,13 @@ nav i {
   margin-bottom: 0rem;
 }
 
+.jumpstart {
+  padding: 0.5rem 0rem;
+}
+
 .jumpstart .card .left-div {
   background-color: var(--light-red);
   padding: 1.5rem;
-}
-
-.jumpstart .card .left-div input {
-  width: 100%;
-}
-
-.jumpstart .card .left-div button {
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.jumpstart .card .left-div button i {
-  margin-left: 1rem;
 }
 
 .jumpstart .card .right-div {
@@ -816,7 +839,8 @@ nav i {
   padding: 1.5rem;
 }
 
-.jumpstart .card .right-div h2, .jumpstart .card .right-div p {
+.jumpstart .card .right-div h2,
+.jumpstart .card .right-div p {
   color: var(--white-color);
 }
 
