@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     
     <link rel="stylesheet" href="../scss/reset.css">
     <link rel="stylesheet" href="../scss/theme.css">
@@ -22,11 +25,21 @@
 
 
     <header>
+        
         <nav>
-            <figure>
-                <img onclick="displayVideo()" src="../images/play icom.png">
-            </figure>
-            <i class="fas fa-bars"></i>
+            <div class="container">
+                <figure>
+                    <div>
+                        <img src="../images/android-chrome-192x192.png">
+                    </div>
+                    <h3>Kon<span>finity</span></h3>
+                </figure>
+         
+            <div>
+                <h4 id="email">konfinity@gmail.com</h4>
+                <h4>+91 9284970819</h4>
+            </div>
+        </div>
         </nav>
     </header>
 
@@ -37,6 +50,7 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen=""></iframe>
         </div>
+
         <div class="popupComponent formComponent" id="popupForm">
             <i class="fas fa-times" id="close-button"  onclick="hidePopupForm()"></i>
             <div>
@@ -44,18 +58,18 @@
                     <h2>Enter your mobile number to start learning</h2>
                     <p>We will send you a confirmation code</p>
                 </article>
-                <form action="">
-                    <input type="text" name="name" placeholder="Enter your name...">
-                    <input type="text" name="email" placeholder="Enter your email...">
-                    <input type="text" name="number" placeholder="enter your mobile number...">
-                    <button class="border-button">Submit <i class="fas fa-arrow-right"></i></button>
+                <form>
+                    <input type="text" name="name" placeholder="Enter your name..." required>
+                    <input type="text" name="email" placeholder="Enter your email..." required>
+                    <input type="text" name="number" placeholder="enter your mobile number..." required>
+                    <button id="form1" class="accent-button">Submit</button>
                 </form>
             </div>
         </div>
         
         <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hideCertificate()">
             <figure>
-                <img src="../images/certificate.jpeg">
+                <img src="../images/certificate.jpg">
             </figure>
         </div>
 
@@ -66,15 +80,15 @@
                     <div class="video-button-wrap">
                         <h1>Full Stack Web Development</h1>
                         <figure class="mobie-play-button">
-                            <img onclick="displayVideo('video')" src="../images/play icom.png">
+                            <img onclick="displayVideo()" src="../images/play icom.png">
                         </figure>
                     </div>
                     <p>Intensive online coding courses, curated by our team from IIT Delhi. Trusted by our growing
                         community of students and graduates from IIT, DTU, NIT, Amity, DU and more.No coding background
                         required.</p>
                     <ul>
-                        <li><span>9</span> months</li>
-                        <li><span>600+</span> problems</li>
+                        <li id="months"><span>9</span> months</li>
+                        <li id="problems"><span>600+</span> problems</li>
                         <li id="students-enrolled"><span>13k+</span> students enrolled</li>
                     </ul>
                 </article>
@@ -110,11 +124,19 @@
                 </div>
             </div>
                 <figure class="hero-image">
-                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    <div>
+                    <img src="../images/heroimage.jpeg" alt="yash">
+                    <i onclick="displayVideo()" class="fas fa-play"></i>
+                    </div>
                     <figcaption>
+                        <div>
+                        <h5>Yash Madhurendra</h5>
+                        <p>Chem Engg,IIT Delhi</p>
+                    </div>
                         <ul>
-                            <li>Placed with Fanatix</li>
-                            <li>Salary : 22LPA</li>
+                            <li><span>Web Development</span> at konfinity</li>
+                            <li>Placed with <span>Fanatix</span></li>
+                            <li>Starting Salary<span>22LPA</span></li>
                         </ul>
                     </figcaption>
                 </figure>
@@ -125,7 +147,7 @@
             <div class="banner">
                 <ul>
                     <li><span>Free Trial</span>
-                        <h4>3 Days</h4>
+                        <h4><span class="counter" data-count="3"> 0 </span> Days</h4>
                     </li>
                     <li><span>certification</span>
                         <h4>certification</h4>
@@ -134,13 +156,13 @@
                         <h4>In -built career services</h4>
                     </li>
                     <li><span>next batch</span>
-                        <h4>April 24</h4>
+                        <h4>April <span class="counter" data-count="24"> 0 </span></h4>
                     </li>
                     <li><span>fee structure(emi)</span>
-                        <h4>6000/month</h4>
+                        <h4><span class="counter" data-count="6000">0 </span>  / month</h4>
                     </li>
                     <li><span>fee structure</span>
-                        <h4>27,000</h4>
+                        <h4 class="counter" data-count="2200">0</h4>
                     </li>
                 </ul>
 
@@ -192,47 +214,140 @@
                 </div>
                 <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
             </form>
+            <p class="free-learning">First 3 days of learning is free</p>
+
         </div>
 
         </section>
 
+        <section class="plan-cards">
+            <div class="container">
+            <div class="banner">
+                <div class="banner-head">
+                    <h3>Basic</h3>
+                    <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
+                    <p>Basic reporting and user analytics for teams.</p>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Entire course library</li>
+                    <li><i class="fas fa-check"></i>Learning paths</li>
+                    <li><i class="fas fa-check"></i>Channels</li>
+                    <li><i class="fas fa-check"></i>Course discussions</li>
+                    <li><i class="fas fa-check"></i>Exercise files</li>
+                </ul>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(0)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
+            </div>
+            <div class="banner">
+                <div class="banner-head">
+                    <h3>Intermediate</h3>
+                    <h2><i class="fas fa-rupee-sign"></i> 12000/month</h2>
+                    <p>Basic reporting and user analytics for teams.</p>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Entire course library</li>
+                    <li><i class="fas fa-check"></i>Learning paths</li>
+                    <li><i class="fas fa-check"></i>Channels</li>
+                    <li><i class="fas fa-check"></i>Course discussions</li>
+                    <li><i class="fas fa-check"></i>Exercise files</li>
+                </ul>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(1)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
+            </div>
+            <div class="banner">
+                <div class="banner-head">
+                    <h3>Advanced</h3>
+                    <h2><i class="fas fa-rupee-sign"></i> 16000/month</h2>
+                    <p>Basic reporting and user analytics for teams.</p>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Entire course library</li>
+                    <li><i class="fas fa-check"></i>Learning paths</li>
+                    <li><i class="fas fa-check"></i>Channels</li>
+                    <li><i class="fas fa-check"></i>Course discussions</li>
+                    <li><i class="fas fa-check"></i>Exercise files</li>
+                </ul>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(2)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
+            </div>
+        </div>
+        </section>
+
         <section class="curriculum">
             <div class="container">
-                <article>
+                <article id="curriculum">
                     <h2>Immersive Project-based Learning Journey</h2>
                     <p>Ace your next interview or excel in your current role by mastering in-demand Full-Stack developer
                         skills through our carefully curated hands-on project-based learning journey.</p>
                 </article>
                 <div class="flex-div">
+                    <div id="allplans">
                     <div class="banner curriculum-banner">
                         <div class="banner-head">
+                            <h3>Basic</h3>
                             <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
-                            <p>for 6 months</p>
+                            <p>Basic reporting and user analytics for teams.</p>
                         </div>
                         <ul>
-                            <li><span>Free Trial</span>
-                                <h4>3 Days</h4>
-                            </li>
-                            <li><span>certification</span>
-                                <h4>certification</h4>
-                            </li>
-                            <li><span>career assistance</span>
-                                <h4>In -built career services</h4>
-                            </li>
-                            <li><span>next batch</span>
-                                <h4>April 24</h4>
-                            </li>
-
+                            <li><i class="fas fa-check"></i>Entire course library</li>
+                            <li><i class="fas fa-check"></i>Learning paths</li>
+                            <li><i class="fas fa-check"></i>Channels</li>
+                            <li><i class="fas fa-check"></i>Course discussions</li>
+                            <li><i class="fas fa-check"></i>Exercise files</li>
                         </ul>
                         <div class="button-div">
-                            <button class="border-button">Chat with us</button>
-                            <button class="accent-button">Apply and start for free</button>
-                            <h4 class="grey-head">Prerequisites</h4>
-                            <h4>Basic programming in any language</h4>
+                            <button class="accent-button">Know more</button>
                         </div>
                     </div>
-                    <div class="curriculum-details">
+                    <div class="banner curriculum-banner">
+                        <div class="banner-head">
+                            <h3>Intermediate</h3>
+                            <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
+                            <p>Basic reporting and user analytics for teams.</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Entire course library</li>
+                            <li><i class="fas fa-check"></i>Learning paths</li>
+                            <li><i class="fas fa-check"></i>Channels</li>
+                            <li><i class="fas fa-check"></i>Course discussions</li>
+                            <li><i class="fas fa-check"></i>Exercise files</li>
+                        </ul>
+                        <div class="button-div">
+                            <button class="accent-button">Know more</button>
+                        </div>
+                    </div>
+                    <div class="banner curriculum-banner">
+                        <div class="banner-head">
+                            <h3>Advanced</h3>
+                            <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
+                            <p>Basic reporting and user analytics for teams.</p>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Entire course library</li>
+                            <li><i class="fas fa-check"></i>Learning paths</li>
+                            <li><i class="fas fa-check"></i>Channels</li>
+                            <li><i class="fas fa-check"></i>Course discussions</li>
+                            <li><i class="fas fa-check"></i>Exercise files</li>
+                        </ul>
+                        <div class="button-div">
+                            <button class="accent-button">Know more</button>
+                        </div>
+                </div>
 
+
+                    <div class="carousel-parent curriculum-carousel" id="curriculum-carousel">
+                        <span class="activcurriculum" onclick="currentSlideCurriculum(0)"></span>
+                        <span onclick="currentSlideCurriculum(1)"></span>
+                        <span onclick="currentSlideCurriculum(2)"></span>
+                    </div>
+
+
+
+
+                    <div class="curriculum-details" id="plan0">
                         <div class="curriculum-item">
                             <div class="wrap-head">
                                 <div class="info">
@@ -264,7 +379,6 @@
                                 </ul>
                             </div>
                         </div>
-
 
                         <div class="curriculum-item">
                             <div class="wrap-head">
@@ -298,7 +412,6 @@
                             </div>
                         </div>
 
-
                         <div class="curriculum-item">
                             <div class="wrap-head">
                                 <div class="info">
@@ -331,7 +444,6 @@
                             </div>
                         </div>
 
-
                         <div class="curriculum-item">
                             <div class="wrap-head">
                                 <div class="info">
@@ -363,8 +475,267 @@
                                 </ul>
                             </div>
                         </div>
-                       
                     </div>
+                    <div class="curriculum-details" id="plan1">
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Full Stack</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('11')"><i class="fas fa-arrow-down" id="icon11"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="11">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Full Stack</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('22')"><i class="fas fa-arrow-down" id="icon22"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="22">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Full Stack</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('33')"><i class="fas fa-arrow-down" id="icon33"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="33">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Full Stack</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('44')"><i class="fas fa-arrow-down" id="icon4"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="44">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curriculum-details" id="plan2">
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('111')"><i class="fas fa-arrow-down" id="icon111"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="111">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('222')"><i class="fas fa-arrow-down" id="icon222"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="222">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('333')"><i class="fas fa-arrow-down" id="icon333"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="333">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="curriculum-item">
+                            <div class="wrap-head">
+                                <div class="info">
+                                    <div>
+                                    <h6>Free Trial</h6>
+                                    </div>
+                                    <div class="image-div">
+                                        <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                        <div>
+                                            <h4>Web Developer</h4>
+                                            <h5>10 Hrs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" onclick="showDescription('444')"><i class="fas fa-arrow-down" id="icon4"></i></div>
+                            </div>
+                            <div class="curriculum-description" id="444">
+                                <p>Add life to the web pages of QTrip by making them dynamic by integrating with a backend and 3rd party plugins</p>
+                                <div class="tags">
+                                    <h6>HTML</h6>
+                                    <h6>CSS</h6>
+                                    <h6>JS</h6>
+                                    <h6>Linux</h6>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                    <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -392,7 +763,7 @@
                     </ul>
                 </article>
                 <figure onclick="displayCertificate()">
-                    <img src="../images//certificate.jpeg" alt="">
+                    <img src="../images//certificate.jpg" alt="">
                 </figure>
             </div>
         </section>
@@ -436,6 +807,24 @@
                     <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
                 </div>
             </div>
+            <div class="technology-parent-desktop">
+                   
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/mongodb.jpeg"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+                    <div class="technology"><figure class="round-icon-images"><img src="../images/play icom.png"><figcaption>Mongoose</figcaption></figure></div>
+            </div>
             <div class="carousel-parent" id="carousel">
                 <span class="active" onclick="currentSlide(0)"></span>
                 <span onclick="currentSlide(1)"></span>
@@ -451,6 +840,8 @@
                 </div>
                 <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
             </form>
+            <p class="free-learning">First 3 days of learning is free</p>
+
         </div>
         </section>
 
@@ -498,7 +889,7 @@
                     </div>
                     <i class="fas fa-times" id="close-button3" onclick="closeInput('3')"></i>
                 </form>
-                <p id="free-learning">First 3 days of learning is free</p>
+                <p class="free-learning">First 3 days of learning is free</p>
 
             </div>
         </section>
@@ -723,6 +1114,67 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+            <div class="testimonial">
+                <div class="wrap-testimonial">
+                    <div class="testimonial-image">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    </div>
+                    <figcaption>
+                        <div>
+                        <h5>Yash Madhurendra</h5>
+                        <p>Chem Engg,IIT Delhi</p>
+                    </div>
+                        <ul>
+                            <li><span>Web Development</span> at konfinity</li>
+                            <li>Placed with <span>Fanatix</span></li>
+                            <li>Starting Salary<span>22LPA</span></li>
+                        </ul>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="wrap-testimonial">
+                    <div class="testimonial-image">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    </div>
+                    <figcaption>
+                        <div>
+                        <h5>Yash Madhurendra</h5>
+                        <p>Chem Engg,IIT Delhi</p>
+                    </div>
+                        <ul>
+                            <li><span>Web Development</span> at konfinity</li>
+                            <li>Placed with <span>Fanatix</span></li>
+                            <li>Starting Salary<span>22LPA</span></li>
+                        </ul>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="wrap-testimonial">
+                    <div class="testimonial-image">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                    </div>
+                    <figcaption>
+                        <div>
+                        <h5>Yash Madhurendra</h5>
+                        <p>Chem Engg,IIT Delhi</p>
+                    </div>
+                        <ul>
+                            <li><span>Web Development</span> at konfinity</li>
+                            <li>Placed with <span>Fanatix</span></li>
+                            <li>Starting Salary<span>22LPA</span></li>
+                        </ul>
+                    </figcaption>
+                </div>
+                </div>
+            </div>
+        </div>
+
         </section>
         
     </main>

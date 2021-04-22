@@ -11,6 +11,7 @@
   --light-red: rgb(255, 241, 243);
   --background-grey: rgb(243, 241, 238);
   --black-color: rgb(0, 0, 0);
+  --abc-color: rgb(243, 166, 180);
 }
 
 @font-face {
@@ -362,6 +363,12 @@ button:hover::before {
   border: 1px solid var(--accent-color);
 }
 
+.border-button:hover::before {
+  background-color: var(--light-blue);
+  -webkit-transform: translate(115%, -10px) rotate(90deg);
+          transform: translate(115%, -10px) rotate(90deg);
+}
+
 input {
   padding: 0.7rem 1rem;
   font-size: 1rem;
@@ -522,6 +529,10 @@ img {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media only screen and (min-device-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -554,7 +565,7 @@ img {
 .popupComponent {
   position: fixed;
   background-color: var(--white-color);
-  top: auto;
+  top: 4rem;
   left: 0;
   z-index: 1;
   height: 100%;
@@ -572,6 +583,10 @@ img {
           align-items: center;
   -webkit-animation: cA 1s forwards;
   animation: cA 1s forwards;
+}
+
+.popupComponent i {
+  cursor: pointer;
 }
 
 @keyframes cA {
@@ -596,5 +611,135 @@ img {
   100% {
     opacity: 1;
   }
+}
+
+.testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .testimonials .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.testimonial {
+  background-image: url("../images/testimonial format.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .testimonial {
+    width: 32%;
+  }
+}
+
+.testimonial .wrap-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10rem;
+}
+
+.testimonial .testimonial-image {
+  width: 50%;
+}
+
+.testimonial figcaption {
+  width: 50%;
+  background-color: var(--white-color);
+  padding: 1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: transparent;
+}
+
+.testimonial figcaption h5 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.testimonial figcaption p {
+  font-size: 0.8rem;
+  margin-bottom: 0rem;
+}
+
+.testimonial figcaption div {
+  width: 100%;
+}
+
+.testimonial figcaption div:after {
+  display: none;
+}
+
+.testimonial figcaption ul {
+  background-color: var(--white-color);
+}
+
+.testimonial figcaption ul li {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.testimonial figcaption ul li span {
+  font-weight: bolder;
+}
+
+.carousel-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.carousel-parent span {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0rem 0.3rem;
+  background-color: var(--light-grey);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carousel-parent .active {
+  background-color: var(--accent-color);
 }
 /*# sourceMappingURL=theme.css.map */

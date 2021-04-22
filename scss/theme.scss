@@ -11,6 +11,8 @@
   --light-red: rgb(255, 241, 243);
   --background-grey: rgb(243, 241, 238);
   --black-color: rgb(0, 0, 0);
+  --abc-color: rgb(243, 166, 180);
+
 }
 @font-face {
   font-family: BoldFont;
@@ -259,6 +261,10 @@ button:hover::before {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+.border-button:hover::before {
+  background-color: var(--light-blue);
+  transform: translate(115%, -10px) rotate(90deg);
+}
 
 input {
   padding: 0.7rem 1rem;
@@ -346,6 +352,9 @@ img {
     cursor: pointer;
   }
 }
+a{
+  text-decoration: none;
+}
 
 @media only screen and (min-device-width: 1200px) {
   .container {
@@ -366,7 +375,7 @@ img {
 .popupComponent {
   position: fixed;
   background-color: var(--white-color);
-  top: auto;
+  top: 4rem;
   left: 0;
   z-index: 1;
   height: 100%;
@@ -377,6 +386,9 @@ img {
   align-items: center;
   -webkit-animation: cA 1s forwards;
   animation: cA 1s forwards;
+  i{
+    cursor: pointer;
+  }
   @keyframes cA {
     0% {
       opacity: 0;
@@ -400,3 +412,93 @@ img {
     }
   }
 }
+.testimonials{
+  .container{
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-device-width: 1200px){
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+  }
+}
+.testimonial {
+    background-image: url("../images/testimonial\ format.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+    
+    padding:2rem 1rem;
+    width:100%;
+    @media only screen and (min-device-width: 1200px){
+      width:32%;
+
+    }
+    .wrap-testimonial{
+      display: flex;
+      flex-direction: row;
+      height:10rem;
+
+    }
+    .testimonial-image{
+      width:50%;  
+         
+    }
+    figcaption{
+      width:50%;
+      background-color: var(--white-color);
+      padding:1rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: transparent;
+      h5{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+      }
+      p{
+font-size: 0.8rem;
+margin-bottom: 0rem;
+      }
+      div{
+        width: 100%;
+       
+      }
+      div:after{
+        display: none;
+      }
+      ul{
+        background-color: var(--white-color);
+        li{
+          font-size: 0.8rem;
+          line-height: 1rem;
+          span{
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  
+  }
+
+  .carousel-parent {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: fit-content;
+
+    span {
+      width: 0.8rem;
+      height: 0.8rem;
+      margin: 0rem 0.3rem;
+      background-color: var(--light-grey);
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    .active {
+      background-color: var(--accent-color);
+    }
+  }

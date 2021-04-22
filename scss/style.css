@@ -1,6 +1,6 @@
 main {
   position: relative;
-  padding-top: 4.2rem;
+  padding-top: 4.8rem;
 }
 
 nav {
@@ -9,6 +9,10 @@ nav {
   left: 0;
   right: 0;
   background-color: var(--black-color);
+  position: fixed;
+}
+
+nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,17 +26,85 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
 }
 
 nav figure {
-  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
-nav i {
+nav figure div {
+  width: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav figure div {
+    width: 3rem;
+  }
+}
+
+nav figure h3 {
   color: var(--white-color);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav figure h3 {
+    font-size: 1.6rem;
+  }
+}
+
+nav figure h3 span {
+  color: var(--middle-shade-color);
+}
+
+nav h4 {
+  color: var(--white-color);
+  text-transform: none;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav div h4 {
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+nav div #email {
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav div h4 {
+    font-size: 1.3rem;
+  }
+  nav div #email {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+  }
 }
 
 .hero-section {
@@ -97,18 +169,41 @@ nav i {
 }
 
 .hero-section article ul li {
-  width: 50%;
   margin: 0.3rem 0rem;
 }
 
 @media only screen and (min-width: 1024px) {
   .hero-section article ul li {
-    width: 20%;
+    margin-right: 1.5rem;
   }
 }
 
 .hero-section article ul li span {
   font-family: BoldFont;
+}
+
+.hero-section article ul #months {
+  width: 40%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section article ul #months {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.hero-section article ul #problems {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section article ul #problems {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .hero-section article ul #students-enrolled {
@@ -117,7 +212,9 @@ nav i {
 
 @media only screen and (min-width: 1024px) {
   .hero-section article ul #students-enrolled {
-    width: 30%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -127,9 +224,69 @@ nav i {
 
 @media only screen and (min-width: 1024px) {
   .hero-section .hero-image {
-    display: block;
+    background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+    background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+    border-radius: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1.5rem;
     width: 40%;
     height: 20rem;
+  }
+  .hero-section .hero-image div {
+    width: 50%;
+    position: relative;
+  }
+  .hero-section .hero-image div i {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    font-size: 2rem;
+    color: var(--white-color);
+    z-index: 6;
+    cursor: pointer;
+  }
+  .hero-section .hero-image div:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .hero-section .hero-image figcaption {
+    width: 50%;
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-section .hero-image figcaption div {
+    width: 100%;
+  }
+  .hero-section .hero-image figcaption div:after {
+    display: none;
+  }
+  .hero-section .hero-image figcaption ul li {
+    margin-top: 0.5rem;
+  }
+  .hero-section .hero-image figcaption ul li span {
+    font-weight: bolder;
   }
 }
 
@@ -276,6 +433,7 @@ nav i {
 
 @media only screen and (min-width: 1024px) {
   .key-highlights .highlights div {
+    background-color: transparent;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -287,6 +445,10 @@ nav i {
 
 .key-highlights .highlights div p {
   text-align: left;
+}
+
+.key-highlights .highlights div p span {
+  font-weight: bolder;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -345,10 +507,27 @@ nav i {
 
 .banner ul li span,
 .banner ul li h4 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   text-align: center;
   color: var(--accent-color);
+}
+
+.banner ul li span span,
+.banner ul li h4 span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0rem 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -364,6 +543,7 @@ nav i {
 
 .videoComponent {
   background-color: rgba(1, 1, 1, 0.7);
+  z-index: 10;
 }
 
 .videoComponent iframe {
@@ -402,7 +582,7 @@ nav i {
 }
 
 .formComponent h2, .formComponent p, .formComponent i {
-  color: var(--white-color);
+  color: var(--accent-color);
   text-align: center;
 }
 
@@ -411,12 +591,14 @@ nav i {
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.2rem;
+  color: var(--white-color);
 }
 
 .formComponent div {
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin: 0rem 1rem;
-  background: transparent;
+  background: var(--white-color);
+  border-radius: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -450,85 +632,135 @@ nav i {
   text-align: center;
 }
 
+.curriculum .curriculum-carousel {
+  margin-top: 2rem;
+}
+
+.curriculum .curriculum-carousel .activcurriculum {
+  background-color: var(--accent-color);
+}
+
 @media only screen and (min-device-width: 1200px) {
-  .curriculum .flex-div {
+  .curriculum .carousel-parent {
+    display: none;
+  }
+  .curriculum .flex-div #allplans {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .curriculum .curriculum-banner {
-  margin-top: 1rem;
   position: unset;
+  padding: 1rem;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -webkit-animation: cA 3s forwards;
+  animation: cA 3s forwards;
 }
 
 @media only screen and (min-device-width: 1200px) {
   .curriculum .curriculum-banner {
     padding: 1.5rem;
+    margin-top: 1.5rem;
     width: 30%;
-  }
-  .curriculum .curriculum-banner ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .curriculum .curriculum-banner ul li p, .curriculum .curriculum-banner ul li span {
-    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
-.curriculum .curriculum-banner div {
-  padding: 1rem 0rem;
+@keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.curriculum .curriculum-banner div h2,
-.curriculum .curriculum-banner div p {
-  color: var(--accent-color);
+@-webkit-keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.curriculum .curriculum-banner .banner-head h3 {
   text-align: center;
-  margin-bottom: 0rem;
-}
-
-.curriculum .curriculum-banner .banner-head {
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.curriculum .curriculum-banner .button-div button {
-  width: 100%;
   margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-banner .banner-head p {
+  text-align: center;
+}
+
+.curriculum .curriculum-banner ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0rem auto;
+}
+
+.curriculum .curriculum-banner ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curriculum .curriculum-banner ul li i {
+  color: var(--accent-color);
+  margin-right: 1rem;
+}
+
+.curriculum .curriculum-banner .button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
 }
 
 .curriculum .curriculum-banner .button-div h4 {
   text-align: center;
 }
 
-.curriculum .curriculum-banner .button-div .grey-head {
-  color: var(--light-grey);
-  margin-bottom: 1rem;
-}
-
-.curriculum .curriculum-banner ul li span,
-.curriculum .curriculum-banner ul li h4 {
-  color: var(--text-color);
-}
-
-.curriculum .curriculum-details {
-  margin-top: 2rem;
-}
-
 @media only screen and (min-device-width: 1200px) {
   .curriculum .curriculum-details {
     width: 65%;
-    margin-top: 0rem;
   }
 }
 
@@ -689,9 +921,14 @@ nav i {
           align-items: center;
 }
 
+.technologies .technology-parent-desktop {
+  display: none;
+}
+
 @media only screen and (min-device-width: 1200px) {
   .technologies .technology-parent {
     margin: 2rem 0rem;
+    display: none;
   }
 }
 
@@ -765,31 +1002,50 @@ nav i {
   margin-top: 0.7rem;
 }
 
-.technologies .carousel-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 1rem auto;
-  margin-bottom: 2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.technologies .carousel-parent span {
-  width: 0.8rem;
-  height: 0.8rem;
-  margin: 0rem 0.3rem;
-  background-color: var(--light-grey);
-  border-radius: 100%;
-}
-
-.technologies .carousel-parent .active {
-  background-color: var(--accent-color);
+@media only screen and (min-device-width: 1200px) {
+  .technologies .carousel-parent {
+    display: none;
+  }
+  .technologies .technology-parent-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 3rem 0rem;
+    max-width: 800px;
+  }
+  .technologies .technology-parent-desktop .technology {
+    width: 15%;
+  }
+  .technologies .technology-parent-desktop .technology figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  .technologies .technology-parent-desktop .technology figure img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .technologies .technology-parent-desktop .technology figure figcaption {
+    text-align: center;
+    margin-top: 0.7rem;
+  }
 }
 
 .projects {
@@ -850,6 +1106,11 @@ nav i {
   margin-bottom: 0.7rem;
 }
 
+.free-learning {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 .career-assistance {
   padding-top: 1.5rem;
 }
@@ -858,10 +1119,6 @@ nav i {
   .career-assistance {
     padding-top: 3rem;
   }
-}
-
-.career-assistance #free-learning {
-  margin-top: 0.5rem;
 }
 
 .download-curriculum {
@@ -908,6 +1165,10 @@ nav i {
 
 .download-curriculum button i {
   margin-right: 0.5rem;
+}
+
+.support-system {
+  background-color: var(--light-red);
 }
 
 .support-system .banner {
@@ -1040,6 +1301,7 @@ nav i {
     display: none;
   }
   .desktop-support-system {
+    background-color: var(--light-red);
     display: block;
   }
   .desktop-support-system .banner {
@@ -1082,6 +1344,8 @@ nav i {
   }
   .desktop-support-system .banner-info .wrap-faculty div {
     width: 20%;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1264,6 +1528,7 @@ nav i {
 
 @media only screen and (min-device-width: 1200px) {
   .jumpstart .card {
+    padding: 3rem 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1333,5 +1598,81 @@ nav i {
 .jumpstart .card .right-div ul li i {
   margin-right: 1rem;
   color: var(--white-color);
+}
+
+.plan-cards {
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .plan-cards {
+    display: block;
+  }
+  .plan-cards .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .plan-cards .banner {
+    position: unset;
+    padding: 1rem;
+    width: 30%;
+  }
+  .plan-cards .banner .banner-head h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .plan-cards .banner .banner-head p {
+    text-align: center;
+  }
+  .plan-cards .banner ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0rem auto;
+  }
+  .plan-cards .banner ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plan-cards .banner ul li i {
+    color: var(--accent-color);
+    margin-right: 1rem;
+  }
+  .plan-cards .banner .button-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+  }
+  .plan-cards .banner .button-div h4 {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,27 +1,76 @@
 main {
   position: relative;
-  padding-top: 4.2rem;
+  padding-top: 4.8rem;
 }
 
 nav {
+  
   padding: 1rem 1.5rem;
   z-index: 999;
   left: 0;
   right: 0;
   background-color: var(--black-color);
+  .container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  }
   position: fixed;
+  
   figure {
-    width: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 100%;
+    div{
+      width:2rem;
+      @media only screen and (min-width: 1024px) {
+        width: 3rem;
+      }
+    }
+    h3{
+      color: var(--white-color);
+      font-size: 1.4rem;
+      @media only screen and (min-width: 1024px) {
+        font-size: 1.6rem;
+      }
+      span{
+        color: var(--middle-shade-color);
+      }
+    }
   }
-  i {
+  
+  h4{
     color: var(--white-color);
-    font-size: 1.5rem;
+    text-transform: none;
   }
+  div{
+    display: flex;
+    flex-direction: column;
+    h4{
+      font-size: 1.1rem;
+      text-align: right ;
+    }
+    #email{
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+   
+  div{
+    flex-direction: row;
+    h4{
+      font-size: 1.3rem;
+    }
+    #email{
+      margin-right: 1rem;
+      margin-bottom: 0rem;
+    }
+  }
+ 
+  
+}
 }
 
 .hero-section {
@@ -58,20 +107,33 @@ nav {
       flex-direction: row;
       flex-wrap: wrap;
       li {
-        width: 50%;
-        @media only screen and (min-width: 1024px) {
-          width:20%;
-        }
+        
         margin: 0.3rem 0rem;
+        @media only screen and (min-width: 1024px) {
+          margin-right: 1.5rem;
+        }
 
         span {
           font-family: BoldFont;
         }
       }
+      #months{
+        width:40%;
+        @media only screen and (min-width: 1024px) {
+          width: fit-content;
+        }
+      }
+      #problems{
+        width:50%;
+        @media only screen and (min-width: 1024px) {
+          width: fit-content;
+
+        }
+      }
       #students-enrolled {
         width: 100%;
         @media only screen and (min-width: 1024px) {
-          width:30%;
+          width: fit-content;
         }
       }
     }
@@ -79,9 +141,65 @@ nav {
   .hero-image {
     display: none;
     @media only screen and (min-width: 1024px) {
-      display: block;
+      background: linear-gradient(
+        to right,
+        var(--accent-color),
+        var(--shade-color)
+      );      
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: row;
+
+      padding: 1.5rem;
       width:40%;
       height:20rem;
+      div{
+        width:50%;
+        position: relative;
+        i{
+          position: absolute;
+          left: 40%;
+          top:40%;
+          font-size: 2rem;
+          color: var(--white-color);
+          z-index: 6;
+          cursor: pointer;
+        }
+       
+      }
+      div:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.5);
+    }
+      figcaption{
+        width:50%;
+        background-color: var(--white-color);
+        padding:1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+          width: 100%;
+         
+        }
+        div:after{
+          display: none;
+        }
+        ul{
+          li{
+            margin-top: 0.5rem;
+            span{
+              font-weight: bolder;
+            }
+          }
+        }
+      }
     
     }
   }
@@ -131,6 +249,7 @@ nav {
   justify-self: center;
   align-items: center;
   padding-top: 16rem;
+ 
   @media only screen and (min-width: 1024px) {
     padding-top: 8rem;
    
@@ -169,12 +288,17 @@ nav {
       margin-top: 1rem;
       border-radius: 0.3rem;
       @media only screen and (min-width: 1024px) {
+        background-color: transparent;
+
         flex-direction: column;
         width:30%;
         padding:1.5rem 1rem;
       }
       p {
         text-align: left;
+        span{
+          font-weight:bolder;
+        }
         @media only screen and (min-width: 1024px) {
           text-align: center;
           margin-top: 1rem;
@@ -218,10 +342,16 @@ nav {
       margin-top: 1rem;
       span,
       h4 {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
         text-align: center;
         color: var(--accent-color);
+        span{
+          width: fit-content;
+          margin: 0rem 0.5rem;
+        }
         @media only screen and (min-width: 1024px) {
           text-align: left;
 
@@ -238,6 +368,7 @@ nav {
 
 .videoComponent {
   background-color: rgba(1, 1, 1, 0.7);
+  z-index: 10;
   iframe {
     height: 14rem;
     width: 100%;
@@ -269,7 +400,7 @@ nav {
     var(--shade-color)
   );
   h2,p,i{
-    color: var(--white-color);
+    color: var(--accent-color);
     text-align: center;
   }
   i{
@@ -277,12 +408,15 @@ nav {
     top:1.5rem;
     right:1.5rem;
     font-size: 1.2rem;
+    color: var(--white-color);
   
   }
   div{
-    padding:1rem;
+    padding:2rem 1rem;
     margin:0rem 1rem;
-    background: transparent;
+    background: var(--white-color);
+    border-radius: 0.5rem;
+    
     @media only screen and (min-width: 1024px) {
       width:40%;
     }
@@ -316,68 +450,100 @@ nav {
     text-align: center;
   }
 }
+.curriculum-carousel{
+  margin-top: 2rem;
+  .activcurriculum{
+    background-color: var(--accent-color);
+  }
+}
   @media only screen and (min-device-width: 1200px){
+    .carousel-parent{
+      display: none;
+    }
     .flex-div{
+      #allplans{
+        width: 100%;
+        display: flex;
       flex-direction: row-reverse;
+      justify-content: space-between;
+      }
     }
   }
-  .curriculum-banner {
-    margin-top: 1rem;
+  .curriculum-banner{
     position: unset;
+    padding: 1rem;
     width: 100%;
-    height: fit-content;
+
     @media only screen and (min-device-width: 1200px){
       padding:1.5rem;
+      margin-top: 1.5rem;
       width:30%;
-      ul{
-        flex-direction: column;
-        align-items: center;
-        li{
-          p,span{
-            text-align: center;
-          }
+      height: fit-content;
+    }
+    -webkit-animation: cA 3s forwards;
+      animation: cA 3s forwards;
+      @keyframes cA {
+        0% {
+          opacity: 0;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
         }
       }
+      @-webkit-keyframes cA {
+        0% {
+          opacity: 0;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    .banner-head{
+      h3{
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      p{
+        text-align: center;
+      }
     }
-    div {
-      padding: 1rem 0rem;
-      h2,
-      p {
+    ul{
+    flex-direction: column;
+    width: fit-content;
+    margin:0rem auto;
+    li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      i{
         color: var(--accent-color);
+        margin-right: 1rem;
+      }
+    }
+    }
+    .button-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      h4{
         text-align: center;
-        margin-bottom: 0rem;
-      }
-    }
-    .banner-head {
-      border-bottom: 1px solid var(--accent-color);
-    }
-    .button-div {
-      button {
-        width: 100%;
-        margin-bottom: 1rem;
-      }
-      h4 {
-        text-align: center;
-      }
-      .grey-head {
-        color: var(--light-grey);
-        margin-bottom: 1rem;
-      }
-    }
-    ul {
-      li {
-        span,
-        h4 {
-          color: var(--text-color);
-        }
       }
     }
   }
+  
+    
+   
+  
   .curriculum-details {
-    margin-top: 2rem;
     @media only screen and (min-device-width: 1200px){
     width:65%;
-    margin-top: 0rem;
     }
     .curriculum-item {
       background-color: var(--background-grey);
@@ -475,10 +641,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .technology-parent-desktop{
+    display: none;
+  }
   
   .technology-parent {
     @media only screen and (min-device-width: 1200px){
       margin: 2rem 0rem;
+      display: none;
     }
     .technology-wrap {
       display: flex;
@@ -529,24 +699,36 @@ nav {
       }
     }
   }
-  .carousel-parent {
+  @media only screen and (min-device-width: 1200px){
+    .carousel-parent{
+      display: none;
+    }
+  .technology-parent-desktop{
     display: flex;
     flex-direction: row;
-    margin: 1rem auto;
-    margin-bottom: 2rem;
-    width: fit-content;
-
-    span {
-      width: 0.8rem;
-      height: 0.8rem;
-      margin: 0rem 0.3rem;
-      background-color: var(--light-grey);
-      border-radius: 100%;
-    }
-    .active {
-      background-color: var(--accent-color);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:3rem 0rem;
+    max-width: 800px;
+    .technology {
+      width: 15%;
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+        figcaption {
+          text-align: center;
+          margin-top: 0.7rem;
+        }
+      }
     }
   }
+}
 }
 
 .projects {
@@ -586,14 +768,17 @@ nav {
   }
 }
 
+.free-learning {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 .career-assistance {
   padding-top: 1.5rem;
   @media only screen and (min-device-width: 1200px){
     padding-top: 3rem;
   }
-  #free-learning {
-    margin-top: 0.5rem;
-  }
+ 
 }
 
 .download-curriculum {
@@ -628,6 +813,7 @@ nav {
 }
 
 .support-system {
+  background-color: var(--light-red);
   .banner {
     position: unset;
     width: 100%;
@@ -719,6 +905,8 @@ nav {
     display: none;
   }
   .desktop-support-system{
+    background-color: var(--light-red);
+
     display: block;
     .banner{
       padding:1rem;
@@ -752,6 +940,8 @@ nav {
         width:80%;
         div{
           width:20%;
+          background-color: var(--white-color);
+          border-radius: 0.5rem;
           align-items: center;
           display: flex;
           flex-direction: column;
@@ -878,9 +1068,11 @@ border-top: 1px solid var(--accent-color);
 
 .jumpstart {
   padding:0.5rem 0rem;
- 
+
   .card {
     @media only screen and (min-device-width: 1200px){
+      padding:3rem 0rem;
+
       display: flex;
       flex-direction: row;
     }
@@ -926,5 +1118,54 @@ border-top: 1px solid var(--accent-color);
       }
     }
   }
+}
+
+.plan-cards{
+  display: none;
+  @media only screen and (min-device-width: 1200px){
+    display: block;
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  .banner{
+    position: unset;
+    padding: 1rem;
+    width: 30%;
+    .banner-head{
+      h3{
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      p{
+        text-align: center;
+      }
+    }
+    ul{
+    flex-direction: column;
+    width: fit-content;
+    margin:0rem auto;
+    li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      i{
+        color: var(--accent-color);
+        margin-right: 1rem;
+      }
+    }
+    }
+    .button-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      h4{
+        text-align: center;
+      }
+    }
+  }
+}
 }
 

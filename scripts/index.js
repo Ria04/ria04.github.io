@@ -77,6 +77,12 @@ for (var j = 0; j < dots.length; j++) {
   });
 }
 
+showInnerItem('item1');
+showInnerItemDesktop('ditem1');
+showDescription('1');
+showDescription('11');
+showDescription('111');
+
 function showInnerItem(id) {
   var element = document.getElementById(id);
   var icon = document.getElementById("icon" + id);
@@ -109,6 +115,28 @@ function showFaq(id) {
 }
 
 
+$('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+    }
+
+  });
+});
+
 /*const popUpForm = document.querySelector('#popupForm');
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
@@ -121,3 +149,34 @@ function onScroll(event) {
 }
 
 window.addEventListener('scroll', event => onScroll(event));*/
+
+
+//plans
+function currentSlideCurriculum(n) {
+  var head = document.getElementById("allplans");
+  var slides = head.getElementsByClassName("curriculum-banner");
+
+  for (var s = 0; s < slides.length; s++) {
+    slides[s].style.display = "none";
+  }
+  for(var i=0;i<3;i++){
+    document.getElementById("plan"+i).style.display="none";
+  }
+  slides[n].style.display = "block";
+  document.getElementById("plan"+n).style.display="block";
+
+
+
+}
+
+currentSlideCurriculum(0);
+
+var carouselhead = document.getElementById("curriculum-carousel");
+var dots = carouselhead.getElementsByTagName("span");
+for (var j = 0; j < dots.length; j++) {
+  dots[j].addEventListener("click", function () {
+    var currentdot = document.getElementsByClassName("activcurriculum");
+    currentdot[0].className = currentdot[0].className.replace("activcurriculum", " ");
+    this.className += "activcurriculum";
+  });
+}
