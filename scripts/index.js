@@ -77,29 +77,18 @@ for (var j = 0; j < dots.length; j++) {
   });
 }
 
-showInnerItem('item1');
-showInnerItemDesktop('ditem1');
 showDescription('1');
 showDescription('11');
 showDescription('111');
 
-function showInnerItem(id) {
-  var element = document.getElementById(id);
-  var icon = document.getElementById("icon" + id);
-  if (element.style.display != "flex") {
-    element.style.display = "flex";
-    icon.classList.replace("fa-angle-down", "fa-angle-up");
-  } else {
-    element.style.display = "none";
-    icon.classList.replace("fa-angle-up", "fa-angle-down");
+function shownav(){
+  var nav=document.getElementById('nav');
+  if(nav.style.display!="flex"){
+    nav.style.display="flex";
   }
-}
-function showInnerItemDesktop(id) {
-  for(var i=1;i<5;i++){
-    document.getElementById("ditem"+i).style.display="none";
+  else{
+    nav.style.display="none";
   }
- document.getElementById(id).style.display="flex";
- 
 }
 
 function showFaq(id) {
@@ -154,22 +143,21 @@ window.addEventListener('scroll', event => onScroll(event));*/
 //plans
 function currentSlideCurriculum(n) {
   var head = document.getElementById("allplans");
-  var slides = head.getElementsByClassName("curriculum-banner");
-
+  var slides = head.getElementsByClassName("banner");
   for (var s = 0; s < slides.length; s++) {
     slides[s].style.display = "none";
   }
   for(var i=0;i<3;i++){
-    document.getElementById("plan"+i).style.display="none";
+    document.getElementById("plan0"+i).style.display="none";
   }
+  
   slides[n].style.display = "block";
-  document.getElementById("plan"+n).style.display="block";
-
+  document.getElementById("plan0"+n).style.display="flex";
 
 
 }
 
-currentSlideCurriculum(0);
+currentSlideCurriculum(00);
 
 var carouselhead = document.getElementById("curriculum-carousel");
 var dots = carouselhead.getElementsByTagName("span");
@@ -179,4 +167,26 @@ for (var j = 0; j < dots.length; j++) {
     currentdot[0].className = currentdot[0].className.replace("activcurriculum", " ");
     this.className += "activcurriculum";
   });
+}
+
+
+function hideListItems(){
+  
+  var parent=document.getElementById("alldesktopplans");
+  var arr=parent.getElementsByClassName("list-items");
+  var element=document.getElementById("hide-features");
+  if(arr[0].style.display!="none"){
+  for(var i=0;i<arr.length;i++){
+    arr[i].style.display="none";
+  }
+  element.innerHTML="Show All Features <i class='fas fa-angle-down'></i>"
+}
+else{
+  for(var i=0;i<arr.length;i++){
+    arr[i].style.display="block";
+  }
+  element.innerHTML="Hide All Features <i class='fas fa-angle-up'></i>"
+
+}
+  
 }

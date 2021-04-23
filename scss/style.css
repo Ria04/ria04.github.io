@@ -1,6 +1,6 @@
 main {
   position: relative;
-  padding-top: 4.8rem;
+  padding-top: 4.3rem;
 }
 
 nav {
@@ -44,6 +44,7 @@ nav figure {
 
 nav figure div {
   width: 2rem;
+  margin-right: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -104,6 +105,80 @@ nav div #email {
   nav div #email {
     margin-right: 1rem;
     margin-bottom: 0rem;
+  }
+}
+
+.mobile-nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-nav .container .icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-nav .container .icon-wrap i {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.mobile-nav .container .email-number-div {
+  display: none;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.mobile-nav .container .email-number-div i {
+  margin-right: 1rem;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop-nav .container {
+    width: 100%;
+  }
+  .desktop-nav #email {
+    margin-right: 2rem;
+  }
+  .desktop-nav i {
+    margin-right: 1rem;
   }
 }
 
@@ -588,8 +663,8 @@ nav div #email {
 
 .formComponent i {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 2rem;
+  right: 2rem;
   font-size: 1.2rem;
   color: var(--white-color);
 }
@@ -632,39 +707,11 @@ nav div #email {
   text-align: center;
 }
 
-.curriculum .curriculum-carousel {
-  margin-top: 2rem;
-}
-
-.curriculum .curriculum-carousel .activcurriculum {
-  background-color: var(--accent-color);
-}
-
-@media only screen and (min-device-width: 1200px) {
-  .curriculum .carousel-parent {
-    display: none;
-  }
-  .curriculum .flex-div #allplans {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .curriculum .curriculum-banner {
   position: unset;
-  padding: 1rem;
+  padding: 2rem 1rem;
   width: 100%;
-  -webkit-animation: cA 3s forwards;
-  animation: cA 3s forwards;
+  margin-top: 2rem;
 }
 
 @media only screen and (min-device-width: 1200px) {
@@ -678,33 +725,35 @@ nav div #email {
   }
 }
 
-@keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+.curriculum .curriculum-banner .banner-head {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--accent-color);
 }
 
-@-webkit-keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.curriculum .curriculum-banner .banner-head h3 {
+.curriculum .curriculum-banner .banner-head h4 {
   text-align: center;
-  margin-bottom: 1rem;
+}
+
+.curriculum .curriculum-banner .banner-head h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--accent-color);
+}
+
+.curriculum .curriculum-banner .banner-head h2 i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .curriculum .curriculum-banner .banner-head p {
@@ -720,19 +769,31 @@ nav div #email {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0rem auto;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .curriculum-banner ul {
+    margin-top: 1rem;
+  }
 }
 
 .curriculum .curriculum-banner ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.curriculum .curriculum-banner ul li .grey-head {
+  color: var(--grey);
+  margin-bottom: 0.5rem;
 }
 
 .curriculum .curriculum-banner ul li i {
@@ -758,8 +819,36 @@ nav div #email {
   text-align: center;
 }
 
+.curriculum .curriculum-banner .button-div button {
+  width: 100%;
+}
+
+.curriculum .curriculum-banner .button-div .accent-button {
+  margin-top: 1rem;
+}
+
+.curriculum .curriculum-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media only screen and (min-device-width: 1200px) {
   .curriculum .curriculum-details {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .curriculum .curriculum-details .curriculum-banner-flex {
     width: 65%;
   }
 }
@@ -1601,14 +1690,177 @@ nav div #email {
 }
 
 .plan-cards {
+  background-color: var(--light-red);
+}
+
+.plan-cards article {
+  margin-bottom: 2rem;
+}
+
+.plan-cards .curriculum-carousel {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.plan-cards .curriculum-carousel .activcurriculum {
+  background-color: var(--accent-color);
+}
+
+.plan-cards .banner {
+  display: none;
+  position: unset;
+  padding: 1rem;
+  width: 100%;
+}
+
+.plan-cards .banner .banner-head h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.plan-cards .banner .banner-head h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-cards .banner .banner-head h2 i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.plan-cards .banner .banner-head p {
+  text-align: center;
+  width: 50%;
+  margin: 0rem auto;
+}
+
+.plan-cards .banner ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0rem auto;
+  margin-top: 2rem;
+}
+
+.plan-cards .banner ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: BoldFont;
+}
+
+.plan-cards .banner ul li i {
+  color: var(--accent-color);
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.plan-cards .banner .button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.plan-cards .banner .button-div h4 {
+  text-align: center;
+}
+
+.plan-cards-mobile .banner {
+  padding: 2rem 1rem;
+  -webkit-animation: cA 3s forwards;
+  animation: cA 3s forwards;
+}
+
+@keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cA {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.plan-cards-desktop {
   display: none;
 }
 
 @media only screen and (min-device-width: 1200px) {
-  .plan-cards {
+  .plan-cards-mobile {
+    display: none;
+  }
+  .plan-cards-desktop {
     display: block;
   }
-  .plan-cards .container {
+  .plan-cards-desktop h5 {
+    text-align: center;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .plan-cards-desktop h5 i {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+  .plan-cards-desktop .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1620,59 +1872,10 @@ nav div #email {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .plan-cards .banner {
-    position: unset;
-    padding: 1rem;
+  .plan-cards-desktop .banner {
     width: 30%;
-  }
-  .plan-cards .banner .banner-head h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .plan-cards .banner .banner-head p {
-    text-align: center;
-  }
-  .plan-cards .banner ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0rem auto;
-  }
-  .plan-cards .banner ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .plan-cards .banner ul li i {
-    color: var(--accent-color);
-    margin-right: 1rem;
-  }
-  .plan-cards .banner .button-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 2rem;
-  }
-  .plan-cards .banner .button-div h4 {
-    text-align: center;
+    display: block;
+    padding: 2rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

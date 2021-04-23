@@ -179,7 +179,7 @@ h6 {
 }
 
 section {
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   @media only screen and (min-width: 1224px) {
     padding: 3rem 0rem;
   }
@@ -261,9 +261,14 @@ button:hover::before {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-.border-button:hover::before {
-  background-color: var(--light-blue);
-  transform: translate(115%, -10px) rotate(90deg);
+.border-button:hover{
+  background: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--shade-color)
+  );
+  color: var(--white-color);
+
 }
 
 input {
@@ -363,14 +368,7 @@ a{
   }
 }
 
-.flex-div {
-  display: flex;
-  flex-direction: column;
-  @media only screen and (min-device-width: 1200px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+
 
 .popupComponent {
   position: fixed;

@@ -251,7 +251,7 @@ h6 {
 }
 
 section {
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
 }
 
 @media only screen and (min-width: 1224px) {
@@ -363,10 +363,10 @@ button:hover::before {
   border: 1px solid var(--accent-color);
 }
 
-.border-button:hover::before {
-  background-color: var(--light-blue);
-  -webkit-transform: translate(115%, -10px) rotate(90deg);
-          transform: translate(115%, -10px) rotate(90deg);
+.border-button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  color: var(--white-color);
 }
 
 input {
@@ -537,28 +537,6 @@ a {
   .container {
     max-width: 1200px;
     margin: 0rem auto;
-  }
-}
-
-.flex-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media only screen and (min-device-width: 1200px) {
-  .flex-div {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
