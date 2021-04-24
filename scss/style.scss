@@ -299,7 +299,7 @@ i{
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  padding-top: 16rem;
+  padding-top: 12rem;
  
   @media only screen and (min-width: 1024px) {
     padding-top: 8rem;
@@ -322,12 +322,31 @@ i{
       margin-bottom: 2rem;
     }
     figure {
-      width: 11rem;
+      width: 20%;
       height: 3.5rem;
       margin-right: 1rem;
       @media only screen and (min-width: 1024px) {
         width: 4rem;
 
+      }
+    }
+    .text-wrap{
+      display: flex;
+      flex-direction: column;
+      width:80%;
+      @media only screen and (min-width: 1024px) {
+        width:100%;
+      }
+      h6{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        @media only screen and (min-width: 1024px) {
+          text-align: center;
+          margin-bottom: 0rem;
+
+
+        }
       }
     }
     div {
@@ -799,7 +818,8 @@ i{
       box-shadow: 0px 0px 10px -2px var(--light-grey);
       width: 48%;
       @media only screen and (min-device-width: 1200px){
-       width:23%;
+       width:30%;
+       margin-top: 1.5rem;
       }
       margin-top: 1rem;
       figure {
@@ -1035,10 +1055,7 @@ i{
   
 }
 
-.salary-report{
-border-top: 1px solid var(--accent-color);
 
-}
 
 .certificate{
   background: linear-gradient(
@@ -1088,7 +1105,7 @@ border-top: 1px solid var(--accent-color);
   }
   ul {
     li {
-      padding: 2rem 1rem;
+      padding: 2rem 0rem;
       cursor: pointer;
       display: flex;
       flex-direction: column;
@@ -1102,6 +1119,11 @@ border-top: 1px solid var(--accent-color);
         }
         h4 {
           line-height: 2rem;
+          font-size: 1.3rem;
+          @media only screen and (min-device-width: 1200px){
+            font-size: 1.5rem;
+          }
+
           color: var(--grey);
         }
         i {
@@ -1178,8 +1200,13 @@ border-top: 1px solid var(--accent-color);
 .plan-cards{
   background-color: var(--light-red);
   article{
+    margin-bottom: 2rem;
+  }
+  @media only screen and (min-device-width: 1200px){
+  article{
     margin-bottom: 4rem;
   }
+}
   .curriculum-carousel{
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -1191,7 +1218,6 @@ border-top: 1px solid var(--accent-color);
     
     display: none;
     position: unset;
-    padding: 1rem;
     width: 100%;
     .banner-head{
       h3{
@@ -1217,6 +1243,11 @@ border-top: 1px solid var(--accent-color);
       }
     
     }
+    .list-items{
+      background:rgb(255,202,196);
+      padding: 2rem 0rem;
+      padding-top: 1rem;
+    }
     ul{
     flex-direction: column;
     width: fit-content;
@@ -1238,6 +1269,7 @@ border-top: 1px solid var(--accent-color);
       flex-direction: column;
       align-items: center;
       margin: 2rem 0rem;
+     
       h4{
         text-align: center;
       }
@@ -1247,7 +1279,9 @@ border-top: 1px solid var(--accent-color);
 .plan-cards-mobile{
 
   .banner{
-  padding:2rem 1rem;
+  padding:2rem 0rem;
+  padding-bottom: 0rem;
+
   -webkit-animation: cA 3s forwards;
   animation: cA 3s forwards;
   @keyframes cA {
@@ -1287,7 +1321,7 @@ border-top: 1px solid var(--accent-color);
  
     h5{
       text-align: center;
-      margin-top: 4rem;
+      margin-top: 5rem;
       display: flex; 
       flex-direction: row;
       justify-content: center;
@@ -1312,7 +1346,7 @@ border-top: 1px solid var(--accent-color);
         padding-top: 1rem;
       }
       .list-items{
-        background:rgba(250, 128, 114, 0.58);
+        background:rgb(255,202,196);
         padding-bottom: 2rem;
       }
     }

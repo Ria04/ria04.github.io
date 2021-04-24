@@ -161,10 +161,15 @@ function showPlan(id){
     document.getElementById('plan0'+i).style.display="none";
     document.getElementById('banner0'+i).style.transform="scale(1)";
 
+    
+
 
   }
   document.getElementById('plan'+id).style.display="flex";
   document.getElementById('banner'+id).style.transform="scale(1.1)";
+  
+
+
   document.getElementById('curriculum-section').style.display="block";
 
 
@@ -201,3 +206,4 @@ else{
 }
   
 }
+
