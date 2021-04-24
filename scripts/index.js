@@ -102,6 +102,7 @@ function showFaq(id) {
     icon.classList.replace("fa-angle-up", "fa-angle-down");
   }
 }
+showFaq('faq1');
 
 
 $('.counter').each(function() {

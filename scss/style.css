@@ -497,12 +497,15 @@ nav div #email {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0rem;
+  margin-top: 0rem;
   width: 80%;
 }
 
 @media only screen and (min-width: 1024px) {
   .key-highlights .highlights .text-wrap {
     width: 100%;
+    margin-top: 1.5rem;
   }
 }
 
@@ -521,7 +524,7 @@ nav div #email {
 
 .key-highlights .highlights div {
   background-color: var(--background-grey);
-  padding: 0.5rem;
+  padding: 0.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,6 +959,10 @@ nav div #email {
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
+}
+
+.curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div figure img {
+  width: auto;
 }
 
 .curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div h4 {
