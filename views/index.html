@@ -261,7 +261,7 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('plan00')">
                     <button class="accent-button">Know more</button>
                 </div></a>
             </div>
@@ -281,7 +281,7 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('plan01')">
                     <button class="accent-button">Know more</button>
                 </div></a>
             </div>
@@ -301,11 +301,11 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('plan00')">
                     <button class="accent-button">Know more</button>
                 </div></a>
             </div>
-            <div class="carousel-parent curriculum-carousel" id="curriculum-carousel">
+            <div class="carousel-parent curriculum-carousel" id="curriculum-carousel" >
                 <span class="activcurriculum" onclick="currentSlideCurriculum(00)"></span>
                 <span onclick="currentSlideCurriculum(01)"></span>
                 <span onclick="currentSlideCurriculum(02)"></span>
@@ -318,7 +318,7 @@
                 <h2>Plans and Pricing</h2>
             </article>
             <div class="container">
-            <div class="banner">
+            <div class="banner" id="banner00">
                 <div class="banner-head">
                     <h3>Basic</h3>
                     <h2><i class="fas fa-rupee-sign"></i> 6000/month</h2>
@@ -327,7 +327,7 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(0)">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('00')">
                     <button class="accent-button">Know more</button>
                 </div></a>
                 <div class="list-items">
@@ -341,7 +341,7 @@
                 
                 </div>
             </div>
-            <div class="banner">
+            <div class="banner" id="banner01">
                 <div class="banner-head">
                     <h3>Intermediate</h3>
                     <h2><i class="fas fa-rupee-sign"></i> 12000/month</h2>
@@ -350,7 +350,7 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(1)">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('01')">
                     <button class="accent-button">Know more</button>
                 </div></a>
                 <div class="list-items">
@@ -364,7 +364,7 @@
                 
                 </div>
             </div>
-            <div class="banner">
+            <div class="banner" id="banner02">
                 <div class="banner-head">
                     <h3>Advanced</h3>
                     <h2><i class="fas fa-rupee-sign"></i> 16000/month</h2>
@@ -373,7 +373,7 @@
                 <div class="button-div">
                     <button class="link-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(2)">
+                <a href="#curriculum"><div class="button-div" onclick="showPlan('02')">
                     <button class="accent-button">Know more</button>
                 </div></a>
                 <div class="list-items">
@@ -1010,7 +1010,7 @@
 
             </div>
         </section>
-        
+
         <section class="testimonials">
             <article>
                 <h2>Testimonials</h2>

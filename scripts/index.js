@@ -147,17 +147,28 @@ function currentSlideCurriculum(n) {
   for (var s = 0; s < slides.length; s++) {
     slides[s].style.display = "none";
   }
-  for(var i=0;i<3;i++){
-    document.getElementById("plan0"+i).style.display="none";
-  }
+  
   
   slides[n].style.display = "block";
-  document.getElementById("plan0"+n).style.display="flex";
 
 
 }
 
 currentSlideCurriculum(00);
+
+function showPlan(id){
+  for(var i=0;i<3;i++){
+    document.getElementById('plan0'+i).style.display="none";
+    document.getElementById('banner0'+i).style.transform="scale(1)";
+
+
+  }
+  document.getElementById('plan'+id).style.display="flex";
+  document.getElementById('banner'+id).style.transform="scale(1.1)";
+  document.getElementById('curriculum-section').style.display="block";
+
+
+}
 
 var carouselhead = document.getElementById("curriculum-carousel");
 var dots = carouselhead.getElementsByTagName("span");

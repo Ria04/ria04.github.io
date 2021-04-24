@@ -715,6 +715,10 @@ nav div #email {
   float: right;
 }
 
+#curriculum-section {
+  display: none;
+}
+
 .curriculum article p {
   text-align: center;
 }
@@ -1706,7 +1710,7 @@ nav div #email {
 }
 
 .plan-cards article {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .plan-cards .curriculum-carousel {
@@ -1767,7 +1771,6 @@ nav div #email {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0rem auto;
-  margin-top: 2rem;
 }
 
 .plan-cards .banner ul li {
@@ -1801,7 +1804,7 @@ nav div #email {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
 }
 
 .plan-cards .banner .button-div h4 {
@@ -1851,7 +1854,7 @@ nav div #email {
   }
   .plan-cards-desktop h5 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

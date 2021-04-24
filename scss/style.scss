@@ -498,7 +498,9 @@ i{
 
   }
 }
-
+#curriculum-section{
+  display: none;
+}
 .curriculum {
   article{
   p{
@@ -1176,7 +1178,7 @@ border-top: 1px solid var(--accent-color);
 .plan-cards{
   background-color: var(--light-red);
   article{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .curriculum-carousel{
     margin-top: 2rem;
@@ -1219,7 +1221,6 @@ border-top: 1px solid var(--accent-color);
     flex-direction: column;
     width: fit-content;
     margin:0rem auto;
-    margin-top: 2rem;
     li{
       display: flex;
       flex-direction: row;
@@ -1236,7 +1237,7 @@ border-top: 1px solid var(--accent-color);
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 2rem;
+      margin: 2rem 0rem;
       h4{
         text-align: center;
       }
@@ -1283,10 +1284,10 @@ border-top: 1px solid var(--accent-color);
   }
   .plan-cards-desktop{
     display: block;
-  
+ 
     h5{
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 4rem;
       display: flex; 
       flex-direction: row;
       justify-content: center;
