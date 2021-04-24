@@ -652,8 +652,14 @@ nav div #email {
 }
 
 .formComponent {
-  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
-  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  background: var(--white-color);
+}
+
+@media only screen and (min-width: 1024px) {
+  .formComponent {
+    background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
+    background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  }
 }
 
 .formComponent h2, .formComponent p, .formComponent i {
@@ -666,7 +672,13 @@ nav div #email {
   top: 2rem;
   right: 2rem;
   font-size: 1.2rem;
-  color: var(--white-color);
+  color: var(--black-color);
+}
+
+@media only screen and (min-width: 1024px) {
+  .formComponent i {
+    color: var(--white-color);
+  }
 }
 
 .formComponent div {
@@ -1875,7 +1887,14 @@ nav div #email {
   .plan-cards-desktop .banner {
     width: 30%;
     display: block;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .plan-cards-desktop .banner ul {
+    padding-top: 1rem;
+  }
+  .plan-cards-desktop .banner .list-items {
+    background: rgba(250, 128, 114, 0.58);
+    padding-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

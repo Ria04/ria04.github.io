@@ -63,6 +63,8 @@
     <main>
 
         <div class="popupComponent videoComponent" id="popupVideo" onclick="hideVideo()">
+            <i class="fas fa-times" id="close-button"  onclick="hideVideo()"></i>
+
             <iframe id="video" src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen=""></iframe>
@@ -85,6 +87,8 @@
         </div>
         
         <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hideCertificate()">
+            <i class="fas fa-times" id="close-button"  onclick="hideCertificate()"></i>
+
             <figure>
                 <img src="../images/certificate.jpg">
             </figure>
@@ -254,6 +258,9 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
+                <div class="button-div">
+                    <button class="link-button">Apply Now</button>
+                </div>
                 <a href="#curriculum"><div class="button-div">
                     <button class="accent-button">Know more</button>
                 </div></a>
@@ -271,6 +278,9 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
+                <div class="button-div">
+                    <button class="link-button">Apply Now</button>
+                </div>
                 <a href="#curriculum"><div class="button-div">
                     <button class="accent-button">Know more</button>
                 </div></a>
@@ -288,6 +298,9 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
+                <div class="button-div">
+                    <button class="link-button">Apply Now</button>
+                </div>
                 <a href="#curriculum"><div class="button-div">
                     <button class="accent-button">Know more</button>
                 </div></a>
@@ -299,6 +312,7 @@
             </div>
 
         </section>
+
         <section class="plan-cards plan-cards-desktop" id="alldesktopplans">
             <article>
                 <h2>Plans and Pricing</h2>
@@ -311,8 +325,11 @@
                     <p>Basic reporting and user analytics for teams.</p>
                 </div>
                 <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
+                    <button class="link-button">Apply Now</button>
                 </div>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(0)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
                 <div class="list-items">
                 <ul>
                     <li><i class="fas fa-check"></i>Entire course library</li>
@@ -321,9 +338,7 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(0)">
-                    <button class="accent-button">Know more</button>
-                </div></a>
+                
                 </div>
             </div>
             <div class="banner">
@@ -333,8 +348,11 @@
                     <p>Basic reporting and user analytics for teams.</p>
                 </div>
                 <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
+                    <button class="link-button">Apply Now</button>
                 </div>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(1)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
                 <div class="list-items">
                 <ul>
                     <li><i class="fas fa-check"></i>Entire course library</li>
@@ -343,9 +361,7 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(1)">
-                    <button class="accent-button">Know more</button>
-                </div></a>
+                
                 </div>
             </div>
             <div class="banner">
@@ -355,8 +371,11 @@
                     <p>Basic reporting and user analytics for teams.</p>
                 </div>
                 <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
+                    <button class="link-button">Apply Now</button>
                 </div>
+                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(2)">
+                    <button class="accent-button">Know more</button>
+                </div></a>
                 <div class="list-items">
                 <ul>
                     <li><i class="fas fa-check"></i>Entire course library</li>
@@ -365,9 +384,7 @@
                     <li><i class="fas fa-check"></i>Course discussions</li>
                     <li><i class="fas fa-check"></i>Exercise files</li>
                 </ul>
-                <a href="#curriculum"><div class="button-div" onclick="currentSlideCurriculum(2)">
-                    <button class="accent-button">Know more</button>
-                </div></a>
+              
             </div>
             </div>
         </div>
@@ -993,6 +1010,7 @@
 
             </div>
         </section>
+        
         <section class="testimonials">
             <article>
                 <h2>Testimonials</h2>

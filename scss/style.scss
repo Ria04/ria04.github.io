@@ -445,11 +445,13 @@ i{
 }
 
 .formComponent{
-   background: linear-gradient(
-    to right,
-    var(--accent-color),
-    var(--shade-color)
-  );
+ background: var(--white-color);
+  @media only screen and (min-width: 1024px) {
+    background: linear-gradient(
+      to right,
+      var(--accent-color),
+      var(--shade-color)
+    );  }
   h2,p,i{
     color: var(--accent-color);
     text-align: center;
@@ -459,8 +461,10 @@ i{
     top:2rem;
     right:2rem;
     font-size: 1.2rem;
+    color: var(--black-color);
+    @media only screen and (min-width: 1024px) {
     color: var(--white-color);
-  
+    }
   }
   div{
     padding:2rem 1rem;
@@ -1302,7 +1306,14 @@ border-top: 1px solid var(--accent-color);
     .banner{
       width: 30%;
       display: block;
-      padding:2rem 1rem;
+      padding:2rem 0rem 0rem 0rem;
+      ul{
+        padding-top: 1rem;
+      }
+      .list-items{
+        background:rgba(250, 128, 114, 0.58);
+        padding-bottom: 2rem;
+      }
     }
   }
 }

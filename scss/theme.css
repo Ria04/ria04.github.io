@@ -369,6 +369,17 @@ button:hover::before {
   color: var(--white-color);
 }
 
+.link-button {
+  background: transparent;
+  color: var(--accent-color);
+  border: none;
+}
+
+.link-button:hover {
+  color: var(--shade-color);
+  border: none;
+}
+
 input {
   padding: 0.7rem 1rem;
   font-size: 1rem;
@@ -564,6 +575,11 @@ a {
 }
 
 .popupComponent i {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  color: var(--white-color);
   cursor: pointer;
 }
 
