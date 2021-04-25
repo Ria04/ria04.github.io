@@ -2,6 +2,8 @@ function displayVideo() {
   var element = document.getElementById("popupVideo");
   element.style.display = "flex";
 }
+var counter = 0; // Global Variable
+
 function hideVideo() {
   var element = document.getElementById("popupVideo");
   element.style.display = "none";
@@ -219,6 +221,8 @@ for (var j = 0; j < lis.length; j++) {
 }
 
 const scrollnav = document.querySelector('#scrollup-nav');
+const popupForm = document.querySelector('#popupForm');
+
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
   const maxHeight = document.body.scrollHeight;
@@ -234,9 +238,18 @@ function onScroll(event) {
 
   }
   }
+  else{
+    scrollnav.style.display="none";
+
+  }
+  if(counter == 0){
+    if(current>maxHeight*0.7){
+      popupForm.style.display="flex";
+       counter++;
+    }
+  }
   
 }
 
 window.addEventListener('scroll', event => onScroll(event));
-
 
