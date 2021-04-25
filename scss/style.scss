@@ -520,7 +520,6 @@ i{
   }
   div{
     padding:2rem 1rem;
-    margin:0rem 1rem;
     background: var(--white-color);
     border-radius: 0.5rem;
     
@@ -529,12 +528,28 @@ i{
     }
 
   }
+  .error-msg{
+    display: none;
+    width:100%;
+    padding: 1rem;
+    color: var(--accent-color);
+    font-family: BoldFont;
+    text-align: center;
+    margin-bottom: 1rem;
+   
+    background-color: var(--light-red);
+  }
+  
   form{
     width:100%;
     
     input{
       margin-bottom: 1rem;
       width: 100%;;
+    }
+    div{
+      padding: 0rem;
+      width: 100%;
     }
     button{
       width: 100%;

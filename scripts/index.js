@@ -25,6 +25,44 @@ function hideCertificate() {
   element.style.display = "none";
 }
 
+function submit(){ 
+
+  var name = document.getElementById("name").value;
+  var youremail = document.getElementById("youremail").value;
+  var number = document.getElementById("number").value;
+
+if(name&&youremail&&number){
+
+    var emailarray=youremail.split("@");
+    if(emailarray.length!=2){
+      document.getElementById("error-message").style.display="block";
+      document.getElementById("error-message").innerText="Enter valid email";
+    }else{
+      var n=number.toString();
+      if(n.length<10||n.length>10){
+        document.getElementById("error-message").style.display="block";
+        document.getElementById("error-message").innerText="Enter valid number";
+      }
+      else{
+
+        localStorage.setItem("name",name);
+        localStorage.setItem("email",youremail);
+        localStorage.setItem("number",number);
+
+        var link = document.createElement('a');
+        link.target="blank";
+      link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Web-Development.pdf';
+      link.dispatchEvent(new MouseEvent('click'));
+      document.getElementById("error-message").style.display="none";
+        }
+  }
+}
+else{
+  document.getElementById("error-message").style.display="block";
+}
+
+}
+
 function openInput(id) {
   var element = document.getElementById("button-component" + id);
   var close = document.getElementById("close-button" + id);
@@ -253,15 +291,5 @@ function onScroll(event) {
 
 window.addEventListener('scroll', event => onScroll(event));
 
-function submit(){  
-  var name = document.getElementById("name").value;
-  var youremail = document.getElementById("youremail").value;
-  var number = document.getElementById("number").value;
 
-  localStorage.setItem("name",name);
-  localStorage.setItem("email",youremail);
-  localStorage.setItem("number",number);
-
-
-}
 
