@@ -208,6 +208,16 @@ else{
   
 }
 
+var nav2 = document.getElementById("nav-2");
+var lis = nav2.getElementsByTagName("li");
+for (var j = 0; j < lis.length; j++) {
+  lis[j].addEventListener("click", function () {
+    var currentdot = document.getElementsByClassName("activnavlist");
+    currentdot[0].className = currentdot[0].className.replace("activnavlist", " ");
+    this.className += "activnavlist";
+  });
+}
+
 const scrollnav = document.querySelector('#scrollup-nav');
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
@@ -224,7 +234,9 @@ function onScroll(event) {
 
   }
   }
+  
 }
 
 window.addEventListener('scroll', event => onScroll(event));
+
 

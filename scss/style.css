@@ -31,6 +31,13 @@ main {
     font-size: 1.5rem;
     color: var(--text-color);
     font-family: BoldFont;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .scrollUp-nav ul .activnavlist {
+    color: var(--accent-color);
   }
 }
 
