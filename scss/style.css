@@ -1630,6 +1630,7 @@ nav div #email {
   }
   .certificate .container article h2, .certificate .container article p {
     margin-bottom: 2rem;
+    text-align: left;
   }
 }
 

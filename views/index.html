@@ -9,9 +9,9 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    
+
     <link rel="stylesheet" href="../scss/reset.css">
     <link rel="stylesheet" href="../scss/theme.css">
     <link rel="stylesheet" href="../scss/style.css">
@@ -21,11 +21,7 @@
 </head>
 
 <body>
-
-
-
     <header>
-        
         <nav class="mobile-nav">
             <div class="container">
                 <div class="icon-wrap">
@@ -38,10 +34,12 @@
                     <i class="fas fa-bars" onclick="shownav()"></i>
                 </div>
                 <div class="email-number-div" id="nav">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@konfinity.com" target="_blank"><h4 id="email"> <i class="fas fa-envelope"></i> admin@konfinity.com</h4></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@konfinity.com" target="_blank">
+                        <h4 id="email"> <i class="fas fa-envelope"></i> admin@konfinity.com</h4>
+                    </a>
                     <h4> <i class="fas fa-phone-alt"></i>+91 9284970819</h4>
                 </div>
-        </div>
+            </div>
         </nav>
         <nav class="desktop-nav">
             <div class="container">
@@ -51,34 +49,49 @@
                     </div>
                     <h3>Kon<span>finity</span></h3>
                 </figure>
-         
-            <div>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@konfinity.com" target="_blank"><h4 id="email"><i class="fas fa-envelope"></i>admin@konfinity.com</h4></a>
-                <h4><i class="fas fa-phone-alt"></i>+91 9284970819</h4>
+
+                <div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@konfinity.com" target="_blank">
+                        <h4 id="email"><i class="fas fa-envelope"></i>admin@konfinity.com</h4>
+                    </a>
+                    <h4><i class="fas fa-phone-alt"></i>+91 9284970819</h4>
+                </div>
             </div>
-        </div>
         </nav>
         <nav class="scrollUp-nav" id="scrollup-nav">
             <div class="container">
 
-            <ul id="nav-2">
-                <a href="#keyhighlights"><li>Highlights</li></a>
-                <a href="#alldesktopplans"><li class="activnavlist">Price and plans</li></a>
-                <a href="#salary"><li>Salary Report</li></a>
-                <a href="#certificate"><li>Certificate</li></a>
-                <a href="#tech"><li>Technologies</li></a>
-                <a href="#projects"><li>Projects</li></a>
-                <a href="#faq"><li>FAQs</li></a>
-            </ul>
-           
-        </div>
+                <ul id="nav-2">
+                    <a href="#keyhighlights">
+                        <li>Highlights</li>
+                    </a>
+                    <a href="#alldesktopplans">
+                        <li class="activnavlist">Price and plans</li>
+                    </a>
+                    <a href="#salary">
+                        <li>Salary Report</li>
+                    </a>
+                    <a href="#certificate">
+                        <li>Certificate</li>
+                    </a>
+                    <a href="#tech">
+                        <li>Technologies</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#faq">
+                        <li>FAQs</li>
+                    </a>
+                </ul>
+
+            </div>
         </nav>
     </header>
 
     <main>
-
         <div class="popupComponent videoComponent" id="popupVideo" onclick="hideVideo()">
-            <i class="fas fa-times" id="close-button"  onclick="hideVideo()"></i>
+            <i class="fas fa-times" id="close-button" onclick="hideVideo()"></i>
 
             <iframe id="video" src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -86,7 +99,7 @@
         </div>
 
         <div class="popupComponent formComponent" id="popupForm">
-            <i class="fas fa-times" id="close-button"  onclick="hidePopupForm()"></i>
+            <i class="fas fa-times" id="close-button" onclick="hidePopupForm()"></i>
             <div>
                 <article>
                     <h2>Enter your mobile number to start learning</h2>
@@ -101,48 +114,52 @@
                 </form>
             </div>
         </div>
-        
+
         <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hideCertificate()">
-            <i class="fas fa-times" id="close-button"  onclick="hideCertificate()"></i>
+            <i class="fas fa-times" id="close-button" onclick="hideCertificate()"></i>
 
             <figure>
                 <img src="../images/certificate.jpg">
             </figure>
         </div>
 
-        <a href="#hero-section"><div class="scrollupComponent">
-            <i class="fas fa-angle-up"></i>
-        </div></a>
+        <a href="#hero-section">
+            <div class="scrollupComponent">
+                <i class="fas fa-angle-up"></i>
+            </div>
+        </a>
 
         <section class="hero-section" id="hero-section">
             <div class="container">
                 <div class="left-hero-div">
-                <article>
-                    <div class="video-button-wrap">
-                        <h1>Web development Courses</h1>
-                        <figure class="mobie-play-button">
-                            <img onclick="displayVideo()" src="../images/play icom.png">
-                        </figure>
+                    <article>
+                        <div class="video-button-wrap">
+                            <h1>Web development Courses</h1>
+                            <figure class="mobie-play-button">
+                                <img onclick="displayVideo()" src="../images/play icom.png">
+                            </figure>
+                        </div>
+                        <p>We have designed a unique Web development program where you can Learn full web stack
+                            development with React and Node & Experience the complete software development life cycle
+                            under the guidance of industry veterans.</p>
+                        <ul>
+                            <li id="months"><span>6</span> months</li>
+                            <li id="problems"><span>600+</span> problems</li>
+                            <li id="students-enrolled"><span>13k+</span> students enrolled</li>
+                        </ul>
+                    </article>
+                    <div class="rating-component">
+                        <ul>
+                            <li>4.8</li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star-half"></i></li>
+                            <li>(2K + ratings)</li>
+                        </ul>
                     </div>
-                    <p>We have designed a unique Web development program where you can Learn full web stack development with React and Node & Experience the complete software development life cycle under the guidance of industry veterans.</p>
-                    <ul>
-                        <li id="months"><span>6</span> months</li>
-                        <li id="problems"><span>600+</span> problems</li>
-                        <li id="students-enrolled"><span>13k+</span> students enrolled</li>
-                    </ul>
-                </article>
-                <div class="rating-component">
-                    <ul>
-                        <li>4.8</li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star-half"></i></li>
-                        <li>(2K + ratings)</li>
-                    </ul>
-                </div>
-                <!--<form>
+                    <!--<form>
                 <div class="button-component" id="button-component" onclick="openInput()">
                     <input class="button-item" type="text" placeholder="Enter Email">
                     <button type="button"  class="button-item accent-button">
@@ -154,17 +171,20 @@
             </form>-->
 
 
-                <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
-                    <figure class="desktop-play-button">
-                        <img onclick="displayVideo()" src="../images/play icom.png">
-                    </figure>
+                    <div class="button-div">
+                        <button class="accent-button">Apply Now</button>
+                        <figure class="desktop-play-button">
+                            <img onclick="displayVideo()" src="../images/play icom.png">
+                        </figure>
 
+                    </div>
                 </div>
-            </div>
-                <figure class="hero-image">
+                <figure>
+                    <img src="../images/newboi.jpg" alt="">
+                </figure>
+                <!-- <figure class="hero-image">
                     <div>
-                    <img src="../images/heroimage.jpeg" alt="yash">
+                    <img src="../images/newboi.jpg" alt="yash">
                     <i onclick="displayVideo()" class="fas fa-play"></i>
                     </div>
                     <figcaption>
@@ -178,7 +198,7 @@
                             <li>Starting Salary<span>22LPA</span></li>
                         </ul>
                     </figcaption>
-                </figure>
+                </figure>-->
             </div>
         </section>
 
@@ -195,7 +215,8 @@
                         <h4><span class="counter" data-count="300"> 0 </span>+</h4>
                     </li>
                     <li><span>Recommended hrs/week</span>
-                        <h4>April <span class="counter" data-count="12">0</span>-<span class="counter" data-count="15">0</span>hrs/week</h4>
+                        <h4>April <span class="counter" data-count="12">0</span>-<span class="counter"
+                                data-count="15">0</span>hrs/week</h4>
                     </li>
                     <li><span>Courses</span>
                         <h4>Starts at Rs. <span class="counter" data-count="6999">0 </span>only</h4>
@@ -213,59 +234,64 @@
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
-                        <h6>Project based curriculum</h6>
-                        <p>in addition to completion certificates andLinkedIn badges, to impress recruiters.</p>
+                            <h6>Project based curriculum</h6>
+                            <p>in addition to completion certificates andLinkedIn badges, to impress recruiters.</p>
                         </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
                             <h6>One-on-one mentorship</h6>
-                            <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any conceptual doubts.</p>
-                            </div>
+                            <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any
+                                conceptual doubts.</p>
+                        </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Placement preparation & career guidance</h6>
-                            <p>100% students hired, at Rs 6-40 LPA salary.In-depth coverage of Data Structures, Algorithms and System Design concepts to crack tech interviews
-                                </p>
-                            </div>
+                            <p>100% students hired, at Rs 6-40 LPA salary.In-depth coverage of Data Structures,
+                                Algorithms and System Design concepts to crack tech interviews
+                            </p>
+                        </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Certificate of Achievement</h6>
-                            <p>Get a certificate of achievement accredited by global certification bodies and deepen your expertise.</p>
-                            </div>
+                            <p>Get a certificate of achievement accredited by global certification bodies and deepen
+                                your expertise.</p>
+                        </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Learn from Industry experts</h6>
-                            <p>Our faculty is from the best institutes worldwide, such as IITD, and expert engineers work with Google, Amazon, Microsoft, and Fortune 500 global tech giants.</p>
-                            </div>
+                            <p>Our faculty is from the best institutes worldwide, such as IITD, and expert engineers
+                                work with Google, Amazon, Microsoft, and Fortune 500 global tech giants.</p>
+                        </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Online Sessions </h6>
-                            <p>100% online platform. Work remotely in distributed teams and schedule projects at convenient timings.</p>
-                            </div>
+                            <p>100% online platform. Work remotely in distributed teams and schedule projects at
+                                convenient timings.</p>
+                        </div>
                     </div>
                 </div>
-            <form class="button-component-form">
-                <div class="button-component" id="button-component1" onclick="openInput('1')">
-                    <input class="button-item" type="text" placeholder="Enter Email">
-                    <button type="button"  class="button-item accent-button">
-                        Apply now
-                    </button>
-                </div>
-                <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
-            </form>
-            <p class="free-learning">First 3 days of learning is free</p>
+                <form class="button-component-form">
+                    <div class="button-component" id="button-component1" onclick="openInput('1')">
+                        <input class="button-item" type="text" placeholder="Enter Email">
+                        <button type="button" class="button-item accent-button">
+                            Apply now
+                        </button>
+                    </div>
+                    <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
+                </form>
+                <p class="free-learning">First 3 days of learning is free</p>
 
-        </div>
+            </div>
 
         </section>
 
@@ -277,34 +303,36 @@
                 <div class="banner-head">
                     <h3>Begginer</h3>
                     <h2><i class="fas fa-rupee-sign"></i> 6,999/month</h2>
-                    <p>Learn from scratch and build strong foundation 
+                    <p>Learn from scratch and build strong foundation
                     </p>
                 </div>
                 <div class="button-div">
                     <button class="accent-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('00')">
-                    <button class="link-button">Know more</button>
-                </div></a>
+                <a href="#curriculum">
+                    <div class="button-div" onclick="showPlan('00')">
+                        <button class="link-button">Know more</button>
+                    </div>
+                </a>
                 <div class="list-items">
-                <ul>
-                    <li><i class="fas fa-check"></i>8 Modules</li>
-                    <li><i class="fas fa-check"></i>2 queries / day</li>
-                    <li><i class="fas fa-check"></i>2 mini projects </li>
-                    <li><i class="fas fa-check"></i>Workspace community</li>
-                    <li><i class="fas fa-check"></i>2 Course duration</li>
-                    <li><i class="fas fa-check"></i>0- Meeting sessions</li>
-                    <li><i class="fas fa-check"></i> 0- capstone projects</li>
-                    <li><i class="fas fa-check"></i>0-  mock interviews</li>
-                    <li><i class="fas fa-check"></i>No- test Series</li>
-                    <li><i class="fas fa-check"></i>0-nano degree</li>
-                    <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                    <li><i class="fas fa-check"></i>No- DS&algo module</li>
-                    <li><i class="fas fa-check"></i>No- Placement assistance</li>
-                    <li><i class="fas fa-check"></i>No- 1:1 mentorship</li>
-                </ul>
+                    <ul>
+                        <li><i class="fas fa-check"></i>8 Modules</li>
+                        <li><i class="fas fa-check"></i>2 queries / day</li>
+                        <li><i class="fas fa-check"></i>2 mini projects </li>
+                        <li><i class="fas fa-check"></i>Workspace community</li>
+                        <li><i class="fas fa-check"></i>2 Course duration</li>
+                        <li><i class="fas fa-check"></i>0- Meeting sessions</li>
+                        <li><i class="fas fa-check"></i> 0- capstone projects</li>
+                        <li><i class="fas fa-check"></i>0- mock interviews</li>
+                        <li><i class="fas fa-check"></i>No- test Series</li>
+                        <li><i class="fas fa-check"></i>0-nano degree</li>
+                        <li><i class="fas fa-check"></i> yes- Certificate</li>
+                        <li><i class="fas fa-check"></i>No- DS&algo module</li>
+                        <li><i class="fas fa-check"></i>No- Placement assistance</li>
+                        <li><i class="fas fa-check"></i>No- 1:1 mentorship</li>
+                    </ul>
                 </div>
-               
+
             </div>
             <div class="banner" id="01">
                 <div class="banner-head">
@@ -315,28 +343,30 @@
                 <div class="button-div">
                     <button class="accent-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('01')">
-                    <button class="link-button">Know more</button>
-                </div></a>
+                <a href="#curriculum">
+                    <div class="button-div" onclick="showPlan('01')">
+                        <button class="link-button">Know more</button>
+                    </div>
+                </a>
                 <div class="list-items">
-                <ul>
-                    <li><i class="fas fa-check"></i>16 Modules</li>
-                    <li><i class="fas fa-check"></i>5 queries / day</li>
-                    <li><i class="fas fa-check"></i>4 mini projects </li>
-                    <li><i class="fas fa-check"></i>Workspace/Slack  community </li>
-                    <li><i class="fas fa-check"></i>4 month Course duration</li>
-                    <li><i class="fas fa-check"></i>25- Meeting sessions</li>
-                    <li><i class="fas fa-check"></i> 3- capstone projects</li>
-                    <li><i class="fas fa-check"></i>3-  mock interviews</li>
-                    <li><i class="fas fa-check"></i>No- test Series</li>
-                    <li><i class="fas fa-check"></i>0-nano degree</li>
-                    <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                    <li><i class="fas fa-check"></i>No- DS&algo module</li>
-                    <li><i class="fas fa-check"></i>No- Placement assistance</li>
-                    <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
-                </ul>
+                    <ul>
+                        <li><i class="fas fa-check"></i>16 Modules</li>
+                        <li><i class="fas fa-check"></i>5 queries / day</li>
+                        <li><i class="fas fa-check"></i>4 mini projects </li>
+                        <li><i class="fas fa-check"></i>Workspace/Slack community </li>
+                        <li><i class="fas fa-check"></i>4 month Course duration</li>
+                        <li><i class="fas fa-check"></i>25- Meeting sessions</li>
+                        <li><i class="fas fa-check"></i> 3- capstone projects</li>
+                        <li><i class="fas fa-check"></i>3- mock interviews</li>
+                        <li><i class="fas fa-check"></i>No- test Series</li>
+                        <li><i class="fas fa-check"></i>0-nano degree</li>
+                        <li><i class="fas fa-check"></i> yes- Certificate</li>
+                        <li><i class="fas fa-check"></i>No- DS&algo module</li>
+                        <li><i class="fas fa-check"></i>No- Placement assistance</li>
+                        <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
+                    </ul>
                 </div>
-                
+
             </div>
             <div class="banner" id="02">
                 <div class="banner-head">
@@ -347,30 +377,32 @@
                 <div class="button-div">
                     <button class="accent-button">Apply Now</button>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('02')">
-                    <button class="link-button">Know more</button>
-                </div></a>
+                <a href="#curriculum">
+                    <div class="button-div" onclick="showPlan('02')">
+                        <button class="link-button">Know more</button>
+                    </div>
+                </a>
                 <div class="list-items">
-                <ul>
-                    <li><i class="fas fa-check"></i>18 Modules</li>
-                    <li><i class="fas fa-check"></i>Unlimited queries / day</li>
-                    <li><i class="fas fa-check"></i>4 mini projects </li>
-                    <li><i class="fas fa-check"></i>Workspace/Slack  community </li>
-                    <li><i class="fas fa-check"></i>4 month Course duration</li>
-                    <li><i class="fas fa-check"></i>40- Meeting sessions</li>
-                    <li><i class="fas fa-check"></i> 5- capstone projects</li>
-                    <li><i class="fas fa-check"></i>3-  mock interviews</li>
-                    <li><i class="fas fa-check"></i>Yes- test Series</li>
-                    <li><i class="fas fa-check"></i>Yes-nano degree</li>
-                    <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                    <li><i class="fas fa-check"></i>yes- DS&algo module</li>
-                    <li><i class="fas fa-check"></i>yes- Placement assistance</li>
-                    <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
-                </ul>
+                    <ul>
+                        <li><i class="fas fa-check"></i>18 Modules</li>
+                        <li><i class="fas fa-check"></i>Unlimited queries / day</li>
+                        <li><i class="fas fa-check"></i>4 mini projects </li>
+                        <li><i class="fas fa-check"></i>Workspace/Slack community </li>
+                        <li><i class="fas fa-check"></i>4 month Course duration</li>
+                        <li><i class="fas fa-check"></i>40- Meeting sessions</li>
+                        <li><i class="fas fa-check"></i> 5- capstone projects</li>
+                        <li><i class="fas fa-check"></i>3- mock interviews</li>
+                        <li><i class="fas fa-check"></i>Yes- test Series</li>
+                        <li><i class="fas fa-check"></i>Yes-nano degree</li>
+                        <li><i class="fas fa-check"></i> yes- Certificate</li>
+                        <li><i class="fas fa-check"></i>yes- DS&algo module</li>
+                        <li><i class="fas fa-check"></i>yes- Placement assistance</li>
+                        <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
+                    </ul>
                 </div>
-                
+
             </div>
-            <div class="carousel-parent curriculum-carousel" id="curriculum-carousel" >
+            <div class="carousel-parent curriculum-carousel" id="curriculum-carousel">
                 <span class="activcurriculum" onclick="currentSlideCurriculum(00)"></span>
                 <span onclick="currentSlideCurriculum(01)"></span>
                 <span onclick="currentSlideCurriculum(02)"></span>
@@ -383,111 +415,119 @@
                 <h2>Fees Plans & pricing(web development course)</h2>
             </article>
             <div class="container">
-            <div class="banner" id="banner00">
-                <div class="banner-head">
-                    <h3>Begginer</h3>
-                    <h2><i class="fas fa-rupee-sign"></i> 6,999/month</h2>
-                    <p>Learn from scratch and build strong foundation </p>
+                <div class="banner" id="banner00">
+                    <div class="banner-head">
+                        <h3>Begginer</h3>
+                        <h2><i class="fas fa-rupee-sign"></i> 6,999/month</h2>
+                        <p>Learn from scratch and build strong foundation </p>
+                    </div>
+                    <div class="button-div">
+                        <button class="accent-button">Apply Now</button>
+                    </div>
+                    <a href="#curriculum">
+                        <div class="button-div" onclick="showPlan('00')">
+                            <button class="link-button">Know more</button>
+                        </div>
+                    </a>
+                    <div class="list-items">
+                        <ul>
+                            <li><i class="fas fa-check"></i>8 Modules</li>
+                            <li><i class="fas fa-check"></i>2 queries / day</li>
+                            <li><i class="fas fa-check"></i>2 mini projects </li>
+                            <li><i class="fas fa-check"></i>Workspace community</li>
+                            <li><i class="fas fa-check"></i>2 Course duration</li>
+                            <li><i class="fas fa-check"></i>0- Meeting sessions</li>
+                            <li><i class="fas fa-check"></i> 0- capstone projects</li>
+                            <li><i class="fas fa-check"></i>0- mock interviews</li>
+                            <li><i class="fas fa-check"></i>No- test Series</li>
+                            <li><i class="fas fa-check"></i>0-nano degree</li>
+                            <li><i class="fas fa-check"></i> yes- Certificate</li>
+                            <li><i class="fas fa-check"></i>No- DS&algo module</li>
+                            <li><i class="fas fa-check"></i>No- Placement assistance</li>
+                            <li><i class="fas fa-check"></i>No- 1:1 mentorship</li>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
+                <div class="banner" id="banner01">
+                    <div class="banner-head">
+                        <h3>Advance</h3>
+                        <h2><i class="fas fa-rupee-sign"></i> 12,999/month</h2>
+                        <p>Become an expert by taking your skills to the next level</p>
+                    </div>
+                    <div class="button-div">
+                        <button class="accent-button">Apply Now</button>
+                    </div>
+                    <a href="#curriculum">
+                        <div class="button-div" onclick="showPlan('01')">
+                            <button class="link-button">Know more</button>
+                        </div>
+                    </a>
+                    <div class="list-items">
+                        <ul>
+                            <li><i class="fas fa-check"></i>16 Modules</li>
+                            <li><i class="fas fa-check"></i>5 queries / day</li>
+                            <li><i class="fas fa-check"></i>4 mini projects </li>
+                            <li><i class="fas fa-check"></i>Workspace/Slack community </li>
+                            <li><i class="fas fa-check"></i>4 month Course duration</li>
+                            <li><i class="fas fa-check"></i>25- Meeting sessions</li>
+                            <li><i class="fas fa-check"></i> 3- capstone projects</li>
+                            <li><i class="fas fa-check"></i>3- mock interviews</li>
+                            <li><i class="fas fa-check"></i>No- test Series</li>
+                            <li><i class="fas fa-check"></i>0-nano degree</li>
+                            <li><i class="fas fa-check"></i> yes- Certificate</li>
+                            <li><i class="fas fa-check"></i>No- DS&algo module</li>
+                            <li><i class="fas fa-check"></i>No- Placement assistance</li>
+                            <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
+                        </ul>
+
+                    </div>
                 </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('00')">
-                    <button class="link-button">Know more</button>
-                </div></a>
-                <div class="list-items">
-                    <ul>
-                        <li><i class="fas fa-check"></i>8 Modules</li>
-                        <li><i class="fas fa-check"></i>2 queries / day</li>
-                        <li><i class="fas fa-check"></i>2 mini projects </li>
-                        <li><i class="fas fa-check"></i>Workspace community</li>
-                        <li><i class="fas fa-check"></i>2 Course duration</li>
-                        <li><i class="fas fa-check"></i>0- Meeting sessions</li>
-                        <li><i class="fas fa-check"></i> 0- capstone projects</li>
-                        <li><i class="fas fa-check"></i>0-  mock interviews</li>
-                        <li><i class="fas fa-check"></i>No- test Series</li>
-                        <li><i class="fas fa-check"></i>0-nano degree</li>
-                        <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                        <li><i class="fas fa-check"></i>No- DS&algo module</li>
-                        <li><i class="fas fa-check"></i>No- Placement assistance</li>
-                        <li><i class="fas fa-check"></i>No- 1:1 mentorship</li>
-                    </ul>
-                
+                <div class="banner" id="banner02">
+                    <div class="banner-head">
+                        <h3>Career track</h3>
+                        <h2><i class="fas fa-rupee-sign"></i> 17,999/month</h2>
+                        <p>A perfect program to launch your high paying tech career</p>
+                    </div>
+                    <div class="button-div">
+                        <button class="accent-button">Apply Now</button>
+                    </div>
+                    <a href="#curriculum">
+                        <div class="button-div" onclick="showPlan('02')">
+                            <button class="link-button">Know more</button>
+                        </div>
+                    </a>
+                    <div class="list-items">
+                        <ul>
+                            <li><i class="fas fa-check"></i>18 Modules</li>
+                            <li><i class="fas fa-check"></i>Unlimited queries / day</li>
+                            <li><i class="fas fa-check"></i>4 mini projects </li>
+                            <li><i class="fas fa-check"></i>Workspace/Slack community </li>
+                            <li><i class="fas fa-check"></i>4 month Course duration</li>
+                            <li><i class="fas fa-check"></i>40- Meeting sessions</li>
+                            <li><i class="fas fa-check"></i> 5- capstone projects</li>
+                            <li><i class="fas fa-check"></i>3- mock interviews</li>
+                            <li><i class="fas fa-check"></i>Yes- test Series</li>
+                            <li><i class="fas fa-check"></i>Yes-nano degree</li>
+                            <li><i class="fas fa-check"></i> yes- Certificate</li>
+                            <li><i class="fas fa-check"></i>yes- DS&algo module</li>
+                            <li><i class="fas fa-check"></i>yes- Placement assistance</li>
+                            <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-            <div class="banner" id="banner01">
-                <div class="banner-head">
-                    <h3>Advance</h3>
-                    <h2><i class="fas fa-rupee-sign"></i> 12,999/month</h2>
-                    <p>Become an expert by taking your skills to the next level</p>
-                </div>
-                <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
-                </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('01')">
-                    <button class="link-button">Know more</button>
-                </div></a>
-                <div class="list-items">
-                    <ul>
-                        <li><i class="fas fa-check"></i>16 Modules</li>
-                        <li><i class="fas fa-check"></i>5 queries / day</li>
-                        <li><i class="fas fa-check"></i>4 mini projects </li>
-                        <li><i class="fas fa-check"></i>Workspace/Slack  community </li>
-                        <li><i class="fas fa-check"></i>4 month Course duration</li>
-                        <li><i class="fas fa-check"></i>25- Meeting sessions</li>
-                        <li><i class="fas fa-check"></i> 3- capstone projects</li>
-                        <li><i class="fas fa-check"></i>3-  mock interviews</li>
-                        <li><i class="fas fa-check"></i>No- test Series</li>
-                        <li><i class="fas fa-check"></i>0-nano degree</li>
-                        <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                        <li><i class="fas fa-check"></i>No- DS&algo module</li>
-                        <li><i class="fas fa-check"></i>No- Placement assistance</li>
-                        <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
-                    </ul>
-                
-                </div>
-            </div>
-            <div class="banner" id="banner02">
-                <div class="banner-head">
-                    <h3>Career track</h3>
-                    <h2><i class="fas fa-rupee-sign"></i> 17,999/month</h2>
-                    <p>A perfect program to launch your high paying tech career</p>
-                </div>
-                <div class="button-div">
-                    <button class="accent-button">Apply Now</button>
-                </div>
-                <a href="#curriculum"><div class="button-div" onclick="showPlan('02')">
-                    <button class="link-button">Know more</button>
-                </div></a>
-                <div class="list-items">
-                    <ul>
-                        <li><i class="fas fa-check"></i>18 Modules</li>
-                        <li><i class="fas fa-check"></i>Unlimited queries / day</li>
-                        <li><i class="fas fa-check"></i>4 mini projects </li>
-                        <li><i class="fas fa-check"></i>Workspace/Slack  community </li>
-                        <li><i class="fas fa-check"></i>4 month Course duration</li>
-                        <li><i class="fas fa-check"></i>40- Meeting sessions</li>
-                        <li><i class="fas fa-check"></i> 5- capstone projects</li>
-                        <li><i class="fas fa-check"></i>3-  mock interviews</li>
-                        <li><i class="fas fa-check"></i>Yes- test Series</li>
-                        <li><i class="fas fa-check"></i>Yes-nano degree</li>
-                        <li><i class="fas fa-check"></i> yes-  Certificate</li>
-                        <li><i class="fas fa-check"></i>yes- DS&algo module</li>
-                        <li><i class="fas fa-check"></i>yes- Placement assistance</li>
-                        <li><i class="fas fa-check"></i>Yes- 1:1 mentorship</li>
-                    </ul>
-              
-            </div>
-            </div>
-        </div>
-        <h5 id="hide-features" onclick="hideListItems()">Hide All Features <i class="fas fa-angle-up"></i></h5>
+            <h5 id="hide-features" onclick="hideListItems()">Hide All Features <i class="fas fa-angle-up"></i></h5>
         </section>
 
         <section class="curriculum" id="curriculum-section">
             <div class="container">
                 <article id="curriculum">
                     <h2>Web development course Curriculum</h2>
-                    <p>Start with learning programming fundamentals, and move on to designing front end, backend, servers, databases, APIs, and more. Master creating small components to constructing complex applications!</p>
+                    <p>Start with learning programming fundamentals, and move on to designing front end, backend,
+                        servers, databases, APIs, and more. Master creating small components to constructing complex
+                        applications!</p>
                 </article>
                 <div class="flex-div">
 
@@ -499,29 +539,41 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 1</h6>
+                                            <h6>Week 1</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Web Development Basics</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('1')"><i class="fas fa-arrow-down" id="icon1"></i></div>
+                                    <div class="icon" onclick="showDescription('1')"><i class="fas fa-arrow-down"
+                                            id="icon1"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="1">
-                                    <p>Get to learn how websites work. Start your web development journey with the basics of HTML and learn how to create impressive websites using HTML.</p>
+                                    <p>Get to learn how websites work. Start your web development journey with the
+                                        basics of HTML and learn how to create impressive websites using HTML.</p>
                                     <div class="tags">
                                         <h6>HTML</h6>
                                         <h6>CSS</h6>
                                         <h6>BootStrap</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -530,28 +582,40 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 2-3</h6>
+                                            <h6>Week 2-3</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Web Development Basics</h4>
                                                 <h5>Week 2-3</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('2')"><i class="fas fa-arrow-down" id="icon2"></i></div>
+                                    <div class="icon" onclick="showDescription('2')"><i class="fas fa-arrow-down"
+                                            id="icon2"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="2">
-                                    <p> Get a piece of basic knowledge on CSS and bootstrap. Start your web development journey with the basics of CSS, and Bootstrap.</p>
+                                    <p> Get a piece of basic knowledge on CSS and bootstrap. Start your web development
+                                        journey with the basics of CSS, and Bootstrap.</p>
                                     <div class="tags">
                                         <h6>CSS</h6>
                                         <h6>BootStrap</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -560,28 +624,41 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 4</h6>
+                                            <h6>Week 4</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Javascript</h4>
                                                 <h5>Week 4</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('3')"><i class="fas fa-arrow-down" id="icon3"></i></div>
+                                    <div class="icon" onclick="showDescription('3')"><i class="fas fa-arrow-down"
+                                            id="icon3"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="3">
-                                    <p>Deep dive into the world of Javascript, one of the commonly used languages for web development. Explore the basics of JS, promises, closures, and complete Javascript.</p>
+                                    <p>Deep dive into the world of Javascript, one of the commonly used languages for
+                                        web development. Explore the basics of JS, promises, closures, and complete
+                                        Javascript.</p>
                                     <div class="tags">
                                         <h6>JS</h6>
-                                        <h6>DOM</h6>    
+                                        <h6>DOM</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -590,28 +667,41 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 5-7</h6>
+                                            <h6>Week 5-7</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>ReactJS</h4>
                                                 <h5>Week 5-7</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('4')"><i class="fas fa-arrow-down" id="icon4"></i></div>
+                                    <div class="icon" onclick="showDescription('4')"><i class="fas fa-arrow-down"
+                                            id="icon4"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="4">
-                                    <p>Most of the websites getting built nowadays are using React, so why should you stay behind. Learn all the components of React, understand how React is better, and don't just learn, build amazing web apps using react</p>
+                                    <p>Most of the websites getting built nowadays are using React, so why should you
+                                        stay behind. Learn all the components of React, understand how React is better,
+                                        and don't just learn, build amazing web apps using react</p>
                                     <div class="tags">
                                         <h6>ReactJS</h6>
                                         <h6>Redux</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -623,10 +713,22 @@
                                 <h4>for 6 months</h4>
                             </div>
                             <ul>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>                                
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
                             </ul>
                             <div class="button-div">
                                 <button class="border-button">Chat with us</button>
@@ -643,29 +745,42 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 7-9</h6>
+                                            <h6>Week 7-9</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>NodeJs</h4>
                                                 <h5>Week 7-9</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('11')"><i class="fas fa-arrow-down" id="icon11"></i></div>
+                                    <div class="icon" onclick="showDescription('11')"><i class="fas fa-arrow-down"
+                                            id="icon11"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="11">
-                                    <p>Always thinking about how to build servers? Its time to build one. Learn about express, security, authentication, restricting routes, hashing passwords, and JWT’s, and much more.</p>
+                                    <p>Always thinking about how to build servers? Its time to build one. Learn about
+                                        express, security, authentication, restricting routes, hashing passwords, and
+                                        JWT’s, and much more.</p>
                                     <div class="tags">
                                         <h6>NodeJs</h6>
                                         <h6>Node</h6>
                                         <h6>Asychronicity</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -674,29 +789,42 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 10</h6>
+                                            <h6>Week 10</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Databases - MongoDB & DynamoDB</h4>
                                                 <h5>Week 10</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('22')"><i class="fas fa-arrow-down" id="icon22"></i></div>
+                                    <div class="icon" onclick="showDescription('22')"><i class="fas fa-arrow-down"
+                                            id="icon22"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="22">
-                                    <p>Want to know how companies manage all their Data and how on a click of a button all the data is there? Don't just learn, master the concepts of Databases. Be a pro in managing data using MongoDB and DynamoDB.</p>
+                                    <p>Want to know how companies manage all their Data and how on a click of a button
+                                        all the data is there? Don't just learn, master the concepts of Databases. Be a
+                                        pro in managing data using MongoDB and DynamoDB.</p>
                                     <div class="tags">
                                         <h6>DB</h6>
                                         <h6>Mongo</h6>
                                         <h6>DynamoDB</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -705,20 +833,24 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 11</h6>
+                                            <h6>Week 11</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Code Review + Deployment</h4>
                                                 <h5>Week 11</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('33')"><i class="fas fa-arrow-down" id="icon33"></i></div>
+                                    <div class="icon" onclick="showDescription('33')"><i class="fas fa-arrow-down"
+                                            id="icon33"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="33">
-                                    <p>Developers don't just write code, they write production level code. Learn how to write production-level code, deploy your projects, and flaunt it to the world.</p>
+                                    <p>Developers don't just write code, they write production level code. Learn how to
+                                        write production-level code, deploy your projects, and flaunt it to the world.
+                                    </p>
                                     <div class="tags">
                                         <h6>Deployment</h6>
                                         <h6>AWS Services</h6>
@@ -726,14 +858,23 @@
                                         <h6>Heroku</h6>
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
-                           
+
                         </di>
                         <div class="banner curriculum-banner">
                             <div class="banner-head">
@@ -741,10 +882,22 @@
                                 <h4>for 6 months</h4>
                             </div>
                             <ul>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>                                
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
                             </ul>
                             <div class="button-div">
                                 <button class="border-button">Chat with us</button>
@@ -761,29 +914,42 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 12</h6>
+                                            <h6>Week 12</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Google Analytics + Webengage</h4>
                                                 <h5>Week 12</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('111')"><i class="fas fa-arrow-down" id="icon111"></i></div>
+                                    <div class="icon" onclick="showDescription('111')"><i class="fas fa-arrow-down"
+                                            id="icon111"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="111">
-                                    <p>Wondering how companies track user behaviour, re-target & engage them? Know the working of Google & Facebook analytics and how to integrate those in your web apps using Google Tag Manager.</p>
+                                    <p>Wondering how companies track user behaviour, re-target & engage them? Know the
+                                        working of Google & Facebook analytics and how to integrate those in your web
+                                        apps using Google Tag Manager.</p>
                                     <div class="tags">
                                         <h6>Google</h6>
                                         <h6>Facebook</h6>
-                                        
+
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -792,28 +958,42 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 3-17</h6>
+                                            <h6>Week 3-17</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
                                                 <h4>Projects</h4>
                                                 <h5>Week 3-17</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('222')"><i class="fas fa-arrow-down" id="icon222"></i></div>
+                                    <div class="icon" onclick="showDescription('222')"><i class="fas fa-arrow-down"
+                                            id="icon222"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="222">
-                                    <p>You will build 6+ projects during the whole program. Starting from building basic apps to bring your learning to the application, to building a real-world website that you can add in your resume or start your own business, you will do it all. The projects are carefully chosen by software developers for you.</p>
+                                    <p>You will build 6+ projects during the whole program. Starting from building basic
+                                        apps to bring your learning to the application, to building a real-world website
+                                        that you can add in your resume or start your own business, you will do it all.
+                                        The projects are carefully chosen by software developers for you.</p>
                                     <div class="tags">
                                         <h6>Projects</h6>
-                                        
+
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -822,34 +1002,47 @@
                                 <div class="wrap-head">
                                     <div class="info">
                                         <div>
-                                        <h6>Week 18-21</h6>
+                                            <h6>Week 18-21</h6>
                                         </div>
                                         <div class="image-div">
-                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg"></figure>
+                                            <figure class="round-icon-images"><img src="../images/mongodb.jpeg">
+                                            </figure>
                                             <div>
-                                                <h4>Portfolio and Mock Interviews  preparation</h4>
+                                                <h4>Portfolio and Mock Interviews preparation</h4>
                                                 <h5>Week 18-21</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('333')"><i class="fas fa-arrow-down" id="icon333"></i></div>
+                                    <div class="icon" onclick="showDescription('333')"><i class="fas fa-arrow-down"
+                                            id="icon333"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="333">
-                                    <p>You will Build your outstanding profile by showcasing your robust portfolio of full-stack applications and Sharpen your interview skills through a series of mock assessments and mock interviews.</p>
+                                    <p>You will Build your outstanding profile by showcasing your robust portfolio of
+                                        full-stack applications and Sharpen your interview skills through a series of
+                                        mock assessments and mock interviews.</p>
                                     <div class="tags">
                                         <h6>Portfolio</h6>
                                         <h6>Mock interviews</h6>
-                                        
+
                                     </div>
                                     <ul>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
-                                        <li><i class="fas fa-star"></i><p>Learn about HTTP and REST APIs and understand how apps communicate with their backend by tweeting from a Linux Terminal using Twitter APIs.</p></li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn about HTTP and REST APIs and understand how apps communicate with
+                                                their backend by tweeting from a Linux Terminal using Twitter APIs.</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
-                           
+
 
                         </div>
                         <div class="banner curriculum-banner">
@@ -858,10 +1051,22 @@
                                 <h4>for 6 months</h4>
                             </div>
                             <ul>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>
-                                <li><h4 class="grey-head">Free tarial</h4><h4>Entire course library</h4></li>                                
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
+                                <li>
+                                    <h4 class="grey-head">Free tarial</h4>
+                                    <h4>Entire course library</h4>
+                                </li>
                             </ul>
                             <div class="button-div">
                                 <button class="border-button">Chat with us</button>
@@ -869,27 +1074,31 @@
                             </div>
                         </div>
 
-                    </div>                 
-            </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="salary-report" id="salary">
             <div class="container">
-            <h2>salary report</h2>
-            <div class="fig-div">
-                <figure>
-                    <img src="../images/salary_report_2.jpg">
-                </figure>
+                <h2>salary report</h2>
+                <div class="fig-div">
+                    <figure>
+                        <img src="../images/salary_report_2.jpg">
+                    </figure>
+                </div>
             </div>
-        </div>
         </section>
 
         <section class="certificate" id="certificate">
             <div class="container">
                 <article class="certificate-info">
                     <h2>Web Development Course Certification</h2>
-                    <p>Konfinity course completion certificate will be awarded when you complete the project work (after expert review) and score a minimum of 60 percent in the test. You would be glad to know that Konfinity certification is recognized across the globe by leading multinational companies, including IBM, Amazon, Ericsson, Sony, Mu Sigma, Cisco, Cognizant, Saint-Gobain, Standard Chartered Bank, TCS, Hexaware, Genpact, </p>
+                    <p>Konfinity course completion certificate will be awarded when you complete the project work (after
+                        expert review) and score a minimum of 60 percent in the test. You would be glad to know that
+                        Konfinity certification is recognized across the globe by leading multinational companies,
+                        including IBM, Amazon, Ericsson, Sony, Mu Sigma, Cisco, Cognizant, Saint-Gobain, Standard
+                        Chartered Bank, TCS, Hexaware, Genpact, </p>
                     <ul>
                         <li>Learn from the best faculty and industry experts.</li>
                         <li>Become a part of the Chandigarh University Alumni network.</li>
@@ -904,71 +1113,194 @@
 
         <section class="technologies" id="tech">
             <div class="container">
-            <article>
-                <h2>Technologies you will master hands-on</h2>
-            </article>
-            <div class="technology-parent" id="technology-parent">
-                <div class="technology-wrap">
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/AWS.png"><figcaption>AWS</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/Bootstrap.png"><figcaption>BootStrap</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/C S S.png"><figcaption>CSS</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/docker.png"><figcaption>Docker</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/express.png"><figcaption>Express</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/GIT.png"><figcaption>GIT</figcaption></figure></div>
-                </div>
-                <div class="technology-wrap">
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/HTML.png"><figcaption>HTML</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/LINUX.png"><figcaption>LINUX</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/node js.png"><figcaption>NodeJS</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/react.png"><figcaption>React</figcaption></figure></div>
-                </div>
-                
-            </div>
-            <div class="technology-parent-desktop">
-                   
-                <div class="technology"><figure class="round-icon-images"><img src="../images/AWS.png"><figcaption>AWS</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/Bootstrap.png"><figcaption>BootStrap</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/C S S.png"><figcaption>CSS</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/docker.png"><figcaption>Docker</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/express.png"><figcaption>Express</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/GIT.png"><figcaption>GIT</figcaption></figure></div>
-                <div class="technology"><figure class="round-icon-images"><img src="../images/HTML.png"><figcaption>HTML</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/LINUX.png"><figcaption>LINUX</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/node js.png"><figcaption>NodeJS</figcaption></figure></div>
-                    <div class="technology"><figure class="round-icon-images"><img src="../images/react.png"><figcaption>React</figcaption></figure></div>
-            </div>
-            <div class="carousel-parent" id="carousel">
-                <span class="active" onclick="currentSlide(0)"></span>
-                <span onclick="currentSlide(1)"></span>
-              
-            </div>
-            <form class="button-component-form">
-                <div class="button-component" id="button-component2" onclick="openInput('2')">
-                    <input class="button-item" type="text" placeholder="Enter Email">
-                    <button type="button"  class="button-item accent-button">
-                        Apply now
-                    </button>
-                </div>
-                <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
-            </form>
-            <p class="free-learning">First 3 days of learning is free</p>
+                <article>
+                    <h2>Technologies you will master hands-on</h2>
+                </article>
+                <div class="technology-parent" id="technology-parent">
+                    <div class="technology-wrap">
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/AWS.png">
+                                <figcaption>AWS</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/Bootstrap.png">
+                                <figcaption>BootStrap</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/C S S.png">
+                                <figcaption>CSS</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/docker.png">
+                                <figcaption>Docker</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/express.png">
+                                <figcaption>Express</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/GIT.png">
+                                <figcaption>GIT</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="technology-wrap">
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/HTML.png">
+                                <figcaption>HTML</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/LINUX.png">
+                                <figcaption>LINUX</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/node js.png">
+                                <figcaption>NodeJS</figcaption>
+                            </figure>
+                        </div>
+                        <div class="technology">
+                            <figure class="round-icon-images"><img src="../images/react.png">
+                                <figcaption>React</figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
-        </div>
+                </div>
+                <div class="technology-parent-desktop">
+
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/AWS.png">
+                            <figcaption>AWS</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/Bootstrap.png">
+                            <figcaption>BootStrap</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/C S S.png">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/docker.png">
+                            <figcaption>Docker</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/express.png">
+                            <figcaption>Express</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/GIT.png">
+                            <figcaption>GIT</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/HTML.png">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/LINUX.png">
+                            <figcaption>LINUX</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/node js.png">
+                            <figcaption>NodeJS</figcaption>
+                        </figure>
+                    </div>
+                    <div class="technology">
+                        <figure class="round-icon-images"><img src="../images/react.png">
+                            <figcaption>React</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="carousel-parent" id="carousel">
+                    <span class="active" onclick="currentSlide(0)"></span>
+                    <span onclick="currentSlide(1)"></span>
+
+                </div>
+                <form class="button-component-form">
+                    <div class="button-component" id="button-component2" onclick="openInput('2')">
+                        <input class="button-item" type="text" placeholder="Enter Email">
+                        <button type="button" class="button-item accent-button">
+                            Apply now
+                        </button>
+                    </div>
+                    <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
+                </form>
+                <p class="free-learning">First 3 days of learning is free</p>
+
+            </div>
         </section>
 
         <section class="projects" id="projects">
             <div class="container">
-            <h2>Projects I will build</h2>
-            <div class="projects-wrap">
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Ecommerce Web App</h4><p>This will be one of the major projects of the program. It will be a full-fledged working website. Just add some products and you will be ready to sell online and take payments.</p></article></div>
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Online Assessment Web App</h4><p>Taking assessment online is one of the most popular thing right now. After building the project only thing you need to do is to crack a client.</p></article></div>
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Chat Web App</h4><p>Bored of using Whatsapp? Create one and use it with your friends. You never know, your app will become a hit.</p></article></div>
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Blog Web App</h4><p>Create your own Medium website. Through the project you will understand how React , Node and Dynamodb work together to create magic.</p></article></div>
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Social Network App</h4><p>Create your own Social Network App. Through the project you will understand how HTML, CSS , JS  work together to create magic.</p></article></div>
-                <div><figure><img src="../images/project_image.jpg" alt=""></figure><article><h4>Dice Roller</h4><p>Fascinated with how animations work? Create one of your own Dice Roller game and master CSS animations</p></article></div>
+                <h2>Projects I will build</h2>
+                <div class="projects-wrap">
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Ecommerce Web App</h4>
+                            <p>This will be one of the major projects of the program. It will be a full-fledged working
+                                website. Just add some products and you will be ready to sell online and take payments.
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Online Assessment Web App</h4>
+                            <p>Taking assessment online is one of the most popular thing right now. After building the
+                                project only thing you need to do is to crack a client.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Chat Web App</h4>
+                            <p>Bored of using Whatsapp? Create one and use it with your friends. You never know, your
+                                app will become a hit.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Blog Web App</h4>
+                            <p>Create your own Medium website. Through the project you will understand how React , Node
+                                and Dynamodb work together to create magic.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Social Network App</h4>
+                            <p>Create your own Social Network App. Through the project you will understand how HTML, CSS
+                                , JS work together to create magic.</p>
+                        </article>
+                    </div>
+                    <div>
+                        <figure><img src="../images/project_image.jpg" alt=""></figure>
+                        <article>
+                            <h4>Dice Roller</h4>
+                            <p>Fascinated with how animations work? Create one of your own Dice Roller game and master
+                                CSS animations</p>
+                        </article>
+                    </div>
 
+                </div>
             </div>
-        </div>
         </section>
 
         <section class="key-highlights career-assistance">
@@ -976,35 +1308,38 @@
                 <article>
                     <h2>Konfinity career assistance</h2>
                     <p>Build your career with the streamlined career path, specially designed for you
-                        Get ready to apply all the skills you learn through our Web development career track Course to crack a job interview and land your dream career as a coveted Web developer.</p>
+                        Get ready to apply all the skills you learn through our Web development career track Course to
+                        crack a job interview and land your dream career as a coveted Web developer.</p>
                 </article>
                 <div class="highlights">
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
-                        <h6>Portfolio and Resume preparation.</h6>
-                        <p>Build your outstanding profile by showcasing your robust portfolio of full stack applications.</p>
+                            <h6>Portfolio and Resume preparation.</h6>
+                            <p>Build your outstanding profile by showcasing your robust portfolio of full stack
+                                applications.</p>
                         </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
-                        <h6>Mock Interviews</h6>
-                        <p>Sharpen your interview skills through a series of mock assessments and mock interviews.</p>
+                            <h6>Mock Interviews</h6>
+                            <p>Sharpen your interview skills through a series of mock assessments and mock interviews.
+                            </p>
                         </div>
                     </div>
                     <div>
                         <figure class="round-icon-images"><img src="../images/mongodb.jpeg" alt=""></figure>
                         <div class="text-wrap">
-                        <h6>Nano degree</h6>
-                        <p>Complete our career track program to get a nano degree on 20+ in-demand technologies</p>
+                            <h6>Nano degree</h6>
+                            <p>Complete our career track program to get a nano degree on 20+ in-demand technologies</p>
                         </div>
                     </div>
                 </div>
                 <form class="button-component-form">
                     <div class="button-component" id="button-component3" onclick="openInput('3')">
                         <input class="button-item" type="text" placeholder="Enter Email">
-                        <button type="button"  class="button-item accent-button">
+                        <button type="button" class="button-item accent-button">
                             Apply now
                         </button>
                     </div>
@@ -1018,65 +1353,65 @@
         <section class="testimonials">
             <article>
                 <h2>Testimonials</h2>
-            </article>  
+            </article>
             <div class="container">
-                
-            <div class="testimonial">
-                <div class="wrap-testimonial">
-                    <div class="testimonial-image">
-                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+
+                <div class="testimonial">
+                    <div class="wrap-testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                        </div>
+                        <figcaption>
+                            <div>
+                                <h5>Yash Madhurendra</h5>
+                                <p>Chem Engg,IIT Delhi</p>
+                            </div>
+                            <ul>
+                                <li><span>Web Development</span> at konfinity</li>
+                                <li>Placed with <span>Fanatix</span></li>
+                                <li>Starting Salary<span>22LPA</span></li>
+                            </ul>
+                        </figcaption>
                     </div>
-                    <figcaption>
-                        <div>
-                        <h5>Yash Madhurendra</h5>
-                        <p>Chem Engg,IIT Delhi</p>
+                </div>
+                <div class="testimonial">
+                    <div class="wrap-testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                        </div>
+                        <figcaption>
+                            <div>
+                                <h5>Yash Madhurendra</h5>
+                                <p>Chem Engg,IIT Delhi</p>
+                            </div>
+                            <ul>
+                                <li><span>Web Development</span> at konfinity</li>
+                                <li>Placed with <span>Fanatix</span></li>
+                                <li>Starting Salary<span>22LPA</span></li>
+                            </ul>
+                        </figcaption>
                     </div>
-                        <ul>
-                            <li><span>Web Development</span> at konfinity</li>
-                            <li>Placed with <span>Fanatix</span></li>
-                            <li>Starting Salary<span>22LPA</span></li>
-                        </ul>
-                    </figcaption>
+                </div>
+                <div class="testimonial">
+                    <div class="wrap-testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
+                        </div>
+                        <figcaption>
+                            <div>
+                                <h5>Yash Madhurendra</h5>
+                                <p>Chem Engg,IIT Delhi</p>
+                            </div>
+                            <ul>
+                                <li><span>Web Development</span> at konfinity</li>
+                                <li>Placed with <span>Fanatix</span></li>
+                                <li>Starting Salary<span>22LPA</span></li>
+                            </ul>
+                        </figcaption>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial">
-                <div class="wrap-testimonial">
-                    <div class="testimonial-image">
-                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
-                    </div>
-                    <figcaption>
-                        <div>
-                        <h5>Yash Madhurendra</h5>
-                        <p>Chem Engg,IIT Delhi</p>
-                    </div>
-                        <ul>
-                            <li><span>Web Development</span> at konfinity</li>
-                            <li>Placed with <span>Fanatix</span></li>
-                            <li>Starting Salary<span>22LPA</span></li>
-                        </ul>
-                    </figcaption>
-                </div>
             </div>
-            <div class="testimonial">
-                <div class="wrap-testimonial">
-                    <div class="testimonial-image">
-                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Yash.jpg" alt="yash">
-                    </div>
-                    <figcaption>
-                        <div>
-                        <h5>Yash Madhurendra</h5>
-                        <p>Chem Engg,IIT Delhi</p>
-                    </div>
-                        <ul>
-                            <li><span>Web Development</span> at konfinity</li>
-                            <li>Placed with <span>Fanatix</span></li>
-                            <li>Starting Salary<span>22LPA</span></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                </div>
-            </div>
-        </div>
 
         </section>
 
@@ -1084,9 +1419,11 @@
             <div class="container">
                 <article>
                     <h2>Program Curriculum</h2>
-                    <p>Get a detailed breakdown of courses per semester, credits and our personalised learning tracks.</p>
+                    <p>Get a detailed breakdown of courses per semester, credits and our personalised learning tracks.
+                    </p>
                 </article>
-                <div onclick="displayPopupForm()"><button class="border-button"><i class="fas fa-arrow-down"></i>download-curriculum</button></div>
+                <div onclick="displayPopupForm()"><button class="border-button"><i
+                            class="fas fa-arrow-down"></i>download-curriculum</button></div>
             </div>
         </section>
 
@@ -1260,10 +1597,55 @@
             </article>
             <div class="container">
                 <ul>
-                    <li onclick="showFaq('faq1')"><div class="faq-head"> <h4>  How do I get my doubts resolved? </h4><i id="iconfaq1" class="fas fa-angle-down"></i></div><div class="faq-answer" id="faq1"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
-                    <li onclick="showFaq('faq2')"><div class="faq-head"> <h4> What exactly are premium courses?</h4><i id="iconfaq2" class="fas fa-angle-down"></i></div><div class="faq-answer" id="faq2"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
-                    <li onclick="showFaq('faq3')"><div class="faq-head"> <h4>  Where will the classes be conducted? What are the course timings? </h4><i id="iconfaq3" class="fas fa-angle-down"></i></div><div class="faq-answer" id="faq3"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
-                    <li onclick="showFaq('faq4')"><div class="faq-head"> <h4> What exactly are premium courses?</h4><i id="iconfaq4" class="fas fa-angle-down"></i></div><div class="faq-answer" id="faq4"><p> Premium courses are designed to give a complete package to ensure that you are able to learn the course content along with other required skills for being successful in this partiuclar domain. These courses come with multiple other elements apart from the course content and doubt resolution support, such as Mock Interviews, Placement support, additional content required for learning, profile building, resume review etc. </p></div></li>
+                    <li onclick="showFaq('faq1')">
+                        <div class="faq-head">
+                            <h4> How do I get my doubts resolved? </h4><i id="iconfaq1" class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq1">
+                            <p> Premium courses are designed to give a complete package to ensure that you are able to
+                                learn the course content along with other required skills for being successful in this
+                                partiuclar domain. These courses come with multiple other elements apart from the course
+                                content and doubt resolution support, such as Mock Interviews, Placement support,
+                                additional content required for learning, profile building, resume review etc. </p>
+                        </div>
+                    </li>
+                    <li onclick="showFaq('faq2')">
+                        <div class="faq-head">
+                            <h4> What exactly are premium courses?</h4><i id="iconfaq2" class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq2">
+                            <p> Premium courses are designed to give a complete package to ensure that you are able to
+                                learn the course content along with other required skills for being successful in this
+                                partiuclar domain. These courses come with multiple other elements apart from the course
+                                content and doubt resolution support, such as Mock Interviews, Placement support,
+                                additional content required for learning, profile building, resume review etc. </p>
+                        </div>
+                    </li>
+                    <li onclick="showFaq('faq3')">
+                        <div class="faq-head">
+                            <h4> Where will the classes be conducted? What are the course timings? </h4><i id="iconfaq3"
+                                class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq3">
+                            <p> Premium courses are designed to give a complete package to ensure that you are able to
+                                learn the course content along with other required skills for being successful in this
+                                partiuclar domain. These courses come with multiple other elements apart from the course
+                                content and doubt resolution support, such as Mock Interviews, Placement support,
+                                additional content required for learning, profile building, resume review etc. </p>
+                        </div>
+                    </li>
+                    <li onclick="showFaq('faq4')">
+                        <div class="faq-head">
+                            <h4> What exactly are premium courses?</h4><i id="iconfaq4" class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="faq-answer" id="faq4">
+                            <p> Premium courses are designed to give a complete package to ensure that you are able to
+                                learn the course content along with other required skills for being successful in this
+                                partiuclar domain. These courses come with multiple other elements apart from the course
+                                content and doubt resolution support, such as Mock Interviews, Placement support,
+                                additional content required for learning, profile building, resume review etc. </p>
+                        </div>
+                    </li>
 
                 </ul>
 
@@ -1279,7 +1661,7 @@
                             <form class="button-component-form">
                                 <div class="button-component" id="button-component4" onclick="openInput('4')">
                                     <input class="button-item" type="text" placeholder="Enter Email">
-                                    <button type="button"  class="button-item accent-button">
+                                    <button type="button" class="button-item accent-button">
                                         Apply now
                                     </button>
                                 </div>
@@ -1292,12 +1674,24 @@
                             <h2>Whats included in price</h2>
                         </article>
                         <ul>
-                            <li><i class="fas fa-check"></i><p>Project based curriculum</p></li>
-                            <li><i class="fas fa-check"></i><p>One-on-one mentorship</p></li>
-                            <li><i class="fas fa-check"></i><p>Placement preparation & career guidance</p></li>
-                            <li><i class="fas fa-check"></i><p>Certificate of Achievement</p></li>
-                            <li><i class="fas fa-check"></i><p>Learn from Industry experts</p></li>
-                            <li><i class="fas fa-check"></i><p>Online Sessions </p></li>
+                            <li><i class="fas fa-check"></i>
+                                <p>Project based curriculum</p>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <p>One-on-one mentorship</p>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <p>Placement preparation & career guidance</p>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <p>Certificate of Achievement</p>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <p>Learn from Industry experts</p>
+                            </li>
+                            <li><i class="fas fa-check"></i>
+                                <p>Online Sessions </p>
+                            </li>
 
                         </ul>
                     </div>
@@ -1305,8 +1699,6 @@
             </div>
         </section>
 
-       
-        
     </main>
 
     <script src="../scripts/index.js"></script>
