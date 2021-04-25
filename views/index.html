@@ -93,10 +93,10 @@
                     <p>We will send you a confirmation code</p>
                 </article>
                 <form>
-                    <input type="text" name="name" placeholder="Enter your name..." required>
-                    <input type="email" name="email" placeholder="Enter your email..." required>
-                    <input type="text" name="number" placeholder="enter your mobile number..." title="Phone number with 7-9 and remaing 9 digit with 0-9" pattern="[7-9]{1}[0-9]{9}" required>
-                    <button id="form1" class="accent-button">Submit</button>
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                    <input type="email" name="email" id="youremail" placeholder="Enter your email..." required>
+                    <input type="text" name="number" id="number" placeholder="enter your mobile number..." title="Phone number with 7-9 and remaing 9 digit with 0-9" pattern="[7-9]{1}[0-9]{9}" required>
+                    <button onsubmit="submit()" class="accent-button">Submit</button>
                 </form>
             </div>
         </div>

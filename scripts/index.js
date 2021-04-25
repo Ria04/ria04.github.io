@@ -253,3 +253,15 @@ function onScroll(event) {
 
 window.addEventListener('scroll', event => onScroll(event));
 
+function submit(){  
+  var name = document.getElementById("name").value;
+  var youremail = document.getElementById("youremail").value;
+  var number = document.getElementById("number").value;
+
+  localStorage.setItem("name",name);
+  localStorage.setItem("email",youremail);
+  localStorage.setItem("number",number);
+
+
+}
+
