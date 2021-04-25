@@ -208,3 +208,23 @@ else{
   
 }
 
+const scrollnav = document.querySelector('#scrollup-nav');
+function onScroll(event) {
+  const current = document.documentElement.scrollTop;
+  const maxHeight = document.body.scrollHeight;
+  var x = window.matchMedia("(min-width: 1024px)");
+
+  if (x.matches) {
+
+  if (current > maxHeight * 0.2) {
+    scrollnav.style.display="block";
+  }
+  if(current < maxHeight * 0.2){
+    scrollnav.style.display="none";
+
+  }
+  }
+}
+
+window.addEventListener('scroll', event => onScroll(event));
+

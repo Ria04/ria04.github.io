@@ -31,6 +31,10 @@
   font-family: LightFont;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -735,5 +739,25 @@ a {
 
 .carousel-parent .active {
   background-color: var(--accent-color);
+}
+
+.scrollupComponent {
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .scrollupComponent {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+  }
+  .scrollupComponent i {
+    color: var(--white-color);
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=theme.css.map */

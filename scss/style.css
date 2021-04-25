@@ -3,6 +3,37 @@ main {
   padding-top: 4.3rem;
 }
 
+.scrollUp-nav {
+  display: none;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .scrollUp-nav {
+    display: none;
+    padding: 1.8rem;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 25px -1px var(--light-grey);
+            box-shadow: 0px 0px 25px -1px var(--light-grey);
+  }
+  .scrollUp-nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .scrollUp-nav ul li {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: BoldFont;
+  }
+}
+
 nav {
   padding: 1rem 1.5rem;
   z-index: 999;
@@ -190,6 +221,7 @@ nav div #email {
 @media only screen and (min-width: 1024px) {
   .hero-section {
     padding-bottom: 10rem;
+    padding-top: 5rem;
   }
   .hero-section .container {
     display: -webkit-box;
