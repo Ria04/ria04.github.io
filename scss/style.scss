@@ -219,67 +219,8 @@ i{
   }
   .hero-image {
     display: none;
-    @media only screen and (min-width: 1024px) {
-      background: linear-gradient(
-        to right,
-        var(--accent-color),
-        var(--shade-color)
-      );      
-      border-radius: 0.5rem;
-      display: flex;
-      flex-direction: row;
-
-      padding: 1.5rem;
-      width:40%;
-      height:20rem;
-      div{
-        width:50%;
-        position: relative;
-        i{
-          position: absolute;
-          left: 40%;
-          top:40%;
-          font-size: 2rem;
-          color: var(--white-color);
-          z-index: 6;
-          cursor: pointer;
-        }
-       
-      }
-      div:after {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(0,0,0,.5);
-    }
-      figcaption{
-        width:50%;
-        background-color: var(--white-color);
-        padding:1.5rem 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        div{
-          width: 100%;
-         
-        }
-        div:after{
-          display: none;
-        }
-        ul{
-          li{
-            margin-top: 0.5rem;
-            span{
-              font-weight: bolder;
-            }
-          }
-        }
-      }
-    
+    @media only screen and (min-width: 1024px) {    
+   display: block;
     }
   }
   
