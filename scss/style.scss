@@ -181,6 +181,8 @@ i{
     margin-bottom: 1rem;
   }
   article {
+    justify-content: flex-start;
+    align-items: flex-start;
     ul {
       display: flex;
       flex-direction: row;
