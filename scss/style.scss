@@ -579,10 +579,11 @@ i{
       flex-direction: column;
       align-items: center;
       margin-top: 2rem;
+
       h4{
         text-align: center;
       }
-      button{
+      button,a{
         width: 100%;
       }
       .accent-button{

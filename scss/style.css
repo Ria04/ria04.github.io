@@ -860,7 +860,7 @@ nav div #email {
   text-align: center;
 }
 
-.curriculum .curriculum-banner .button-div button {
+.curriculum .curriculum-banner .button-div button, .curriculum .curriculum-banner .button-div a {
   width: 100%;
 }
 
