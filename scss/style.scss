@@ -900,6 +900,8 @@ i{
 
 .career-assistance {
   padding-top: 1.5rem;
+  background:var(--background-middle-color);
+
   @media only screen and (min-device-width: 1200px){
     padding-top: 3rem;
   }
@@ -1296,7 +1298,7 @@ i{
     
     }
     .list-items{
-      background:rgb(255,202,196);
+      background:var(--background-middle-color);
       padding: 2rem 0rem;
       padding-top: 1rem;
     }
@@ -1394,11 +1396,9 @@ i{
       width: 30%;
       display: block;
       padding:2rem 0rem 0rem 0rem;
-      ul{
-        padding-top: 1rem;
-      }
+     
       .list-items{
-        background:rgb(255,202,196);
+        background:var(--background-middle-color);
         padding-bottom: 2rem;
       }
     }

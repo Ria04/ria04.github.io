@@ -11,7 +11,7 @@
   --light-red: rgb(255, 241, 243);
   --background-grey: rgb(243, 241, 238);
   --black-color: rgb(0, 0, 0);
-  --abc-color: rgb(243, 166, 180);
+  --background-middle-color: rgb(255,202,196);
 
 }
 @font-face {
@@ -429,76 +429,7 @@ a{
     }
   }
 }
-.testimonials{
-  .container{
-    display: flex;
-    flex-direction: column;
-    @media only screen and (min-device-width: 1200px){
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-  }
-}
-.testimonial {
-    background-image: url("../images/testimonial\ format.jpg");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    border-radius: 0.5rem;
-    
-    padding:2rem 1rem;
-    width:100%;
-    @media only screen and (min-device-width: 1200px){
-      width:32%;
 
-    }
-    .wrap-testimonial{
-      display: flex;
-      flex-direction: row;
-      height:10rem;
-
-    }
-    .testimonial-image{
-      width:50%;  
-         
-    }
-    figcaption{
-      width:50%;
-      background-color: var(--white-color);
-      padding:1rem 0.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      background-color: transparent;
-      h5{
-        font-size: 1.1rem;
-        margin-top: 1rem;
-      }
-      p{
-font-size: 0.8rem;
-margin-bottom: 0rem;
-      }
-      div{
-        width: 100%;
-       
-      }
-      div:after{
-        display: none;
-      }
-      ul{
-        background-color: var(--white-color);
-        li{
-          font-size: 0.8rem;
-          line-height: 1rem;
-          span{
-            font-weight: bolder;
-          }
-        }
-      }
-    }
-  
-  }
 
   .carousel-parent {
     display: flex;
@@ -537,4 +468,62 @@ margin-bottom: 0rem;
     }
   }
 }
+@media only screen and (min-device-width: 1200px){
+article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p{
+    max-width: 800px;
+  }
+}
+}
 
+.testimonial{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .wrap-testimonial{
+    display: flex;
+    border: 1px solid var(--text-color);
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+    @media only screen and (min-device-width: 1200px){
+
+    width: 32%;
+    }
+    
+    .testimonial-image{
+      width:12rem;
+      img{
+        object-position: left;
+      }
+    }
+    figcaption{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding:0.5rem;
+      h5{
+        font-size: 1.2rem;
+      }
+      @media only screen and (min-device-width: 1200px){
+        h5{
+          font-size: 1.4rem;
+        }
+      }
+      span{
+        font-weight: 900;
+      }
+      ul{
+        li{
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

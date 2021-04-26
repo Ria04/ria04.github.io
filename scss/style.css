@@ -1310,6 +1310,7 @@ nav div #email {
 
 .career-assistance {
   padding-top: 1.5rem;
+  background: var(--background-middle-color);
 }
 
 @media only screen and (min-device-width: 1200px) {
@@ -1864,7 +1865,7 @@ nav div #email {
 }
 
 .plan-cards .banner .list-items {
-  background: #ffcac4;
+  background: var(--background-middle-color);
   padding: 2rem 0rem;
   padding-top: 1rem;
 }
@@ -2000,11 +2001,8 @@ nav div #email {
     display: block;
     padding: 2rem 0rem 0rem 0rem;
   }
-  .plan-cards-desktop .banner ul {
-    padding-top: 1rem;
-  }
   .plan-cards-desktop .banner .list-items {
-    background: #ffcac4;
+    background: var(--background-middle-color);
     padding-bottom: 2rem;
   }
 }
