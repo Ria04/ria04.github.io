@@ -1238,6 +1238,9 @@ nav div #email {
 
 .projects .projects-wrap div article {
   padding: 0.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (min-device-width: 1200px) {
@@ -1297,8 +1300,10 @@ nav div #email {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .download-curriculum .container p, .download-curriculum .container h2 {
-    text-align: left;
+  .download-curriculum .container article {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

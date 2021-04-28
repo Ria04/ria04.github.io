@@ -826,12 +826,14 @@ i{
       }
       article {
         padding: 0.5rem;
+        align-items: flex-start;
         @media only screen and (min-device-width: 1200px){
           padding:1rem;
         }
       }
       h4 {
         margin-bottom: 0.7rem;
+        
       }
     }
   }
@@ -861,9 +863,10 @@ i{
     @media only screen and (min-device-width: 1200px){
       flex-direction: row;
       justify-content: space-between;
-      p,h2{
-        text-align: left;
-      }
+      article{
+        
+      align-items: flex-start;
+    }
     }
   }
   background: linear-gradient(
