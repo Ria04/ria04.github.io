@@ -670,17 +670,6 @@ nav div #email {
   }
 }
 
-.formComponent {
-  background: var(--white-color);
-}
-
-@media only screen and (min-width: 1024px) {
-  .formComponent {
-    background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
-    background: linear-gradient(to right, var(--accent-color), var(--shade-color));
-  }
-}
-
 .formComponent h2, .formComponent p, .formComponent i {
   color: var(--accent-color);
   text-align: center;
@@ -704,11 +693,13 @@ nav div #email {
   padding: 2rem 1rem;
   background: var(--white-color);
   border-radius: 0.5rem;
+  margin: 0rem 1rem;
 }
 
 @media only screen and (min-width: 1024px) {
   .formComponent div {
     width: 40%;
+    margin: 0rem;
   }
 }
 
@@ -734,6 +725,7 @@ nav div #email {
 
 .formComponent form div {
   padding: 0rem;
+  margin: 0rem;
   width: 100%;
 }
 

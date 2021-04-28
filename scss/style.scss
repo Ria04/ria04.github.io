@@ -440,13 +440,7 @@ i{
 }
 
 .formComponent{
- background: var(--white-color);
-  @media only screen and (min-width: 1024px) {
-    background: linear-gradient(
-      to right,
-      var(--accent-color),
-      var(--shade-color)
-    );  }
+ 
   h2,p,i{
     color: var(--accent-color);
     text-align: center;
@@ -465,9 +459,10 @@ i{
     padding:2rem 1rem;
     background: var(--white-color);
     border-radius: 0.5rem;
-    
+    margin:0rem 1rem;
     @media only screen and (min-width: 1024px) {
       width:40%;
+      margin: 0rem;
     }
 
   }
@@ -492,6 +487,8 @@ i{
     }
     div{
       padding: 0rem;
+      margin: 0rem;
+
       width: 100%;
     }
     button{
