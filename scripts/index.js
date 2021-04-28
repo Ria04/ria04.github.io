@@ -211,10 +211,10 @@ function showPlan(id){
   
 
 
-  document.getElementById('curriculum-section').style.display="block";
 
 
 }
+showPlan('00');
 
 var carouselhead = document.getElementById("curriculum-carousel");
 var dots = carouselhead.getElementsByTagName("span");
