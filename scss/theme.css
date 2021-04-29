@@ -18,15 +18,12 @@
   font-family: BoldFont;
   src: url("../fonts/Nunito-Bold.ttf") format("truetype");
 }
-
 @font-face {
   font-family: LightFont;
   src: url("../fonts/Nunito-Light.ttf") format("truetype");
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   font-family: LightFont;
 }
@@ -51,34 +48,29 @@ h1 {
   font-size: 1.8rem;
   line-height: 1.25;
 }
-
 @media only screen and (min-device-width: 320px) {
   h1 {
     font-size: 1.5rem;
   }
 }
-
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
   h1 {
     font-size: 2rem;
     line-height: 1.3;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h1 {
     font-size: 2.5rem;
     line-height: 1.125;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h1 {
     font-size: 2.5rem;
     line-height: 1.05;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h1 {
     font-size: 2.7rem;
@@ -92,21 +84,18 @@ h2 {
   margin-bottom: 1rem;
   text-align: center;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h2 {
     font-size: 1.625rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h2 {
     font-size: 2rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h2 {
     font-size: 2.25rem;
@@ -114,7 +103,6 @@ h2 {
     font-weight: 700;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h2 {
     font-size: 2.25rem;
@@ -126,28 +114,24 @@ h3 {
   font-size: 1.375rem;
   line-height: 1.3;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h3 {
     font-size: 1.375rem;
     line-height: 1.33;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h3 {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h3 {
     font-size: 1.75rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h3 {
     font-size: 1.75rem;
@@ -159,28 +143,24 @@ h4 {
   font-size: 1.375rem;
   line-height: 1.13;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h4 {
     font-size: 1.375rem;
     line-height: 1.13;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h4 {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h4 {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h4 {
     font-size: 1.75rem;
@@ -192,28 +172,24 @@ h5 {
   font-size: 1rem;
   line-height: 1.13;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h5 {
     font-size: 1rem;
     line-height: 1.13;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h5 {
     font-size: 1.1rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h5 {
     font-size: 1.3rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h5 {
     font-size: 1.3rem;
@@ -225,28 +201,24 @@ h6 {
   font-size: 1rem;
   line-height: 1.13;
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h6 {
     font-size: 1rem;
     line-height: 1.13;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h6 {
     font-size: 1.1rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   h6 {
     font-size: 1.3rem;
     line-height: 1.25;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   h6 {
     font-size: 1.3rem;
@@ -257,7 +229,6 @@ h6 {
 section {
   padding: 1.5rem 1rem;
 }
-
 @media only screen and (min-width: 1224px) {
   section {
     padding: 3rem 0rem;
@@ -271,31 +242,27 @@ label {
   color: var(--text-color);
   margin-bottom: 1rem;
 }
-
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
   p,
-  label {
+label {
     font-size: 1rem;
   }
 }
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   p,
-  label {
+label {
     font-size: 1.15rem;
   }
 }
-
 @media only screen and (min-width: 1224px) {
   p,
-  label {
+label {
     font-size: 1.15rem;
   }
 }
-
 @media only screen and (min-width: 1824px) {
   p,
-  label {
+label {
     font-size: 1.15rem;
   }
 }
@@ -315,16 +282,13 @@ button {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
   font-family: BoldFont;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   text-transform: capitalize;
 }
-
 @media only screen and (min-width: 1024px) {
   button {
     padding: 0.7rem 2rem;
@@ -338,9 +302,7 @@ button::before {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-transform: translateX(-110%) rotate(45deg);
-          transform: translateX(-110%) rotate(45deg);
-  -webkit-transition: all 3s cubic-bezier(0.15, 1, 0.19, 1);
+  transform: translateX(-110%) rotate(45deg);
   transition: all 3s cubic-bezier(0.15, 1, 0.19, 1);
 }
 
@@ -350,12 +312,10 @@ button:hover {
 
 button:hover::before {
   background-color: #fff;
-  -webkit-transform: translate(115%, -10px) rotate(90deg);
-          transform: translate(115%, -10px) rotate(90deg);
+  transform: translate(115%, -10px) rotate(90deg);
 }
 
 .accent-button {
-  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
   background: linear-gradient(to right, var(--accent-color), var(--shade-color));
   color: var(--white-color);
   border: 1px solid var(--accent-color);
@@ -368,7 +328,6 @@ button:hover::before {
 }
 
 .border-button:hover {
-  background: -webkit-gradient(linear, left top, right top, from(var(--accent-color)), to(var(--shade-color)));
   background: linear-gradient(to right, var(--accent-color), var(--shade-color));
   color: var(--white-color);
 }
@@ -390,7 +349,6 @@ input {
   font-family: BoldFont;
   border: 1px solid var(--light-grey);
 }
-
 @media only screen and (min-width: 1024px) {
   input {
     padding: 0.7rem 1rem;
@@ -399,27 +357,8 @@ input {
 }
 
 input:focus {
-  -webkit-box-shadow: 0px 0px 10px -2px skyblue;
-          box-shadow: 0px 0px 10px -2px skyblue;
+  box-shadow: 0px 0px 10px -2px skyblue;
   border: 1px solid skyblue;
-}
-
-input::-webkit-input-placeholder {
-  font-size: 1rem;
-  color: var(--light-grey);
-  text-transform: capitalize;
-}
-
-input:-ms-input-placeholder {
-  font-size: 1rem;
-  color: var(--light-grey);
-  text-transform: capitalize;
-}
-
-input::-ms-input-placeholder {
-  font-size: 1rem;
-  color: var(--light-grey);
-  text-transform: capitalize;
 }
 
 input::placeholder {
@@ -427,17 +366,7 @@ input::placeholder {
   color: var(--light-grey);
   text-transform: capitalize;
 }
-
 @media only screen and (min-width: 1024px) {
-  input::-webkit-input-placeholder {
-    font-size: 1.2rem;
-  }
-  input:-ms-input-placeholder {
-    font-size: 1.2rem;
-  }
-  input::-ms-input-placeholder {
-    font-size: 1.2rem;
-  }
   input::placeholder {
     font-size: 1.2rem;
   }
@@ -446,8 +375,7 @@ input::placeholder {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .round-icon-images img {
@@ -455,30 +383,18 @@ img {
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 0px 9px 3px var(--light-grey);
-          box-shadow: 0px 0px 9px 3px var(--light-grey);
+  box-shadow: 0px 0px 9px 3px var(--light-grey);
 }
 
 .button-component {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
-
 @media only screen and (min-device-width: 1200px) {
   .button-component {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     width: 25rem;
   }
   .button-component .shrink-button-component {
@@ -486,15 +402,12 @@ img {
     display: block;
   }
 }
-
 .button-component input {
   display: none;
 }
-
 .button-component button {
   width: 100%;
 }
-
 .button-component .shrink-button-component {
   width: 100%;
   display: block;
@@ -503,41 +416,22 @@ img {
 .button-component-form {
   margin-top: 1rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .button-component-form button,
 .button-component-form input {
   width: 100%;
 }
-
 @media only screen and (min-device-width: 1200px) {
   .button-component-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
-
 .button-component-form i {
   padding: 0.7rem;
   display: none;
@@ -560,7 +454,6 @@ a {
     margin: 0rem auto;
   }
 }
-
 .popupComponent {
   position: fixed;
   background-color: rgba(1, 1, 1, 0.7);
@@ -570,20 +463,12 @@ a {
   height: 100%;
   width: 100%;
   display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   -webkit-animation: cA 1s forwards;
   animation: cA 1s forwards;
 }
-
 .popupComponent i {
   position: absolute;
   top: 2rem;
@@ -592,13 +477,19 @@ a {
   color: var(--white-color);
   cursor: pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e952bae96ed0c84df59170d17f1bd0aab3db35a
 @media only screen and (min-device-width: 1200px) {
   .popupComponent i {
     top: 2.7rem;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e952bae96ed0c84df59170d17f1bd0aab3db35a
 @keyframes cA {
   0% {
     opacity: 0;
@@ -610,7 +501,6 @@ a {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes cA {
   0% {
     opacity: 0;
@@ -624,20 +514,12 @@ a {
 }
 
 .carousel-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 1rem auto;
   margin-bottom: 2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
-
 .carousel-parent span {
   width: 0.8rem;
   height: 0.8rem;
@@ -646,7 +528,6 @@ a {
   border-radius: 100%;
   cursor: pointer;
 }
-
 .carousel-parent .active {
   background-color: var(--accent-color);
 }
@@ -670,101 +551,61 @@ a {
     font-size: 1.2rem;
   }
 }
-
 @media only screen and (min-device-width: 1200px) {
   article {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   article p {
     max-width: 800px;
   }
 }
-
 .testimonial {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .testimonial .wrap-testimonial {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid var(--text-color);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 100%;
   margin-bottom: 1rem;
 }
-
 @media only screen and (min-device-width: 1200px) {
   .testimonial .wrap-testimonial {
     width: 32%;
   }
 }
-
 .testimonial .wrap-testimonial .testimonial-image {
   width: 12rem;
 }
-
 .testimonial .wrap-testimonial .testimonial-image img {
-  -o-object-position: left;
-     object-position: left;
+  object-position: left;
 }
-
 .testimonial .wrap-testimonial figcaption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0.5rem;
 }
-
 .testimonial .wrap-testimonial figcaption h5 {
   font-size: 1.2rem;
 }
-
 @media only screen and (min-device-width: 1200px) {
   .testimonial .wrap-testimonial figcaption h5 {
     font-size: 1.4rem;
   }
 }
-
 .testimonial .wrap-testimonial figcaption span {
   font-weight: 900;
 }
-
 .testimonial .wrap-testimonial figcaption ul li {
   margin-top: 0.5rem;
 }
+
 /*# sourceMappingURL=theme.css.map */
