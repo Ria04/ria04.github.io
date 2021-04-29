@@ -375,10 +375,13 @@ a{
   text-decoration: none;
 }
 
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-device-width: 1024px) {
   .container {
+    margin: 0rem 1;
+    @media only screen and (min-device-width: 1200px) {
     max-width: 1200px;
     margin: 0rem auto;
+    }
   }
 }
 

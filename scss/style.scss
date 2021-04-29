@@ -1342,10 +1342,15 @@ i{
       width: 30%;
       display: block;
       padding:2rem 0rem 0rem 0rem;
+      height: fit-content;
+
      
       .list-items{
         background:var(--background-middle-color);
         padding-bottom: 2rem;
+        ul{
+          padding:0rem 1rem;
+        }
       }
     }
   }
