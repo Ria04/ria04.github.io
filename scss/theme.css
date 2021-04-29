@@ -477,19 +477,11 @@ a {
   color: var(--white-color);
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 1e952bae96ed0c84df59170d17f1bd0aab3db35a
 @media only screen and (min-device-width: 1200px) {
   .popupComponent i {
     top: 2.7rem;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 1e952bae96ed0c84df59170d17f1bd0aab3db35a
 @keyframes cA {
   0% {
     opacity: 0;
