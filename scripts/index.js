@@ -258,6 +258,37 @@ for (var j = 0; j < lis.length; j++) {
   });
 }
 
+var testimonialCarouselHead = document.getElementById("testimonial-carousel");
+var testi = testimonialCarouselHead.getElementsByTagName("span");
+for (var j = 0; j < testi.length; j++) {
+  testi[j].addEventListener("click", function () {
+    var currentdot = document.getElementsByClassName("activeTesti");
+    currentdot[0].className = currentdot[0].className.replace("activeTesti", " ");
+    this.className += "activeTesti";
+  });
+}
+
+function currentSlidetestimonial(n) {
+  var head = document.getElementById("testi");
+  var slides = head.getElementsByClassName("testimonial");
+  for (var s = 0; s < slides.length; s++) {
+    slides[s].style.display = "none";
+  }
+  
+  
+  slides[n].style.display = "flex";
+
+
+}
+
+currentSlidetestimonial(0);
+
+
+
+
+
+
+
 const scrollnav = document.querySelector('#scrollup-nav');
 const popupForm = document.querySelector('#popupForm');
 const scrollupComponent=document.querySelector('#scrollupComponent');

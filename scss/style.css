@@ -1411,4 +1411,8 @@ nav div #email {
   }
 }
 
+.testimonials .activeTesti {
+  background-color: var(--accent-color);
+}
+
 /*# sourceMappingURL=style.css.map */

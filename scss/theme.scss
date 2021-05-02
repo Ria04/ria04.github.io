@@ -492,6 +492,30 @@ article{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  -webkit-animation: cA 1s forwards;
+  animation: cA 1s forwards;
+  @keyframes cA {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes cA {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .testimonial-background{
     background: url("../images/testimonial\ sample.jpg");
     background-repeat: no-repeat;
