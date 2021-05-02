@@ -200,21 +200,21 @@ currentSlideCurriculum(00);
 function showPlan(id){
   for(var i=0;i<3;i++){
     document.getElementById('plan0'+i).style.display="none";
-    document.getElementById('banner0'+i).style.transform="scale(1)";
+    document.getElementById('banner0'+i).classList.remove("activeFee");
 
     
 
 
   }
   document.getElementById('plan'+id).style.display="flex";
-  document.getElementById('banner'+id).style.transform="scale(1.1)";
+  document.getElementById('banner'+id).classList.add("activeFee");
   
 
 
 
 
 }
-showPlan('00');
+showPlan('01');
 
 var carouselhead = document.getElementById("curriculum-carousel");
 var dots = carouselhead.getElementsByTagName("span");

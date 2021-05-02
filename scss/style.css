@@ -1,6 +1,7 @@
 main {
   position: relative;
   padding-top: 4.3rem;
+  background-color: var(--light-red);
 }
 
 .scrollUp-nav {
@@ -35,7 +36,7 @@ nav {
   z-index: 999;
   left: 0;
   right: 0;
-  background-color: var(--black-color);
+  background-color: rgba(1, 1, 1, 0.8);
   position: fixed;
 }
 nav .container {
@@ -74,6 +75,9 @@ nav figure h3 span {
 nav h4 {
   color: var(--white-color);
   text-transform: none;
+}
+nav h4:hover {
+  color: var(--accent-color);
 }
 nav div {
   display: flex;
@@ -412,23 +416,35 @@ nav div #email {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
   text-align: center;
   color: var(--accent-color);
 }
+.banner ul li span i,
+.banner ul li h4 i {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .banner ul li span i,
+.banner ul li h4 i {
+    font-size: 1.2rem;
+  }
+}
 .banner ul li span span,
 .banner ul li h4 span {
   width: fit-content;
-  margin: 0rem 0.5rem;
+  margin: 0rem 0.3rem;
+  color: var(--accent-color);
 }
-@media only screen and (min-width: 1024px) {
-  .banner ul li span,
-.banner ul li h4 {
-    text-align: left;
-  }
+.banner ul li span .lightFont,
+.banner ul li h4 .lightFont {
+  font-family: LightFont;
+  font-size: 1rem;
 }
 .banner ul li span {
   margin-bottom: 0.5rem;
+  color: var(--grey);
 }
 
 .videoComponent {
@@ -537,7 +553,7 @@ nav div #email {
 }
 .curriculum .curriculum-banner .banner-head {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--grey);
 }
 .curriculum .curriculum-banner .banner-head h4 {
   text-align: center;
@@ -578,10 +594,11 @@ nav div #email {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .curriculum .curriculum-banner ul li h4 {
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 @media only screen and (min-device-width: 1200px) {
   .curriculum .curriculum-banner ul li h4 {
@@ -590,7 +607,13 @@ nav div #email {
 }
 .curriculum .curriculum-banner ul li .grey-head {
   color: var(--grey);
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+@media only screen and (min-device-width: 1200px) {
+  .curriculum .curriculum-banner ul li .grey-head {
+    font-size: 1.2rem;
+  }
 }
 .curriculum .curriculum-banner ul li i {
   color: var(--accent-color);
@@ -660,10 +683,13 @@ nav div #email {
   margin-right: 1.5rem;
 }
 .curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div figure img {
-  width: auto;
+  width: 4rem;
 }
 .curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div h4 {
   margin-bottom: 0.5rem;
+}
+.curriculum .curriculum-details .curriculum-item .wrap-head .info .image-div h5 {
+  color: var(--grey);
 }
 .curriculum .curriculum-details .curriculum-item .wrap-head .icon {
   font-size: 1.5rem;
@@ -672,6 +698,15 @@ nav div #email {
 .curriculum .curriculum-details .curriculum-item .curriculum-description {
   display: none;
   animation: mymove 2s;
+  /*h6 {
+      padding: 0.3rem 1.5rem;
+      border: 1px solid var(--accent-color);
+      color: var(--accent-color);
+      border-radius: 0.2rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }*/
 }
 @keyframes mymove {
   0% {
@@ -691,15 +726,13 @@ nav div #email {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin: 1rem 0rem;
 }
-.curriculum .curriculum-details .curriculum-item .curriculum-description .tags h6 {
-  padding: 0.3rem 1.5rem;
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-  border-radius: 0.2rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+.curriculum .curriculum-details .curriculum-item .curriculum-description .tags li {
+  margin-top: 0rem;
+}
+.curriculum .curriculum-details .curriculum-item .curriculum-description .tags li span {
+  padding: 0.34rem;
 }
 .curriculum .curriculum-details .curriculum-item .curriculum-description ul li {
   display: flex;
@@ -1274,6 +1307,9 @@ nav div #email {
   margin-right: 1rem;
   font-size: 1rem;
 }
+.plan-cards .banner ul li .fa-times {
+  color: var(--grey);
+}
 .plan-cards .banner .button-div {
   display: flex;
   flex-direction: column;
@@ -1357,10 +1393,26 @@ nav div #email {
   .plan-cards-desktop .banner .list-items ul {
     padding: 0rem 1rem;
   }
+  .plan-cards-desktop .activeFee {
+    background-color: var(--black-color);
+  }
+  .plan-cards-desktop .activeFee .link-button:hover::before {
+    background-color: var(--black-color);
+  }
+  .plan-cards-desktop .activeFee h3, .plan-cards-desktop .activeFee h2, .plan-cards-desktop .activeFee p {
+    color: var(--white-color);
+  }
+  .plan-cards-desktop .activeFee .list-items {
+    background: #1b1a1a;
+  }
+  .plan-cards-desktop .activeFee .list-items li {
+    color: var(--white-color);
+  }
 }
 .salary-report article h3 {
   margin: 1rem 0rem;
   text-align: center;
+  color: var(--grey);
 }
 .salary-report .flex-div {
   display: flex;
@@ -1373,12 +1425,18 @@ nav div #email {
   justify-content: space-between;
 }
 .salary-report .flex-div .companies .wrap-companies figure {
-  width: 48%;
+  width: 50%;
   height: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--grey);
+}
+@media only screen and (min-device-width: 1200px) {
+  .salary-report .flex-div .companies .wrap-companies figure {
+    border: none;
+  }
 }
 @media only screen and (min-device-width: 1200px) {
   .salary-report .flex-div .companies .wrap-companies figure {
@@ -1390,13 +1448,35 @@ nav div #email {
   width: 80%;
   height: 80%;
 }
+.salary-report .flex-div .companies .wrap-companies figure:nth-child(odd) {
+  border-left: none;
+  border-top: none;
+}
+.salary-report .flex-div .companies .wrap-companies figure:nth-child(9) {
+  border-bottom: none;
+}
+.salary-report .flex-div .companies .wrap-companies figure:nth-child(even) {
+  border-right: none;
+  border-top: none;
+  border-left: none;
+}
 .salary-report .flex-div .fig-div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .salary-report .flex-div .fig-div figure {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+}
+.salary-report .flex-div .fig-div figure img {
+  object-fit: contain;
+  transform: scale(1);
+}
+@media only screen and (min-device-width: 1200px) {
+  .salary-report .flex-div .fig-div figure img {
+    transform: scale(1.1);
+  }
 }
 @media only screen and (min-device-width: 1200px) {
   .salary-report .flex-div {
@@ -1411,6 +1491,9 @@ nav div #email {
   }
 }
 
+.testimonials .carousel-parent {
+  margin-bottom: 0rem;
+}
 .testimonials .activeTesti {
   background-color: var(--accent-color);
 }
