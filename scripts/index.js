@@ -260,6 +260,7 @@ for (var j = 0; j < lis.length; j++) {
 
 const scrollnav = document.querySelector('#scrollup-nav');
 const popupForm = document.querySelector('#popupForm');
+const scrollupComponent=document.querySelector('#scrollupComponent');
 
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
@@ -270,9 +271,11 @@ function onScroll(event) {
 
   if (current > maxHeight * 0.2) {
     scrollnav.style.display="block";
+    scrollupComponent.style.display="block";
   }
   if(current < maxHeight * 0.2){
     scrollnav.style.display="none";
+    scrollupComponent.style.display="none";
 
   }
   }

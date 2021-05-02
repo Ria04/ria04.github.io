@@ -437,8 +437,11 @@ i{
     width: 100%;
     margin: 0rem 0.5rem;
     @media only screen and (min-width: 1024px) {
-      height:35rem;
-      width:55%;
+      height:60%;
+      width:70%;
+     img{
+       object-fit: contain;
+     }
     }
   }
 }
@@ -450,14 +453,10 @@ i{
     text-align: center;
   }
   i{
-    position: absolute;
-    top:2rem;
-    right:2rem;
+    
     font-size: 1.2rem;
-    color: var(--black-color);
-    @media only screen and (min-width: 1024px) {
     color: var(--white-color);
-    }
+    
   }
   div{
     padding:2rem 1rem;
@@ -531,10 +530,17 @@ i{
     }
    
     .banner-head{
-      padding-bottom: 2rem;
+      padding-bottom: 0.5rem;
       h4{
         text-align: center;
+        color: var(--grey);
+        font-size: 1.2rem;
+        @media only screen and (min-device-width: 1200px){
+          font-size: 1.5rem;
+
+        }
       }
+     
       h2{
         display: flex;
         flex-direction: row;
@@ -557,7 +563,7 @@ i{
     margin:0rem auto;
     margin-top: 2rem;
     @media only screen and (min-device-width: 1200px){
-      margin-top: 1rem;
+      margin-top: 0rem;
 
     }
    
@@ -565,6 +571,7 @@ i{
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 2rem;
       h4{
         font-size: 1.2rem;
         @media only screen and (min-device-width: 1200px){
@@ -574,7 +581,7 @@ i{
       }
       .grey-head{
         color: var(--grey);
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.1rem;
       }
       i{
         color: var(--accent-color);
@@ -623,6 +630,8 @@ i{
       margin-top: 1rem;
       @media only screen and (min-device-width: 1200px){
     padding: 1.5rem;
+
+
       }
       .wrap-head {
         display: flex;
@@ -644,9 +653,9 @@ i{
             flex-direction: row;
             align-items: center;
             figure {
-              width: 3rem;
-              height: 3rem;
-              margin-right: 1rem;
+              height: 4rem;
+              
+              margin-right: 1.5rem;
               img{
                 width: auto;
               }
@@ -696,16 +705,20 @@ i{
           li {
             display: flex;
             flex-direction: row;
+            margin-top: 1rem;
             i {
               margin-right: 1rem;
               margin-top: 0.4rem;
               color: var(--accent-color);
+              font-size: 1rem;
             }
             p {
               margin-top: 0rem;
+              margin-bottom: 0rem;
             }
           }
         }
+        
       }
     }
   }
@@ -824,9 +837,10 @@ i{
       }
       margin-top: 1rem;
       figure {
-        height: 5rem;
+        height: 6rem;
+        background-color: var(--light-blue);
         @media only screen and (min-device-width: 1200px){
-          height:8rem;
+          height:9rem;
          }
         margin-bottom: 0.7rem;
       }
@@ -839,7 +853,10 @@ i{
       }
       h4 {
         margin-bottom: 0.7rem;
-        
+        font-size: 1.1rem;
+        @media only screen and (min-device-width: 1200px){
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -853,7 +870,15 @@ i{
 .career-assistance {
   padding-top: 1.5rem;
   background:var(--background-middle-color);
+  .highlights{
+    div{
+      background-color: var(--light-red);
+      @media only screen and (min-device-width: 1200px){
+        background-color: transparent;
 
+      }
+    }
+  }
   @media only screen and (min-device-width: 1200px){
     padding-top: 3rem;
   }
@@ -872,6 +897,13 @@ i{
       article{
         
       align-items: flex-start;
+      @media only screen and (min-device-width: 1200px){
+
+      p{
+        max-width: 70%;
+        text-align: left;
+      }
+    }
     }
     }
   }
@@ -1358,6 +1390,63 @@ i{
         ul{
           padding:0rem 1rem;
         }
+      }
+    }
+  }
+}
+
+.salary-report{
+  article{
+    h3{
+      margin: 1rem 0rem;
+      text-align: center;
+    }
+  }
+  .flex-div{
+    display: flex;
+    flex-direction: column;
+    .companies{
+      .wrap-companies{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        figure{
+          width:48%;
+          height:7rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          @media only screen and (min-device-width: 1200px){
+            width:30%;
+
+          }
+          
+          img{
+            object-fit: contain;
+            width: 80%;
+            height: 80%;
+          }
+        }
+      }
+    }
+    .fig-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      figure{
+        width:80%;
+      }
+    }
+    @media only screen and (min-device-width: 1200px){
+      flex-direction: row;
+      justify-content: space-between;
+      .companies{
+        width:45%;
+      }
+      .fig-div{
+        width:45%;
       }
     }
   }
