@@ -556,48 +556,61 @@ a {
     max-width: 800px;
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-33rem * 2));
+  }
+}
+#testi {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+#testi::before, #testi::after {
+  background: linear-gradient(to right, #010101 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 20%;
+  z-index: 2;
+}
+#testi::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+#testi::before {
+  left: 0;
+  top: 0;
+}
+
 .testimonial {
-  margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -webkit-animation: cA 1s forwards;
-  animation: cA 1s forwards;
+  animation: scroll 20s linear infinite;
+  width: calc(100% * 4);
 }
-@keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes cA {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
+@media only screen and (min-device-width: 1200px) {
+  .testimonial {
+    width: calc(35rem * 4);
   }
 }
 .testimonial .testimonial-background {
   background: url("../images/testimonial sample.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 18rem;
+  margin: 0rem 0.5rem;
+  height: 14rem;
   width: 100%;
-  margin-bottom: 1rem;
 }
 @media only screen and (min-device-width: 1200px) {
   .testimonial .testimonial-background {
-    width: 48%;
+    width: 35rem;
+    height: 18rem;
   }
 }
 .testimonial .wrap-testimonial {
@@ -605,30 +618,28 @@ a {
   border: 1px solid var(--text-color);
   flex-direction: row;
   width: 92%;
-  margin: 1.3rem 1rem;
-  height: 15.7rem;
+  margin: 1rem 1rem;
+  height: 12rem;
   background-color: rgba(1, 1, 1, 0.2);
 }
 @media only screen and (min-device-width: 1200px) {
   .testimonial .wrap-testimonial {
     margin: 1.2rem 1.6rem 1rem 1.5rem;
+    height: 15.7rem;
   }
 }
 .testimonial .wrap-testimonial .testimonial-image {
-  width: 70%;
+  width: 10rem;
+  height: 12rem;
 }
 @media only screen and (min-device-width: 1200px) {
   .testimonial .wrap-testimonial .testimonial-image {
+    height: 100%;
     width: 50%;
   }
 }
-.testimonial .wrap-testimonial .testimonial-image img {
-  object-position: center;
-}
-@media only screen and (min-device-width: 1200px) {
-  .testimonial .wrap-testimonial .testimonial-image img {
-    object-position: left;
-  }
+.testimonial .wrap-testimonial .testimonial-image #yash {
+  object-position: left;
 }
 .testimonial .wrap-testimonial figcaption {
   display: flex;
@@ -637,15 +648,21 @@ a {
   padding: 0.5rem;
 }
 .testimonial .wrap-testimonial figcaption h5 {
-  font-size: 1.2rem;
-  color: var(--white-color);
-}
-.testimonial .wrap-testimonial figcaption p {
+  font-size: 1rem;
   color: var(--white-color);
 }
 @media only screen and (min-device-width: 1200px) {
   .testimonial .wrap-testimonial figcaption h5 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+}
+.testimonial .wrap-testimonial figcaption p {
+  color: var(--white-color);
+  font-size: 0.9rem;
+}
+@media only screen and (min-device-width: 1200px) {
+  .testimonial .wrap-testimonial figcaption p {
+    font-size: 1.15rem;
   }
 }
 .testimonial .wrap-testimonial figcaption span {
@@ -656,10 +673,23 @@ a {
   margin-top: 0.5rem;
   color: var(--white-color);
 }
+@media only screen and (max-device-width: 1200px) {
+  .testimonial .wrap-testimonial figcaption ul li {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;
+  }
+}
 
 strike {
   margin-right: 1rem;
   color: var(--grey);
+  display: flex;
+  flex-direction: row;
+}
+strike i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0rem;
 }
 
 .tag {

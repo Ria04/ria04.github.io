@@ -487,46 +487,66 @@ article{
   }
 }
 }
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(1,1,1,1) 0%,rgba(255,255,255,0) 100%);
+}
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-33rem * 2))}
+}
+
+#testi{
+  background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	margin: auto;
+	overflow:hidden;
+  position: relative;
+  
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100%;
+    position: absolute;
+    width: 20%;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+}
 
 .testimonial{
-  margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -webkit-animation: cA 1s forwards;
-  animation: cA 1s forwards;
-  @keyframes cA {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes cA {
-    0% {
-      opacity: 0;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
+animation: scroll 20s linear infinite;
+width: calc(100% * 4);
+
+@media only screen and (min-device-width: 1200px){
+
+width: calc(35rem * 4);
+}
+
+
   .testimonial-background{
     background: url("../images/testimonial\ sample.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 18rem;
+    margin:0rem 0.5rem;
+    height: 14rem;
     width: 100%;
-    margin-bottom: 1rem;
     @media only screen and (min-device-width: 1200px){
-      width: 48%;
+      width: 35rem;
+      height: 18rem;
 
     }
   }
@@ -535,28 +555,28 @@ article{
     border: 1px solid var(--text-color);
     flex-direction: row;
     width: 92%;
-    margin: 1.3rem 1rem;
+    margin: 1rem 1rem;
 
     @media only screen and (min-device-width: 1200px){
     margin: 1.2rem 1.6rem 1rem 1.5rem;
-    }
     height: 15.7rem;
+
+    }
+    height: 12rem;
     background-color: rgba(1,1,1,0.2);
    
     
     .testimonial-image{
-      width: 70%;
+      width:10rem;
+      height:12rem;
 
       @media only screen and (min-device-width: 1200px){
-
+        height:100%;
       width:50%;
       }
-      img{
-        object-position: center;
-
-        @media only screen and (min-device-width: 1200px){
+      #yash{
         object-position: left;
-        }
+
       }
     }
     figcaption{
@@ -565,19 +585,21 @@ article{
       justify-content: space-between;
       padding:0.5rem;
       h5{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        @media only screen and (min-device-width: 1200px){
+        font-size: 1.5rem;
+        }
         color: var(--white-color);
       }
       p{
         color: var(--white-color);
-
-      }
-      @media only screen and (min-device-width: 1200px){
-        h5{
-          font-size: 1.4rem;
-
+        font-size: 0.9rem;
+        @media only screen and (min-device-width: 1200px){
+          font-size:1.15rem;
         }
+
       }
+      
       span{
         font-weight: 900;
         color: var(--white-color);
@@ -587,15 +609,39 @@ article{
         li{
           margin-top: 0.5rem;
           color: var(--white-color);
-
+          @media only screen and (max-device-width: 1200px){
+            font-size: 0.9rem;
+            margin-top: 0.1rem;
+          }
         }
       }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 strike{
   margin-right: 1rem;
-  color:var(--grey)
+  color:var(--grey);
+  display: flex;
+  flex-direction: row;
+
+    i{
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      margin-top: 0rem;
+    }
+
+  
+  
 }
 
 

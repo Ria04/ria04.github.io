@@ -61,6 +61,7 @@ nav {
     }
     h3{
       color: var(--white-color);
+      letter-spacing: 0.1rem;
       font-size: 1.4rem;
       @media only screen and (min-width: 1024px) {
         font-size: 1.6rem;
@@ -75,6 +76,7 @@ nav {
   h4{
     color: var(--white-color);
     text-transform: none;
+    letter-spacing: 0.1rem;
   }
   h4:hover{
     color: var(--accent-color);
@@ -562,12 +564,30 @@ i{
       h2{
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
         color: var(--accent-color);
         i{
-          font-size: 1.5rem;
-          margin-right: 0.5rem;
+          font-size: 1rem;
+          margin-right: 0.3rem;
+          margin-top: 0.3rem;
+
+          @media only screen and (min-device-width: 1200px){
+            margin-right: 0.5rem;
+
+          margin-top: 0.7rem;
+          }
+
+        }
+        strike{
+          i{
+            margin-top: 0.3rem;
+          }
+          @media only screen and (min-device-width: 1200px){
+
+          i{
+            margin-top: 0.7rem;
+          }
+        }
         }
       }
       p{
@@ -689,6 +709,7 @@ i{
             }
             h5{
               color: var(--grey);
+              font-family: LightFont;
             }
           }
         }
@@ -1299,14 +1320,20 @@ i{
         color: var(--accent-color);
 
       }
+      
       h2{
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
         i{
-          font-size: 1.5rem;
-          margin-right: 0.5rem;
+          font-size: 1rem;
+          margin-right: 0.3rem;
+          margin-top: 0.3rem;
+          @media only screen and (min-device-width: 1200px){
+            margin-top: 0.7rem;
+            margin-right: 0.5rem;
+
+          }
         }
       }
       p{
@@ -1339,6 +1366,9 @@ i{
         color: var(--grey);
       }
     }
+    .cross-li{
+      color:var(--grey);
+    }
     }
     .button-div{
       display: flex;
@@ -1348,6 +1378,30 @@ i{
      
       h4{
         text-align: center;
+      }
+      .link-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .fa-play{
+          font-size: 1rem;
+          margin-left: 1rem;
+        }
+      }
+      .link-button:hover{
+        i{
+          position: relative;
+          @keyframes play{
+            from{
+                left:0;
+            }
+            to{
+                left:1rem;
+            }
+          }
+          animation: play 1s;
+          animation-fill-mode: forwards;       
+         }
       }
     }
   }
@@ -1435,6 +1489,12 @@ i{
       .link-button:hover::before{
         background-color: var(--black-color);
       }
+      strike{
+        i{
+          color: var(--grey);
+        }
+      }
+      
       h3,h2,p{
         color: var(--white-color);
       }
@@ -1443,6 +1503,9 @@ i{
         
         li{
           color: var(--white-color);
+        }
+        .cross-li{
+          color: var(--grey);
         }
       }
     }
@@ -1456,6 +1519,7 @@ i{
       margin: 1rem 0rem;
       text-align: center;
       color: var(--grey);
+      font-family: LightFont;
     }
   }
   .flex-div{
@@ -1499,6 +1563,16 @@ i{
         border-bottom:none;
 
       }
+      .wrap-companies figure:nth-child(10){
+        border-bottom:none;
+
+      }
+      @media only screen and (min-device-width: 1200px){
+
+      .wrap-companies figure:nth-child(10){
+        display: none;
+      }
+    }
       .wrap-companies figure:nth-child(even){
         border-right:none;
         border-top:none;
@@ -1535,15 +1609,5 @@ i{
   }
 }
 
-.testimonials{
-  .carousel-parent{
-    margin-bottom: 0rem;
-  }
-  .activeTesti{
-    background-color: var(--accent-color);
-   
-    
-  }
-}
 
 
