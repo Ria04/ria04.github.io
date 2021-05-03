@@ -1334,6 +1334,7 @@ nav div #email {
   color: var(--accent-color);
   margin-right: 1rem;
   font-size: 1rem;
+  width: 1rem;
 }
 .plan-cards .banner ul li .fa-times {
   color: var(--grey);
