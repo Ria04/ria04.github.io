@@ -1433,7 +1433,7 @@ nav div #email {
   }
   .plan-cards-desktop h5 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
