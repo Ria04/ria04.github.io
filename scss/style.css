@@ -1266,6 +1266,11 @@ nav div #email {
 .plan-cards article {
   margin-bottom: 2rem;
 }
+.plan-cards article h4 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
 @media only screen and (min-device-width: 1200px) {
   .plan-cards article {
     margin-bottom: 4rem;
@@ -1351,12 +1356,12 @@ nav div #email {
   align-items: center;
 }
 .plan-cards .banner .button-div .link-button .fa-play {
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-left: 1rem;
 }
 .plan-cards .banner .button-div .link-button:hover i {
   position: relative;
-  animation: play 1s;
+  animation: play 2s;
   animation-fill-mode: forwards;
 }
 @keyframes play {
