@@ -1303,7 +1303,7 @@ i{
   }
   @media only screen and (min-device-width: 1200px){
   article{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
   .curriculum-carousel{
@@ -1451,13 +1451,34 @@ i{
   .plan-cards-mobile{
     display: none;
   }
+
+  #banner01{
+    position: relative;
+    margin-top: 4rem;
+  }
+ 
+  #recomended{
+    position: absolute;
+    background: linear-gradient(
+      to right,
+      var(--accent-color),
+      var(--shade-color)
+    );
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    ;
+    font-size: 1rem;
+    top:-1rem;
+    left:32%;
+    padding: 0.5rem;    
+  }
   
   .plan-cards-desktop{
     display: block;
  
     h5{
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       display: flex; 
       flex-direction: row;
       justify-content: center;
@@ -1479,6 +1500,7 @@ i{
       display: block;
       padding:2rem 0rem 0rem 0rem;
       height: fit-content;
+      
 
      
       .list-items{

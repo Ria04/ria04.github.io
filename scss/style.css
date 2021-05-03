@@ -1273,7 +1273,7 @@ nav div #email {
 }
 @media only screen and (min-device-width: 1200px) {
   .plan-cards article {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 .plan-cards .curriculum-carousel {
@@ -1411,12 +1411,28 @@ nav div #email {
     display: none;
   }
 
+  #banner01 {
+    position: relative;
+    margin-top: 4rem;
+  }
+
+  #recomended {
+    position: absolute;
+    background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    top: -1rem;
+    left: 32%;
+    padding: 0.5rem;
+  }
+
   .plan-cards-desktop {
     display: block;
   }
   .plan-cards-desktop h5 {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
