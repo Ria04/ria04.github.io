@@ -1485,6 +1485,9 @@ nav div #email {
     color: var(--grey);
   }
 }
+.salary-report {
+  background-color: var(--light-red);
+}
 .salary-report article h3 {
   margin: 1rem 0rem;
   text-align: center;
