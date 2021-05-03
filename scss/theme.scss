@@ -31,6 +31,22 @@ html{
   scroll-behavior: smooth;
 }
 
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.8), rgb(255, 255, 255));
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+background-image: linear-gradient(315deg, rgb(187, 19, 51) 0%, rgb(247, 3, 3) 74%);
+border-radius: 10px;
+
+}
+
 h1,
 h2,
 h3,
