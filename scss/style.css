@@ -237,6 +237,34 @@ nav div #email {
 @media only screen and (min-width: 1024px) {
   .hero-section .hero-image {
     display: block;
+    position: relative;
+  }
+  .hero-section .hero-image i {
+    position: absolute;
+    cursor: pointer;
+    color: var(--shade-color);
+    -webkit-animation: random 5s infinite;
+    animation: random 5s infinite;
+    left: 52%;
+    top: 46%;
+    font-size: 2rem;
+  }
+  @keyframes random {
+    15% {
+      color: var(--black-color);
+    }
+    30% {
+      color: var(--shade-color);
+    }
+    45% {
+      color: var(--black-color);
+    }
+    60% {
+      color: var(--shade-color);
+    }
+    75% {
+      color: var(--black-color);
+    }
   }
 }
 .hero-section .rating-component {
@@ -443,6 +471,14 @@ nav div #email {
 .banner ul li h4 .lightFont {
   font-family: LightFont;
   font-size: 1rem;
+}
+.banner ul li span .light-weight,
+.banner ul li h4 .light-weight {
+  font-family: LightFont;
+}
+.banner ul li span .remove-margin,
+.banner ul li h4 .remove-margin {
+  margin-right: 0rem;
 }
 .banner ul li span {
   margin-bottom: 0.5rem;
@@ -1329,6 +1365,7 @@ nav div #email {
   flex-direction: row;
   align-items: center;
   font-family: BoldFont;
+  text-transform: capitalize;
 }
 .plan-cards .banner ul li i {
   color: var(--accent-color);

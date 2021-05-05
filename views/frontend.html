@@ -133,6 +133,21 @@
                 <i class="fas fa-angle-up"></i>
             </div>
         </a>
+        <div class="chat-box" id="chat-box">
+            <a href="tel:7310946608"><div class="inner-div">
+                <span>Request a callback</span>
+                <i class="fas fa-phone-alt"></i>
+            </div>
+        </a>
+            <a href="https://api.whatsapp.com/send?phone=917310946608" target="blank"><div class="inner-div">
+                <span>Chat with us</span>
+                <i class="fas fa-comment-dots"></i>
+            </div>
+        </a>
+           <figure id="robot">
+               <img onclick="displayChatbot()" src="../images/robo icon.png">
+           </figure>
+        </div>
 
         <section class="hero-section" id="hero-section">
             <div class="container">
@@ -185,6 +200,7 @@
                     </div>
                 </div>
                 <figure class="hero-image">
+                    <i onclick="displayVideo()" class="fas fa-play"></i>
                     <img src="../images/newboi.png" alt="">
                 </figure>
                 <!-- <figure class="hero-image">
@@ -330,7 +346,7 @@
                         <li><i class="fas fa-check"></i>2 queries / day</li>
                         <li><i class="fas fa-check"></i>1 mini projects </li>
                         <li><i class="fas fa-check"></i>Workspace community</li>
-                        <li><i class="fas fa-check"></i>1 Course duration</li>
+                        <li><i class="fas fa-check"></i>1 month Course duration</li>
                         <li class="cross-li"><i class="fas fa-times"></i>Meeting sessions</li>
                         <li class="cross-li"><i class="fas fa-times"></i>capstone projects</li>
                         <li class="cross-li"><i class="fas fa-times"></i>mock interviews</li>
@@ -405,7 +421,7 @@
                         <li><i class="fas fa-check"></i> 3- capstone projects</li>
                         <li><i class="fas fa-check"></i>mock interviews</li>
                         <li><i class="fas fa-check"></i>test Series</li>
-                        <li><i class="fas fa-check"></i>Yes-nano degree</li>
+                        <li><i class="fas fa-check"></i>nano degree</li>
                         <li><i class="fas fa-check"></i> Certificate</li>
                         <li><i class="fas fa-check"></i>DS&algo module</li>
                         <li><i class="fas fa-check"></i>Placement assistance</li>
@@ -425,7 +441,7 @@
         <section class="plan-cards plan-cards-desktop" id="alldesktopplans">
             <article>
                 <h4>Fees Plans & pricing</h4>
-                <h2>web development course</h2>
+                <h2>Front-End development course</h2>
             </article>
             <div class="container">
                 <div class="banner" id="banner00">
@@ -449,7 +465,7 @@
                             <li><i class="fas fa-check"></i>2 queries / day</li>
                             <li><i class="fas fa-check"></i>1 mini projects </li>
                             <li><i class="fas fa-check"></i>Workspace community</li>
-                            <li><i class="fas fa-check"></i>1 Course duration</li>
+                            <li><i class="fas fa-check"></i>1 month Course duration</li>
                             <li class="cross-li"><i class="fas fa-times"></i>Meeting sessions</li>
                             <li class="cross-li"><i class="fas fa-times"></i>capstone projects</li>
                             <li class="cross-li"><i class="fas fa-times"></i>mock interviews</li>
@@ -525,7 +541,7 @@
                             <li><i class="fas fa-check"></i> 3- capstone projects</li>
                             <li><i class="fas fa-check"></i>mock interviews</li>
                             <li><i class="fas fa-check"></i>test Series</li>
-                            <li><i class="fas fa-check"></i>Yes-nano degree</li>
+                            <li><i class="fas fa-check"></i>nano degree</li>
                             <li><i class="fas fa-check"></i> Certificate</li>
                             <li><i class="fas fa-check"></i>DS&algo module</li>
                             <li><i class="fas fa-check"></i>Placement assistance</li>
@@ -541,7 +557,7 @@
         <section class="curriculum" id="curriculum-section">
             <div class="container">
                 <article id="curriculum">
-                    <h2>Front end Web development course Curriculum</h2>
+                    <h2>Front-End  development course Curriculum</h2>
                     <p>Start with learning programming fundamentals, and move on to designing front end, backend,
                         servers, databases, APIs, and more. Master creating small components to constructing complex
                         applications!</p>
@@ -600,7 +616,7 @@
                                             </figure>
                                             <div>
                                                 <h4>Web Development Basics</h4>
-                                                <h5>Week 2-3</h5>
+                                                <h5>Week 2</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -640,7 +656,7 @@
                                             </figure>
                                             <div>
                                                 <h4>Javascript</h4>
-                                                <h5>Week 4</h5>
+                                                <h5>Week 3</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -667,8 +683,6 @@
                                 </div>
                             </div>
 
-                            
-                               
                             <div class="curriculum-item">
                                 <div class="wrap-head">
                                     <div class="info">
@@ -678,14 +692,14 @@
                                             </figure>
                                             <div>
                                                 <h4>Mini Projects</h4>
-                                                <h5>Week 5</h5>
+                                                <h5>Week 4</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('6')"><i class="fas fa-arrow-down"
-                                            id="icon6"></i></div>
+                                    <div class="icon" onclick="showDescription('4')"><i class="fas fa-arrow-down"
+                                            id="icon4"></i></div>
                                 </div>
-                                <div class="curriculum-description" id="6">
+                                <div class="curriculum-description" id="4">
                                     <p>In the last week, we will give you 2 mini-projects to enhance your skills and
                                         build a solid resume for a web developer.
                                     </p>
@@ -740,7 +754,7 @@
 
                         <div v class="curriculum-banner-flex">
 
-                            <div class="curriculum-item">
+                          <div class="curriculum-item">
                                 <div class="wrap-head">
                                     <div class="info">
 
@@ -748,7 +762,7 @@
                                             <figure><img src="../images/HTML.png">
                                             </figure>
                                             <div>
-                                                <h4>Advanced HTML</h4>
+                                                <h4>Web Development Advanced</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
@@ -757,7 +771,8 @@
                                             id="icon11"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="11">
-                                    <p>Learn advanced HTML concepts that will help your web application go to the next level. You will learn HTML canvas, html svg ,html APIs, html geolocation , html drag/drop,web storage, web workers, html sse and many more.</p>
+                                    <p>Get to learn how websites work. Start your web development journey with the
+                                        Advance of HTML , HTML5 and learn how to create unique websites using HTML5.</p>
                                     <ul class="tags">
                                         <li class="tag"><span>HTML</span></li>
                                         <li class="tag"><span>HTML5</span></li>
@@ -778,7 +793,46 @@
                                 </div>
                             </div>
 
-                      
+                            <div class="curriculum-item">
+                                <div class="wrap-head">
+                                    <div class="info">
+
+                                        <div class="image-div">
+                                            <figure><img src="../images/C S S.png">
+                                            </figure>
+                                            <div>
+                                                <h4>Web Development Advanced</h4>
+                                                <h5>Week 2-3</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon" onclick="showDescription('22')"><i class="fas fa-arrow-down"
+                                            id="icon22"></i></div>
+                                </div>
+                                <div class="curriculum-description" id="22">
+                                    <p> Get a piece of Advance knowledge on CSS ,CSS3 and Bootstrap. Start your web
+                                        development journey with the basics of CSS and Bootstrap..</p>
+                                    <ul class="tags">
+                                        <li class="tag"><span>CSS</span></li>
+                                        <li class="tag"><span>CSS3</span></li>
+                                        <li class="tag"><span>BootStrap</span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn CSS , CSS3 elements, tags and utilizing them to enhance the layout,
+                                                position of various factors on the web page</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn Bootstrap by using it to design a mobile-friendly responsive web
+                                                page.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Understand padding, tags, class, fonts, backgrounds, margin, and many
+                                                more things </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
                             <div class="curriculum-item">
                                 <div class="wrap-head">
@@ -864,42 +918,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                            
-                            
-
-                            <div class="curriculum-item">
-                                <div class="wrap-head">
-                                    <div class="info">
-
-                                        <div class="image-div">
-                                            <figure><img src="../images/deployment.png">
-                                            </figure>
-                                            <div>
-                                                <h4>Code Review + Deployment</h4>
-                                                <h5>Week 14-15</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon" onclick="showDescription('88')"><i class="fas fa-arrow-down"
-                                            id="icon88"></i></div>
-                                </div>
-                                <div class="curriculum-description" id="88">
-                                    <p> Developers don’t just write code. They write production-level code. Learn how to
-                                        write production-level code, deploy your projects, and flaunt it to the world.
-                                    </p>
-                                    <ul class="tags">
-                                        <li class="tag"><span>Heroku</span></li>
-                                        <li class="tag"><span>AWS</span></li>
-                                        <li class="tag"><span>Ec2</span></li>
-
-                                    </ul>
-
-                                </div>
-                            </div>
-
-
-                           
                             <div class="curriculum-item">
                                 <div class="wrap-head">
                                     <div class="info">
@@ -909,14 +927,14 @@
                                             </figure>
                                             <div>
                                                 <h4>Projects</h4>
-                                                <h5>Week 13-16</h5>
+                                                <h5>Week 6-10</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('199')"><i class="fas fa-arrow-down"
-                                            id="icon199"></i></div>
+                                    <div class="icon" onclick="showDescription('55')"><i class="fas fa-arrow-down"
+                                            id="icon55"></i></div>
                                 </div>
-                                <div class="curriculum-description" id="199">
+                                <div class="curriculum-description" id="55">
                                     <p> You will build 7+ projects during the whole program. Starting from building
                                         basic apps to bring your learning to the application to building a real-world
                                         website that you can add to your resume or create your own business, you will do
@@ -933,6 +951,37 @@
                                     </ul>
                                 </div>
                             </div>
+                      
+                            <div class="curriculum-item">
+                                <div class="wrap-head">
+                                    <div class="info">
+
+                                        <div class="image-div">
+                                            <figure><img src="../images/deployment.png">
+                                            </figure>
+                                            <div>
+                                                <h4>Code Review + Deployment</h4>
+                                                <h5>Week 11-12</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon" onclick="showDescription('66')"><i class="fas fa-arrow-down"
+                                            id="icon66"></i></div>
+                                </div>
+                                <div class="curriculum-description" id="66">
+                                    <p> Developers don’t just write code. They write production-level code. Learn how to
+                                        write production-level code, deploy your projects, and flaunt it to the world.
+                                    </p>
+                                    <ul class="tags">
+                                        <li class="tag"><span>Heroku</span></li>
+                                        <li class="tag"><span>AWS</span></li>
+                                        <li class="tag"><span>Ec2</span></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>                         
+                            
 
 
                         </div>
@@ -979,7 +1028,7 @@
                                             <figure><img src="../images/HTML.png">
                                             </figure>
                                             <div>
-                                                <h4>Advanced HTML</h4>
+                                                <h4>Web Development Advanced</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
@@ -988,7 +1037,8 @@
                                             id="icon111"></i></div>
                                 </div>
                                 <div class="curriculum-description" id="111">
-                                    <p>Learn advanced HTML concepts that will help your web application go to the next level. You will learn HTML canvas, html svg ,html APIs, html geolocation , html drag/drop,web storage, web workers, html sse and many more.</p>
+                                    <p>Get to learn how websites work. Start your web development journey with the
+                                        Advance of HTML , HTML5 and learn how to create unique websites using HTML5.</p>
                                     <ul class="tags">
                                         <li class="tag"><span>HTML</span></li>
                                         <li class="tag"><span>HTML5</span></li>
@@ -1009,7 +1059,46 @@
                                 </div>
                             </div>
 
-                        
+                            <div class="curriculum-item">
+                                <div class="wrap-head">
+                                    <div class="info">
+
+                                        <div class="image-div">
+                                            <figure><img src="../images/C S S.png">
+                                            </figure>
+                                            <div>
+                                                <h4>Web Development Advanced</h4>
+                                                <h5>Week 2-3</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon" onclick="showDescription('222')"><i class="fas fa-arrow-down"
+                                            id="icon222"></i></div>
+                                </div>
+                                <div class="curriculum-description" id="222">
+                                    <p> Get a piece of Advance knowledge on CSS ,CSS3 and Bootstrap. Start your web
+                                        development journey with the basics of CSS and Bootstrap..</p>
+                                    <ul class="tags">
+                                        <li class="tag"><span>CSS</span></li>
+                                        <li class="tag"><span>CSS3</span></li>
+                                        <li class="tag"><span>BootStrap</span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn CSS , CSS3 elements, tags and utilizing them to enhance the layout,
+                                                position of various factors on the web page</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Learn Bootstrap by using it to design a mobile-friendly responsive web
+                                                page.</p>
+                                        </li>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>Understand padding, tags, class, fonts, backgrounds, margin, and many
+                                                more things </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
                             <div class="curriculum-item">
                                 <div class="wrap-head">
@@ -1019,7 +1108,7 @@
                                             <figure><img src="../images/javascript icon.png">
                                             </figure>
                                             <div>
-                                                <h4>Advance Javascript</h4>
+                                                <h4>Web Development Advanced Javascript</h4>
                                                 <h5>Week 4</h5>
                                             </div>
                                         </div>
@@ -1095,8 +1184,40 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="curriculum-item">
+                                <div class="wrap-head">
+                                    <div class="info">
 
-                            
+                                        <div class="image-div">
+                                            <figure><img src="../images/projects icon.png">
+                                            </figure>
+                                            <div>
+                                                <h4>Projects</h4>
+                                                <h5>Week 6-12</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon" onclick="showDescription('555')"><i class="fas fa-arrow-down"
+                                            id="icon555"></i></div>
+                                </div>
+                                <div class="curriculum-description" id="555">
+                                    <p> You will build 7+ projects during the whole program. Starting from building
+                                        basic apps to bring your learning to the application to building a real-world
+                                        website that you can add to your resume or create your own business, you will do
+                                        it all. Our expert software developers carefully choose these projects for you.
+                                    </p>
+                                    <ul class="tags">
+                                        <li class="tag"><span>projects</span></li>
+
+                                    </ul>
+                                    <ul>
+                                        <li><i class="fas fa-star"></i>
+                                            <p>work on both mini and capstone projects </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                      
                             <div class="curriculum-item">
                                 <div class="wrap-head">
                                     <div class="info">
@@ -1106,14 +1227,14 @@
                                             </figure>
                                             <div>
                                                 <h4>Code Review + Deployment</h4>
-                                                <h5>Week 14-15</h5>
+                                                <h5>Week 12-14</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('888')"><i class="fas fa-arrow-down"
-                                            id="icon888"></i></div>
+                                    <div class="icon" onclick="showDescription('666')"><i class="fas fa-arrow-down"
+                                            id="icon666"></i></div>
                                 </div>
-                                <div class="curriculum-description" id="888">
+                                <div class="curriculum-description" id="666">
                                     <p> Developers don’t just write code. They write production-level code. Learn how to
                                         write production-level code, deploy your projects, and flaunt it to the world.
                                     </p>
@@ -1131,52 +1252,19 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/projects icon.png">
-                                            </figure>
-                                            <div>
-                                                <h4>Projects</h4>
-                                                <h5>Week 13-16</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="icon" onclick="showDescription('9999')"><i class="fas fa-arrow-down"
-                                            id="icon9999"></i></div>
-                                </div>
-                                <div class="curriculum-description" id="9999">
-                                    <p> You will build 7+ projects during the whole program. Starting from building
-                                        basic apps to bring your learning to the application to building a real-world
-                                        website that you can add to your resume or create your own business, you will do
-                                        it all. Our expert software developers carefully choose these projects for you.
-                                    </p>
-                                    <ul class="tags">
-                                        <li class="tag"><span>projects</span></li>
-
-                                    </ul>
-                                    <ul>
-                                        <li><i class="fas fa-star"></i>
-                                            <p>work on both mini and capstone projects </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="curriculum-item">
-                                <div class="wrap-head">
-                                    <div class="info">
-
-                                        <div class="image-div">
                                             <figure><img src="../images/interviewww 1.png">
                                             </figure>
                                             <div>
                                                 <h4>Portfolio and Mock Interviews preparation
                                                 </h4>
-                                                <h5>Week 17-20</h5>
+                                                <h5>Week 15-16</h5>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="icon" onclick="showDescription('99999')"><i class="fas fa-arrow-down"
-                                            id="icon99999"></i></div>
+                                    <div class="icon" onclick="showDescription('777')"><i class="fas fa-arrow-down"
+                                            id="icon777"></i></div>
                                 </div>
-                                <div class="curriculum-description" id="99999">
+                                <div class="curriculum-description" id="777">
                                     <p> You will Build your outstanding profile by showcasing your robust portfolio of
                                         full-stack web development and Sharpen your interview skills through a series of
                                         mock assessments and mock interviews.
@@ -1202,7 +1290,7 @@
                                     </ul>
                                 </div>
                             </div>
-
+ 
 
                         </div>
                         <div class="banner curriculum-banner">

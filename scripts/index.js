@@ -268,6 +268,7 @@ for (var j = 0; j < lis.length; j++) {
 const scrollnav = document.querySelector('#scrollup-nav');
 const popupForm = document.querySelector('#popupForm');
 const scrollupComponent=document.querySelector('#scrollupComponent');
+const chatbox=document.querySelector('#chat-box');
 
 function onScroll(event) {
   const current = document.documentElement.scrollTop;
@@ -283,11 +284,15 @@ function onScroll(event) {
   if(current < maxHeight * 0.2){
     scrollnav.style.display="none";
     scrollupComponent.style.display="none";
+    chatbox.style.display="flex";
+
 
   }
   }
   else{
     scrollnav.style.display="none";
+    scrollupComponent.style.display="none";
+
 
   }
   if(counter == 0){
@@ -301,5 +306,21 @@ function onScroll(event) {
 
 window.addEventListener('scroll', event => onScroll(event));
 
+
+function displayChatbot(){
+  var head=document.getElementById("chat-box");
+  var divs=head.getElementsByClassName("inner-div");
+  if(divs[0].style.display=="flex"){
+    for(var i=0;i<divs.length;i++){
+      divs[i].style.display="none"
+    }
+  }
+  else{
+    for(var i=0;i<divs.length;i++){
+      divs[i].style.display="flex"
+    }
+  }
+  
+}
 
 

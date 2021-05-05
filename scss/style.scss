@@ -230,6 +230,24 @@ i{
     display: none;
     @media only screen and (min-width: 1024px) {    
    display: block;
+   position: relative;
+   i{
+     position: absolute;
+     cursor: pointer;
+     color: var(--shade-color);
+     -webkit-animation: random 5s infinite;
+     animation: random 5s infinite;
+     @keyframes  random {
+      15% { color: var(--black-color); } 
+      30% { color: var(--shade-color); } 
+      45% { color: var(--black-color); } 
+      60% { color: var(--shade-color); }
+      75% { color: var(--black-color); }  
+  }
+     left: 52%;
+     top: 46%;
+     font-size: 2rem;
+   }
     }
   }
   
@@ -423,6 +441,12 @@ i{
         .lightFont{
           font-family: LightFont;
           font-size: 1rem;
+        }
+        .light-weight{
+          font-family: LightFont;
+        }
+        .remove-margin{
+          margin-right: 0rem;
         }
        
       }
@@ -1362,6 +1386,7 @@ i{
       flex-direction: row;
       align-items: center;
       font-family: BoldFont;
+      text-transform: capitalize;
       i{
         color: var(--accent-color);
         margin-right: 1rem;
