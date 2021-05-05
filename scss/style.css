@@ -208,7 +208,7 @@ nav div #email {
   font-family: BoldFont;
 }
 .hero-section article ul #months {
-  width: 40%;
+  width: 28%;
 }
 @media only screen and (min-width: 1024px) {
   .hero-section article ul #months {
@@ -470,11 +470,7 @@ nav div #email {
 .banner ul li span .lightFont,
 .banner ul li h4 .lightFont {
   font-family: LightFont;
-  font-size: 1rem;
-}
-.banner ul li span .light-weight,
-.banner ul li h4 .light-weight {
-  font-family: LightFont;
+  font-size: 1.2rem;
 }
 .banner ul li span .remove-margin,
 .banner ul li h4 .remove-margin {

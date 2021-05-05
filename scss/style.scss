@@ -206,7 +206,7 @@ i{
         }
       }
       #months{
-        width:40%;
+        width:28%;
         @media only screen and (min-width: 1024px) {
           width: fit-content;
         }
@@ -440,11 +440,9 @@ i{
         }
         .lightFont{
           font-family: LightFont;
-          font-size: 1rem;
+          font-size: 1.2rem;
         }
-        .light-weight{
-          font-family: LightFont;
-        }
+        
         .remove-margin{
           margin-right: 0rem;
         }
