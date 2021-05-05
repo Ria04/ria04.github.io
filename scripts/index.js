@@ -309,16 +309,20 @@ window.addEventListener('scroll', event => onScroll(event));
 
 function displayChatbot(){
   var head=document.getElementById("chat-box");
+  var robot=document.getElementById("robot");
   var divs=head.getElementsByClassName("inner-div");
   if(divs[0].style.display=="flex"){
     for(var i=0;i<divs.length;i++){
-      divs[i].style.display="none"
+      divs[i].style.display="none";
     }
+    robot.innerHTML='<img onclick="displayChatbot()" src="../images/robo icon.png">'
   }
   else{
     for(var i=0;i<divs.length;i++){
       divs[i].style.display="flex"
     }
+    robot.innerHTML='<img onclick="displayChatbot()" src="../images/cross.png">'
+
   }
   
 }
