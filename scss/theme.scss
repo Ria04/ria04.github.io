@@ -1,3 +1,5 @@
+// colors
+
 :root {
   --text-color: #333;
   --accent-color: rgb(187, 19, 51);
@@ -12,7 +14,11 @@
   --background-grey: rgb(243, 241, 238);
   --black-color: rgb(0, 0, 0);
   --background-middle-color: rgb(255,202,196);
+  --section-background-gradient:linear-gradient(to right, rgb(0, 0, 0), rgb(204, 0, 0));
 }
+
+// fonts
+
 @font-face {
   font-family: BoldFont;
   src: url("../fonts/Nunito-Bold.ttf") format("truetype");
@@ -31,21 +37,22 @@ html{
   scroll-behavior: smooth;
 }
 
+// scroll bar styling
 
 body::-webkit-scrollbar {
   width: 1rem;
 }
-
 body::-webkit-scrollbar-track {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.8), rgb(255, 255, 255));
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: black;
 background-image: linear-gradient(315deg, rgb(187, 19, 51) 0%, rgb(247, 3, 3) 74%);
 border-radius: 10px;
 
 }
+
+// headings
 
 h1,
 h2,
@@ -235,6 +242,8 @@ label {
   font-family: BoldFont;
 }
 
+// buttons
+
 button {
   padding: 0.7rem 1.5rem;
   font-size: 1rem;
@@ -289,7 +298,6 @@ button:hover::before {
   color: var(--white-color);
 
 }
-
 .link-button{
   background: transparent;
   color: var(--accent-color);
@@ -300,6 +308,8 @@ button:hover::before {
   border: none;
 
 }
+
+// input
 
 input {
   padding: 0.7rem 1rem;
@@ -324,6 +334,8 @@ input::placeholder {
   }
 }
 
+// ime
+
 img {
   width: 100%;
   height: 100%;
@@ -336,9 +348,7 @@ img {
   }
 }
 
-.shadow {
-  box-shadow: 0px 0px 9px 3px var(--light-grey);
-}
+// button components
 
 .button-component {
   display: flex;
@@ -387,19 +397,12 @@ img {
     cursor: pointer;
   }
 }
+
+
 a{
   text-decoration: none;
 }
 
-@media only screen and (min-device-width: 1024px) {
-  .container {
-    margin: 0rem 1;
-    @media only screen and (min-device-width: 1200px) {
-    max-width: 1200px;
-    margin: 0rem auto;
-    }
-  }
-}
 
 
 
@@ -453,8 +456,9 @@ a{
   }
 }
 
+// carousel in mobile
 
-  .carousel-parent {
+.carousel-parent {
     display: flex;
     flex-direction: row;
     margin: 1rem auto;
@@ -472,9 +476,11 @@ a{
     .active {
       background-color: var(--accent-color);
     }
-  }
-  
-  .scrollupComponent{
+}
+
+// scroll up to top
+
+.scrollupComponent{
     display: none;
    
     position: fixed;
@@ -489,7 +495,9 @@ a{
       color: var(--white-color);
       font-size: 1.2rem;
     }
-  }
+}
+
+// chat component
 
 .chat-box{
   position: fixed;
@@ -504,6 +512,17 @@ a{
     cursor: pointer;
     width:3rem;
     height:3rem;
+    padding: 0.7rem;
+    background:var(--section-background-gradient);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    #cross{
+      width:1.2rem;
+      height:1.2rem;
+    }
     @media only screen and (min-device-width: 1200px){
       width:4rem;
       height:4rem;
@@ -545,24 +564,8 @@ a{
   
 
 }
-@media only screen and (min-device-width: 1200px){
-article{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p{
-    max-width: 800px;
-  }
-}
-}
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(1,1,1,1) 0%,rgba(255,255,255,0) 100%);
-}
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-33rem * 2))}
-}
+
+// testimonials 
 
 #testi{
   background: white;
@@ -571,10 +574,15 @@ article{
 	overflow:hidden;
   position: relative;
   
-	
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-33rem * 2))}
+  }
+  
 	&::before,
 	&::after {
-		@include white-gradient;
+    background: linear-gradient(to right,  rgba(1,1,1,1) 0%,rgba(255,255,255,0) 100%);
 		content: "";
 		height: 100%;
     position: absolute;
@@ -591,96 +599,95 @@ article{
 	&::before {
 		left: 0;
 		top: 0;
-	}
-}
-
-.testimonial{
-  display: flex;
-
-animation: scroll 20s linear infinite;
-width: calc(100% * 4);
-
-@media only screen and (min-device-width: 1200px){
-
-width: calc(35rem * 4);
-}
-
-
-  .testimonial-background{
-    background: url("../images/testimonial\ q.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin:0rem 0.5rem;
-    height: 14rem;
-    width: 100%;
-    @media only screen and (min-device-width: 1200px){
-      width: 35rem;
-      height: 18rem;
-
-    }
   }
-  .wrap-testimonial{
+  .testimonial{
     display: flex;
-    border: 1px solid var(--text-color);
-    flex-direction: row;
-    width: 92%;
-    margin: 1rem 1rem;
-
-    @media only screen and (min-device-width: 1200px){
-    margin: 1.2rem 1.6rem 1rem 1.5rem;
-    height: 15.7rem;
-
-    }
-    height: 12rem;
-    background-color: rgba(1,1,1,0.2);
-   
-    
-    .testimonial-image{
-      width:10rem;
-      height:12rem;
-
+  
+  animation: scroll 20s linear infinite;
+  width: calc(100% * 4);
+  
+  @media only screen and (min-device-width: 1200px){
+  
+  width: calc(35rem * 4);
+  }
+  
+  
+    .testimonial-background{
+      background: url("../images/testimonial\ 0007\ copy\ 1.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin:0rem 0.5rem;
+      height: 14rem;
+      width: 100%;
       @media only screen and (min-device-width: 1200px){
-        height:100%;
-      width:50%;
-      }
-      #yash{
-        object-position: left;
-
+        width: 35rem;
+        height: 18rem;
+  
       }
     }
-    figcaption{
+    .wrap-testimonial{
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding:0.5rem;
-      h5{
-        font-size: 1rem;
-        @media only screen and (min-device-width: 1200px){
-        font-size: 1.5rem;
-        }
-        color: var(--white-color);
+      border: 1px solid var(--text-color);
+      flex-direction: row;
+      width: 92%;
+      margin: 1rem 1rem;
+  
+      @media only screen and (min-device-width: 1200px){
+      margin: 1.2rem 1.6rem 1rem 1.5rem;
+      height: 15.7rem;
+  
       }
-      p{
-        color: var(--white-color);
-        font-size: 0.9rem;
-        @media only screen and (min-device-width: 1200px){
-          font-size:1.15rem;
-        }
-
-      }
+      height: 12rem;
+      background-color: rgba(1,1,1,0.2);
+     
       
-      span{
-        font-weight: 900;
-        color: var(--white-color);
-
+      .testimonial-image{
+        width:10rem;
+        height:12rem;
+  
+        @media only screen and (min-device-width: 1200px){
+          height:100%;
+        width:50%;
+        }
+        #yash{
+          object-position: left;
+  
+        }
       }
-      ul{
-        li{
-          margin-top: 0.5rem;
+      figcaption{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:0.5rem;
+        h5{
+          font-size: 1rem;
+          @media only screen and (min-device-width: 1200px){
+          font-size: 1.5rem;
+          }
           color: var(--white-color);
-          @media only screen and (max-device-width: 1200px){
-            font-size: 0.9rem;
-            margin-top: 0.1rem;
+        }
+        p{
+          color: var(--white-color);
+          font-size: 0.9rem;
+          @media only screen and (min-device-width: 1200px){
+            font-size:1.15rem;
+          }
+  
+        }
+        
+        span{
+          font-weight: 900;
+          color: var(--white-color);
+  
+        }
+        ul{
+          li{
+            margin-top: 0.5rem;
+            color: var(--white-color);
+            @media only screen and (max-device-width: 1200px){
+              font-size: 0.9rem;
+              margin-top: 0.1rem;
+            }
           }
         }
       }
@@ -688,14 +695,7 @@ width: calc(35rem * 4);
   }
 }
 
-
-
-
-
-
-
-
-
+// strike styling
 
 strike{
   margin-right: 1rem;
@@ -713,10 +713,7 @@ strike{
   
 }
 
-
-
-
-
+// curriculum tags 
 
 .tag {
   background: var(--background-middle-color);
@@ -754,4 +751,25 @@ strike{
   right: 0;
   top: 0;
 }
+
+// only desktop
+
+@media only screen and (min-device-width: 1200px){
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      max-width: 800px;
+    }
+  }
+  .container {
+    margin: 0rem 1;
+    @media only screen and (min-device-width: 1200px) {
+    max-width: 1200px;
+    margin: 0rem auto;
+    }
+  }
+  }
 

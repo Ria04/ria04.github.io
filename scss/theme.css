@@ -12,6 +12,7 @@
   --background-grey: rgb(243, 241, 238);
   --black-color: rgb(0, 0, 0);
   --background-middle-color: rgb(255,202,196);
+  --section-background-gradient:linear-gradient(to right, rgb(0, 0, 0), rgb(204, 0, 0));
 }
 
 @font-face {
@@ -397,10 +398,6 @@ img {
   border-radius: 100%;
 }
 
-.shadow {
-  box-shadow: 0px 0px 9px 3px var(--light-grey);
-}
-
 .button-component {
   display: flex;
   flex-direction: column;
@@ -457,17 +454,6 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (min-device-width: 1024px) {
-  .container {
-    margin: 0rem 1;
-  }
-}
-@media only screen and (min-device-width: 1024px) and (min-device-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0rem auto;
-  }
-}
 .popupComponent {
   position: fixed;
   background-color: rgba(1, 1, 1, 0.7);
@@ -569,6 +555,17 @@ a {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
+  padding: 0.7rem;
+  background: var(--section-background-gradient);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.chat-box figure #cross {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 @media only screen and (min-device-width: 1200px) {
   .chat-box figure {
@@ -607,16 +604,12 @@ a {
   display: none;
 }
 
-@media only screen and (min-device-width: 1200px) {
-  article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  article p {
-    max-width: 800px;
-  }
+#testi {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 @keyframes scroll {
   0% {
@@ -625,13 +618,6 @@ a {
   100% {
     transform: translateX(calc(-33rem * 2));
   }
-}
-#testi {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  margin: auto;
-  overflow: hidden;
-  position: relative;
 }
 #testi::before, #testi::after {
   background: linear-gradient(to right, #010101 0%, rgba(255, 255, 255, 0) 100%);
@@ -650,19 +636,18 @@ a {
   left: 0;
   top: 0;
 }
-
-.testimonial {
+#testi .testimonial {
   display: flex;
   animation: scroll 20s linear infinite;
   width: calc(100% * 4);
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial {
+  #testi .testimonial {
     width: calc(35rem * 4);
   }
 }
-.testimonial .testimonial-background {
-  background: url("../images/testimonial q.png");
+#testi .testimonial .testimonial-background {
+  background: url("../images/testimonial 0007 copy 1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0rem 0.5rem;
@@ -670,12 +655,12 @@ a {
   width: 100%;
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial .testimonial-background {
+  #testi .testimonial .testimonial-background {
     width: 35rem;
     height: 18rem;
   }
 }
-.testimonial .wrap-testimonial {
+#testi .testimonial .wrap-testimonial {
   display: flex;
   border: 1px solid var(--text-color);
   flex-direction: row;
@@ -685,58 +670,58 @@ a {
   background-color: rgba(1, 1, 1, 0.2);
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial .wrap-testimonial {
+  #testi .testimonial .wrap-testimonial {
     margin: 1.2rem 1.6rem 1rem 1.5rem;
     height: 15.7rem;
   }
 }
-.testimonial .wrap-testimonial .testimonial-image {
+#testi .testimonial .wrap-testimonial .testimonial-image {
   width: 10rem;
   height: 12rem;
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial .wrap-testimonial .testimonial-image {
+  #testi .testimonial .wrap-testimonial .testimonial-image {
     height: 100%;
     width: 50%;
   }
 }
-.testimonial .wrap-testimonial .testimonial-image #yash {
+#testi .testimonial .wrap-testimonial .testimonial-image #yash {
   object-position: left;
 }
-.testimonial .wrap-testimonial figcaption {
+#testi .testimonial .wrap-testimonial figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.5rem;
 }
-.testimonial .wrap-testimonial figcaption h5 {
+#testi .testimonial .wrap-testimonial figcaption h5 {
   font-size: 1rem;
   color: var(--white-color);
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial .wrap-testimonial figcaption h5 {
+  #testi .testimonial .wrap-testimonial figcaption h5 {
     font-size: 1.5rem;
   }
 }
-.testimonial .wrap-testimonial figcaption p {
+#testi .testimonial .wrap-testimonial figcaption p {
   color: var(--white-color);
   font-size: 0.9rem;
 }
 @media only screen and (min-device-width: 1200px) {
-  .testimonial .wrap-testimonial figcaption p {
+  #testi .testimonial .wrap-testimonial figcaption p {
     font-size: 1.15rem;
   }
 }
-.testimonial .wrap-testimonial figcaption span {
+#testi .testimonial .wrap-testimonial figcaption span {
   font-weight: 900;
   color: var(--white-color);
 }
-.testimonial .wrap-testimonial figcaption ul li {
+#testi .testimonial .wrap-testimonial figcaption ul li {
   margin-top: 0.5rem;
   color: var(--white-color);
 }
 @media only screen and (max-device-width: 1200px) {
-  .testimonial .wrap-testimonial figcaption ul li {
+  #testi .testimonial .wrap-testimonial figcaption ul li {
     font-size: 0.9rem;
     margin-top: 0.1rem;
   }
@@ -789,6 +774,28 @@ strike i {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media only screen and (min-device-width: 1200px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article p {
+    max-width: 800px;
+  }
+
+  .container {
+    margin: 0rem 1;
+  }
+}
+@media only screen and (min-device-width: 1200px) and (min-device-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0rem auto;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

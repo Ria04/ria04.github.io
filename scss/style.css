@@ -966,7 +966,7 @@ nav div #email {
 }
 
 .download-curriculum {
-  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  background: var(--section-background-gradient);
 }
 .download-curriculum .container {
   display: flex;
@@ -1158,7 +1158,7 @@ nav div #email {
   }
 }
 .certificate {
-  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  background: var(--section-background-gradient);
 }
 .certificate .container {
   display: flex;
@@ -1266,7 +1266,7 @@ nav div #email {
   }
 }
 .jumpstart .card .right-div {
-  background: linear-gradient(to right, var(--accent-color), var(--shade-color));
+  background: var(--section-background-gradient);
   padding: 1.5rem;
 }
 @media only screen and (min-device-width: 1200px) {

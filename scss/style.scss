@@ -984,11 +984,7 @@ i{
     }
     }
   }
-  background: linear-gradient(
-    to right,
-    var(--accent-color),
-    var(--shade-color)
-  );
+  background: var(--section-background-gradient);
   h2,
   p {
     color: var(--white-color);
@@ -1173,11 +1169,8 @@ i{
 
 
 .certificate{
-  background: linear-gradient(
-        to right,
-        var(--accent-color),
-        var(--shade-color)
-      );
+ background: var(--section-background-gradient);
+
   .container{
     display: flex;
     flex-direction:column;
@@ -1281,11 +1274,8 @@ i{
      
     }
     .right-div {
-      background: linear-gradient(
-        to right,
-        var(--accent-color),
-        var(--shade-color)
-      );
+      background: var(--section-background-gradient);
+
       @media only screen and (min-device-width: 1200px){
         width:50%;
       }

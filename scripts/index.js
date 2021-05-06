@@ -315,13 +315,13 @@ function displayChatbot(){
     for(var i=0;i<divs.length;i++){
       divs[i].style.display="none";
     }
-    robot.innerHTML='<img onclick="displayChatbot()" src="../images/robo icon.png">'
+    robot.innerHTML='<img src="../images/robo icon.png">'
   }
   else{
     for(var i=0;i<divs.length;i++){
       divs[i].style.display="flex"
     }
-    robot.innerHTML='<img onclick="displayChatbot()" src="../images/cross.png">'
+    robot.innerHTML='<img id="cross" src="../images/cross.png">'
 
   }
   
