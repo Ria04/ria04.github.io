@@ -288,7 +288,22 @@ i{
     }
   }
 }
-
+.thankyou{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3{
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    @media only screen and (min-width: 1024px) {
+      margin-bottom: 1rem;
+    }
+  }
+  p{
+    text-align: center;
+  }
+}
 .key-highlights {
   position: relative;
   display: flex;
@@ -296,6 +311,9 @@ i{
   justify-self: center;
   align-items: center;
   padding-top: 12rem;
+  .thankyou{
+    margin-top: 1rem;
+  }
  
   @media only screen and (min-width: 1024px) {
     padding-top: 8rem;
@@ -947,6 +965,9 @@ i{
 .career-assistance {
   padding-top: 1.5rem;
   background:var(--background-middle-color);
+  .thankyou{
+    margin-top: 1rem;
+  }
   .highlights{
     div{
       background-color: var(--light-red);
@@ -1355,7 +1376,7 @@ i{
       }
       p{
         text-align: center;
-        width: 50%;
+        width: 45%;
         margin:0rem auto;
       }
     

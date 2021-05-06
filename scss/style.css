@@ -310,6 +310,25 @@ nav div #email {
   }
 }
 
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thankyou h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .thankyou h3 {
+    margin-bottom: 1rem;
+  }
+}
+.thankyou p {
+  text-align: center;
+}
+
 .key-highlights {
   position: relative;
   display: flex;
@@ -317,6 +336,9 @@ nav div #email {
   justify-self: center;
   align-items: center;
   padding-top: 12rem;
+}
+.key-highlights .thankyou {
+  margin-top: 1rem;
 }
 @media only screen and (min-width: 1024px) {
   .key-highlights {
@@ -951,6 +973,9 @@ nav div #email {
   padding-top: 1.5rem;
   background: var(--background-middle-color);
 }
+.career-assistance .thankyou {
+  margin-top: 1rem;
+}
 .career-assistance .highlights div {
   background-color: var(--light-red);
 }
@@ -1343,7 +1368,7 @@ nav div #email {
 }
 .plan-cards .banner .banner-head p {
   text-align: center;
-  width: 50%;
+  width: 45%;
   margin: 0rem auto;
 }
 .plan-cards .banner .list-items {

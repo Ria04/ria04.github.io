@@ -25,11 +25,60 @@ function hideCertificate() {
   element.style.display = "none";
 }
 
-function submit(){ 
+
+
+
+function submitEmail(id){
+  var email=document.getElementById("input"+id).value;
+  let TimeStamp = new Date();
+
+  var len=email.split("@");
+
+  let emailData = new FormData();
+  emailData.append('Email', email);
+  emailData.append('TimeStamp', TimeStamp);
+  if(email){
+    if(len.length==2){
+
+  document.getElementById("thankyou"+id).innerHTML="<h3>Thankyou</h3><p>Your information has been received. A member of our team will be in touch with you shortly!</p>"
+  
+  fetch('https://script.google.com/macros/s/AKfycbxqPIaLsdwSWzyVIipcjQKmzIzrpH6zs0z07E44st0q3lBKvrS0TP-Iy9pQ9X3JCVRB/exec', {
+          method: 'POST',
+          mode: 'cors',
+          body: emailData
+        })
+          // .then((response) => response.json())
+          .then((response) => {
+            console.log("data appended successfully");
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+        }
+        else{
+          document.getElementById("input"+id).style.boxShadow="0px 0px 10px -2px red";
+        }
+
+  }
+  
+    else{
+      document.getElementById("input"+id).style.boxShadow="0px 0px 10px -2px red";
+
+    }
+  
+
+       
+}
+
+
+
+function submit(course){ 
 
   var name = document.getElementById("name").value;
   var youremail = document.getElementById("youremail").value;
   var number = document.getElementById("number").value;
+  let TimeStamp = new Date();
+
 
 if(name&&youremail&&number){
 
@@ -49,11 +98,42 @@ if(name&&youremail&&number){
         localStorage.setItem("email",youremail);
         localStorage.setItem("number",number);
 
+
+        let formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Email', youremail);
+        formData.append('PhoneNumber', number);
+        formData.append('TimeStamp', TimeStamp);
+
+
+        //append data to download curricilum sheet
+
+        fetch('https://script.google.com/macros/s/AKfycbzVa8WqhPPMZqHAIm8OdmhwtIX6BrQKr_42LPqbUwRfSc06TRs3idw61bkGE91X1bQEpA/exec', {
+          method: 'POST',
+          mode: 'cors',
+          body: formData
+        })
+          // .then((response) => response.json())
+          .then((response) => {
+            console.log("data appended successfully");
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+
+
+
         var link = document.createElement('a');
         link.target="blank";
-      link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Web-Development.pdf';
+        if(course=='frontend'){
+          link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Front-End-Development.pdf';
+        }
+        else{
+          link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Web-Development.pdf';
+        }
       link.dispatchEvent(new MouseEvent('click'));
       document.getElementById("error-message").style.display="none";
+      hidePopupForm();
         }
   }
 }
@@ -71,6 +151,8 @@ function openInput(id) {
     childs[i].classList.add("shrink-button-component");
   }
   close.style.display = "block";
+
+  document.getElementById("submit-email"+id).setAttribute("onclick","submitEmail("+ id+")");
 }
 
 function closeInput(id) {
@@ -185,6 +267,18 @@ window.addEventListener('scroll', event => onScroll(event));*/
 function currentSlideCurriculum(n) {
   var head = document.getElementById("allplans");
   var slides = head.getElementsByClassName("banner");
+  if(n=='00'){
+    document.getElementById('activeplanmobile').innerText="Begginer";
+    
+      }
+      else if(n=='01'){
+        document.getElementById('activeplanmobile').innerText="Advance";
+    
+      }
+      else if(n=='02'){
+        document.getElementById('activeplanmobile').innerText="Career Track";
+    
+      }
   for (var s = 0; s < slides.length; s++) {
     slides[s].style.display = "none";
   }
@@ -195,16 +289,26 @@ function currentSlideCurriculum(n) {
 
 }
 
-currentSlideCurriculum(00);
+currentSlideCurriculum('01');
 
 function showPlan(id){
+
+  if(id=='00'){
+document.getElementById('activeplandesktop').innerText="Begginer";
+
+  }
+  else if(id=='01'){
+    document.getElementById('activeplandesktop').innerText="Advance";
+
+  }
+  else if(id=='02'){
+    document.getElementById('activeplandesktop').innerText="Career Track";
+
+  }
+
   for(var i=0;i<3;i++){
     document.getElementById('plan0'+i).style.display="none";
     document.getElementById('banner0'+i).classList.remove("activeFee");
-
-    
-
-
   }
   document.getElementById('plan'+id).style.display="flex";
   document.getElementById('banner'+id).classList.add("activeFee");

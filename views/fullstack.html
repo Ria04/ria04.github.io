@@ -277,16 +277,18 @@
                         </div>
                     </div>
                 </div>
-                <form class="button-component-form">
-                    <div class="button-component" id="button-component1" onclick="openInput('1')">
-                        <input class="button-item" type="text" placeholder="Enter Email">
-                        <button type="button" class="button-item accent-button">
-                            Apply now
-                        </button>
+                <div class="thankyou" id="thankyou1">
+                    <form class="button-component-form">
+                        <div class="button-component" id="button-component1" onclick="openInput('1')">
+                            <input id="input1" class="button-item" type="email"  placeholder="Enter Email" required>
+                            <button id="submit-email1" type="button" class="button-item accent-button">
+                                Apply now
+                            </button>
+                        </div>
+                        <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
+                    </form>
+                    <p class="free-learning">First 3 days of learning is free</p>
                     </div>
-                    <i class="fas fa-times" id="close-button1" onclick="closeInput('1')"></i>
-                </form>
-                <p class="free-learning">First 3 days of learning is free</p>
 
             </div>
 
@@ -294,7 +296,7 @@
 
         <section class="plan-cards plan-cards-mobile" id="allplans">
             <article>
-                <h4>Fees Plans & pricing</h4>
+                <h4 id="activeplanmobile">Advance</h4>
 
                 <h2>Full Stack development course</h2>
             </article>
@@ -414,7 +416,7 @@
 
         <section class="plan-cards plan-cards-desktop" id="alldesktopplans">
             <article>
-                <h4>Fees Plans & pricing</h4>
+                <h4 id="activeplandesktop">Advance</h4>
                 <h2>Full Stack development course</h2>
             </article>
             <div class="container">
@@ -550,7 +552,7 @@
                                             <figure><img src="../images/HTML.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Basics</h4>
+                                                <h4>Web Development Basics HTML</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
@@ -563,8 +565,7 @@
                                         basics of HTML and learn how to create impressive websites using HTML.</p>
                                     <ul class="tags">
                                         <li class="tag"><span>HTML</span></li>
-                                        <li class="tag"><span>CSS</span></li>
-                                        <li class="tag"><span>BootStrap</span></li>
+                                     
                                     </ul>
                                     <ul>
                                         <li><i class="fas fa-star"></i>
@@ -589,7 +590,7 @@
                                             <figure><img src="../images/C S S.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Basics</h4>
+                                                <h4>Web Development Basics CSS</h4>
                                                 <h5>Week 2-3</h5>
                                             </div>
                                         </div>
@@ -773,7 +774,7 @@
                                             <figure><img src="../images/HTML.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Advanced</h4>
+                                                <h4>Web Development Advanced HTML</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
@@ -812,7 +813,7 @@
                                             <figure><img src="../images/C S S.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Advanced</h4>
+                                                <h4>Web Development Advanced CSS</h4>
                                                 <h5>Week 2</h5>
                                             </div>
                                         </div>
@@ -1163,7 +1164,7 @@
                                             <figure><img src="../images/HTML.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Advanced</h4>
+                                                <h4>Web Development Advanced HTML</h4>
                                                 <h5>Week 1</h5>
                                             </div>
                                         </div>
@@ -1202,7 +1203,7 @@
                                             <figure><img src="../images/C S S.png">
                                             </figure>
                                             <div>
-                                                <h4>Web Development Advanced</h4>
+                                                <h4>Web Development Advanced CSS</h4>
                                                 <h5>Week 2</h5>
                                             </div>
                                         </div>
@@ -1809,16 +1810,19 @@
 
 
                 </div>
-                <form class="button-component-form">
-                    <div class="button-component" id="button-component2" onclick="openInput('2')">
-                        <input class="button-item" type="text" placeholder="Enter Email">
-                        <button type="button" class="button-item accent-button">
-                            Apply now
-                        </button>
-                    </div>
-                    <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
-                </form>
-                <p class="free-learning">First 3 days of learning is free</p>
+                <div class="thankyou" id="thankyou2">
+
+                    <form class="button-component-form">
+                        <div class="button-component" id="button-component2" onclick="openInput('2')">
+                            <input id="input2" class="button-item" type="email" placeholder="Enter Email">
+                            <button type="button" id="submit-email2" class="button-item accent-button">
+                                Apply now
+                            </button>
+                        </div>
+                        <i class="fas fa-times" id="close-button2" onclick="closeInput('2')"></i>
+                    </form>
+                    <p class="free-learning">First 3 days of learning is free</p>
+                    </div>  
 
             </div>
         </section>
@@ -1914,16 +1918,20 @@
                         </div>
                     </div>
                 </div>
-                <form class="button-component-form">
-                    <div class="button-component" id="button-component3" onclick="openInput('3')">
-                        <input class="button-item" type="text" placeholder="Enter Email">
-                        <button type="button" class="button-item accent-button">
-                            Apply now
-                        </button>
+                <div class="thankyou" id="thankyou3">
+
+                    <form class="button-component-form">
+                        <div class="button-component" id="button-component3" onclick="openInput('3')">
+                            <input id="input3" class="button-item" type="email" placeholder="Enter Email">
+                            <button type="button" id="submit-email3" class="button-item accent-button">
+                                Apply now
+                            </button>
+                        </div>
+                        <i class="fas fa-times" id="close-button3" onclick="closeInput('3')"></i>
+                    </form>
+                    <p class="free-learning">First 3 days of learning is free</p>
                     </div>
-                    <i class="fas fa-times" id="close-button3" onclick="closeInput('3')"></i>
-                </form>
-                <p class="free-learning">First 3 days of learning is free</p>
+
 
             </div>
         </section>
@@ -2138,15 +2146,18 @@
                     <div class="left-div">
                         <article>
                             <h2>Empowering learners of tomorrow</h2>
-                            <form class="button-component-form">
-                                <div class="button-component" id="button-component4" onclick="openInput('4')">
-                                    <input class="button-item" type="text" placeholder="Enter Email">
-                                    <button type="button" class="button-item accent-button">
-                                        Apply now
-                                    </button>
+                            <div class="thankyou" id="thankyou4">
+
+                                <form class="button-component-form">
+                                    <div class="button-component" id="button-component4" onclick="openInput('4')">
+                                        <input class="button-item" id="input4" type="email" placeholder="Enter Email">
+                                        <button type="button" id="submit-email4" class="button-item accent-button">
+                                            Apply now
+                                        </button>
+                                    </div>
+                                    <i class="fas fa-times" id="close-button4" onclick="closeInput('4')"></i>
+                                </form>
                                 </div>
-                                <i class="fas fa-times" id="close-button4" onclick="closeInput('4')"></i>
-                            </form>
                         </article>
                     </div>
                     <div class="right-div">
