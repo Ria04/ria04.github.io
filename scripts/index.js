@@ -1,4 +1,4 @@
-function displayVideo() {
+/*function displayVideo() {
   var element = document.getElementById("popupVideo");
   element.style.display = "flex";
 }
@@ -22,6 +22,18 @@ function displayCertificate() {
 }
 function hideCertificate() {
   var element = document.getElementById("popupCertificate");
+  element.style.display = "none";
+}*/
+
+
+function display(id) {
+  var element = document.getElementById(id);
+  element.style.display = "flex";
+}
+var counter = 0; // Global Variable
+
+function hide(id) {
+  var element = document.getElementById(id);
   element.style.display = "none";
 }
 

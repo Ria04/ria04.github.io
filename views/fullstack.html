@@ -93,8 +93,8 @@
     </header>
 
     <main>
-        <div class="popupComponent videoComponent" id="popupVideo" onclick="hideVideo()">
-            <i class="fas fa-times" id="close-button" onclick="hideVideo()"></i>
+        <div class="popupComponent videoComponent" id="popupVideo" onclick="hide('popupVideo')">
+            <i class="fas fa-times" id="close-button" onclick="hide('popupVideo')"></i>
 
             <iframe id="video" src="https://www.youtube.com/embed/P8c3q5c4D5s" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -102,7 +102,7 @@
         </div>
 
         <div class="popupComponent formComponent" id="popupForm">
-            <i class="fas fa-times" id="close-button" onclick="hidePopupForm()"></i>
+            <i class="fas fa-times" id="close-button" onclick="hide('popupForm')"></i>
             <div>
                 <article>
                     <h2>Welcome</h2>
@@ -118,11 +118,11 @@
             </div>
         </div>
 
-        <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hideCertificate()">
-            <i class="fas fa-times" id="close-button" onclick="hideCertificate()"></i>
+        <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hide('popupCertificate')">
+            <i class="fas fa-times" id="close-button" onclick="hide('popupCertificate')"></i>
 
             <figure>
-                <img src="../images/certificate.jpg">
+                <img src="../images/full stack dev..jpg">
             </figure>
         </div>
 
@@ -159,7 +159,7 @@
                         <div class="video-button-wrap">
                             <h1>Full Stack development Course</h1>
                             <figure class="mobie-play-button">
-                                <img onclick="displayVideo()" src="../images/play icom.png">
+                                <img onclick="display('popupVideo')" src="../images/play icom.png">
                             </figure>
                         </div>
                         <p>We have designed a unique Full Stack development program where you can Learn full web stack
@@ -190,8 +190,8 @@
                     </div>
                 </div>
                 <figure class="hero-image">
-                    <i onclick="displayVideo()" class="fas fa-play"></i>
-                    <img src="../images/fullStack.png" alt="">
+                    <i onclick="display('popupVideo')" class="fas fa-play"></i>
+                    <img src="../images/fullStackHeroSection.png" alt="">
                 </figure>
               
             </div>
@@ -1652,8 +1652,8 @@
                         Chartered Bank, TCS, Hexaware, Genpact, </p>
 
                 </article>
-                <figure onclick="displayCertificate()">
-                    <img src="../images//certificate.jpg" alt="">
+                <figure onclick="display('popupCertificate')">
+                    <img src="../images/full stack dev..jpg" alt="">
                 </figure>
             </div>
         </section>
@@ -2033,7 +2033,7 @@
                     <p>Get a detailed breakdown of courses per semester, credits and our personalised learning tracks.
                     </p>
                 </article>
-                <div onclick="displayPopupForm()"><button class="border-button"><i
+                <div onclick="display('popupForm')"><button class="border-button"><i
                             class="fas fa-arrow-down"></i>download-curriculum</button></div>
             </div>
         </section>
