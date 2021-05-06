@@ -590,6 +590,11 @@ nav div #email {
   float: right;
 }
 
+.curriculum article h4 {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .curriculum article p {
   text-align: center;
 }
@@ -1635,6 +1640,24 @@ nav div #email {
   .salary-report .flex-div .fig-div {
     width: 45%;
   }
+}
+
+#thankyouWithTick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#thankyouWithTick .fa-check {
+  position: unset;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+#thankyouWithTick .wrap-i {
+  background: var(--section-background-gradient);
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

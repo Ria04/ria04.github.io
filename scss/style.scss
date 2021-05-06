@@ -571,6 +571,11 @@ i{
 
 .curriculum {
   article{
+    h4{
+      color: var(--accent-color);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
   p{
     text-align: center;
   }
@@ -1672,5 +1677,23 @@ i{
   }
 }
 
+#thankyouWithTick{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fa-check{
+    position: unset;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+  }
+  .wrap-i{
+    background: var(--section-background-gradient);
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+}
 
 

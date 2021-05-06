@@ -28,7 +28,7 @@
                 <div class="icon-wrap">
                     <figure>
                         <div>
-                            <img src="../images/android-chrome-192x192.png">
+                            <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/konfinityLogo.png">
                         </div>
                         <h3>Kon<span>finity</span></h3>
                     </figure>
@@ -48,7 +48,7 @@
             <div class="container">
                 <figure>
                     <div>
-                        <img src="../images/android-chrome-192x192.png">
+                        <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/konfinityLogo.png">
                     </div>
                     <h3>Kon<span>finity</span></h3>
                 </figure>
@@ -119,12 +119,28 @@
                 </form>
             </div>
         </div>
+        <div class="popupComponent formComponent" id="popupScrollForm">
+            <i class="fas fa-times" id="close-button" onclick="hide('popupScrollForm')"></i>
+            <div id="thankyouWithTick">
+                <article>
+                    <h2>Welcome</h2>
+                    <p>Enter all the details to start learning</p>
+                </article>
+                <form>
+                    <div class="error-msg" id="error-message1">Please enter all the details</div>
+                    <input type="text" name="name" id="name1" placeholder="Enter your name..." required>
+                    <input type="email" name="email" id="youremail1" placeholder="Enter your email..." required>
+                    <input type="number" name="number" id="number1" placeholder="enter your mobile number..." required>
+                    <div onclick="thankyou()"><button type="button" class="accent-button">Submit</button></div>
+                </form>
+            </div>
+        </div>
 
         <div class="popupComponent certificateComponent" id="popupCertificate" onclick="hide('popupCertificate')">
             <i class="fas fa-times" id="close-button" onclick="hide('popupCertificate')"></i>
 
             <figure>
-                <img src="../images/web dev..jpg">
+                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/webDevelopmentCertificate.jpg">
             </figure>
         </div>
 
@@ -147,7 +163,7 @@
                 </div>
             </a>
                <figure  onclick="displayChatbot()" id="robot">
-                   <img src="../images/robo icon.png">
+                   <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/robotIcon.png">
                </figure>
             </div>
             
@@ -161,7 +177,7 @@
                         <div class="video-button-wrap">
                             <h1>Web development Course</h1>
                             <figure class="mobie-play-button">
-                                <img onclick="display('popupVideo')" src="../images/play icom.png">
+                                <img onclick="display('popupVideo')" src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/playIcon.png">
                             </figure>
                         </div>
                         <p>We have designed a unique Web development program where you can Learn full web stack
@@ -193,7 +209,7 @@
                 </div>
                 <figure class="hero-image">
                     <i onclick="display('popupVideo')" class="fas fa-play"></i>
-                    <img src="../images/webHeroSection.png" alt="">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/webHeroSection.png" alt="">
                 </figure>
               
             </div>
@@ -230,7 +246,7 @@
                 </article>
                 <div class="highlights">
                     <div>
-                        <figure><img src="../images/project based.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/projectBasedIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Project based curriculum</h6>
                             <p>Cutting edge curriculum containing 100+ projects designed in guidance with industry and
@@ -238,7 +254,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/project based 1.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/oneToOneIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>One-on-one mentorship</h6>
                             <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any
@@ -246,7 +262,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/placement prep.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/placementPreparationIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Placement preparation & career guidance</h6>
                             <p>100% students hired, at Rs 6-40 LPA salary.In-depth coverage of Data Structures,
@@ -255,7 +271,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/certificate of ach.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/certificateIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Certificate of Achievement</h6>
                             <p>Get a certificate of achievement accredited by global certification bodies and deepen
@@ -263,7 +279,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/learn from industry exp.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/learnFromIndustryIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Learn from Industry experts</h6>
                             <p>Our faculty is from the best institutes worldwide, such as IITD, and expert engineers
@@ -271,7 +287,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/online session 1.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/onlineSessionIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Online Sessions </h6>
                             <p>100% online platform. Work remotely in distributed teams and schedule projects at
@@ -298,12 +314,12 @@
 
         <section class="plan-cards plan-cards-mobile" id="allplans">
             <article>
-                <h4 id="activeplanmobile">Advance</h4>
+                <h4>plans and pricing</h4>
                 <h2>Web development course</h2>
             </article>
             <div class="banner" id="00">
                 <div class="banner-head">
-                    <h3>Begginer</h3>
+                    <h3>Beginner</h3>
                     <h2><strike><i class="fas fa-rupee-sign"></i> 9,999</strike><i class="fas fa-rupee-sign"></i> 6,999
                     </h2>
                     <p>Learn from scratch and build strong foundation
@@ -417,13 +433,13 @@
 
         <section class="plan-cards plan-cards-desktop" id="alldesktopplans">
             <article>
-                <h4 id="activeplandesktop">Advance</h4>
+                <h4>plans and pricing</h4>
                 <h2>web development course</h2>
             </article>
             <div class="container">
                 <div class="banner" id="banner00">
                     <div class="banner-head">
-                        <h3>Begginer</h3>
+                        <h3>Beginner</h3>
                         <h2><strike><i class="fas fa-rupee-sign"></i> 9,999</strike><i class="fas fa-rupee-sign"></i>
                             6,999</h2>
                         <p>Learn from scratch and build strong foundation </p>
@@ -534,6 +550,7 @@
         <section class="curriculum" id="curriculum-section">
             <div class="container">
                 <article id="curriculum">
+                    <h4 id="activeplan">Advance</h4>
                     <h2>Web development course Curriculum</h2>
                     <p>Start with learning programming fundamentals, and move on to designing front end, backend,
                         servers, databases, APIs, and more. Master creating small components to constructing complex
@@ -550,7 +567,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/HTML.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/HTML.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Basics HTML</h4>
@@ -588,7 +605,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/C S S.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/css.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Basics CSS</h4>
@@ -628,7 +645,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/javascript icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/javascriptIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Javascript</h4>
@@ -664,7 +681,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/node js.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nodeJs.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Basic Nodejs</h4>
@@ -701,7 +718,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/projects icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/projectsIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Mini Projects</h4>
@@ -743,7 +760,7 @@
                                 </li>
                                 <li>
                                     <h4 class="grey-head">Level</h4>
-                                    <h4>Begginer</h4>
+                                    <h4>Beginner</h4>
                                 </li>
                                 <li>
                                     <h4 class="grey-head">Mini Projects</h4>
@@ -772,7 +789,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/HTML.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/HTML.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced HTML</h4>
@@ -811,7 +828,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/C S S.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/css.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced CSS</h4>
@@ -852,7 +869,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/javascript icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/javascriptIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced Javascript</h4>
@@ -893,7 +910,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/react.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/react.png">
                                             </figure>
                                             <div>
                                                 <h4>ReactJS</h4>
@@ -937,7 +954,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/node js.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nodeJs.png">
                                             </figure>
                                             <div>
                                                 <h4>NodeJS</h4>
@@ -978,7 +995,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/mongoose.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoDb.png">
                                             </figure>
                                             <div>
                                                 <h4>Databases - MongoDB & DynamoDB</h4>
@@ -1019,7 +1036,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/projects icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/projectsIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Projects</h4>
@@ -1053,7 +1070,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/deployment.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/deployment.png">
                                             </figure>
                                             <div>
                                                 <h4>Code Review + Deployment</h4>
@@ -1084,7 +1101,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/google analytics.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/googleAnalytics.png">
                                             </figure>
                                             <div>
                                                 <h4>Google Analytics + Webengage</h4>
@@ -1163,7 +1180,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/HTML.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/HTML.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced HTML</h4>
@@ -1202,7 +1219,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/C S S.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/css.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced CSS</h4>
@@ -1243,7 +1260,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/javascript icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/javascriptIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Web Development Advanced Javascript</h4>
@@ -1284,7 +1301,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/react.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/react.png">
                                             </figure>
                                             <div>
                                                 <h4>ReactJS</h4>
@@ -1328,7 +1345,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/node js.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nodeJs.png">
                                             </figure>
                                             <div>
                                                 <h4>NodeJS</h4>
@@ -1368,7 +1385,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/mongoose.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoDb.png">
                                             </figure>
                                             <div>
                                                 <h4>Databases - MongoDB & DynamoDB</h4>
@@ -1409,7 +1426,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/projects icon.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/projectsIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Projects</h4>
@@ -1443,7 +1460,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/deployment.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/deployment.png">
                                             </figure>
                                             <div>
                                                 <h4>Code Review + Deployment</h4>
@@ -1473,7 +1490,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/google analytics.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/googleAnalytics.png">
                                             </figure>
                                             <div>
                                                 <h4>Google Analytics + Webengage</h4>
@@ -1511,7 +1528,7 @@
                                     <div class="info">
 
                                         <div class="image-div">
-                                            <figure><img src="../images/interviewww 1.png">
+                                            <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/interviewIcon.png">
                                             </figure>
                                             <div>
                                                 <h4>Portfolio and Mock Interviews preparation
@@ -1597,17 +1614,17 @@
                         </article>
                         <div class="wrap-companies">
                             <figure>
-                                <img src="../images/amazon-512.png">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/amazon.png">
                             </figure>
                             <figure>
-                                <img src="../images/google icon png.png">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/google.png">
                             </figure>
                             <figure>
                                 <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Paytm.png">
                             </figure>
                             <figure>
                                 <img
-                                    src="../images/fast retailing.png">
+                                    src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/fastRetailing.png">
                             </figure>
                             <figure>
                                 <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/zest.png">
@@ -1616,10 +1633,10 @@
                                 <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/spinny.png">
                             </figure>
                             <figure>
-                                <img src="../images/microsoft.png">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/microsoft.png">
                             </figure>
                             <figure>
-                                <img src="../images/facebookicon png.png">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/facebook.png">
                             </figure>
                             <figure>
                                 <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/oracle.png">
@@ -1634,7 +1651,7 @@
                             <h3>Highest salaries</h3>
                         </article>
                         <figure>
-                            <img src="../images/salary report web.png">
+                            <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/salaryReportweb.png">
                         </figure>
                     </div>
                 </div>
@@ -1654,7 +1671,7 @@
 
                 </article>
                 <figure onclick="display('popupCertificate')">
-                    <img src="../images/web dev..jpg" alt="">
+                    <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/webDevelopmentCertificate.jpg" alt="">
                 </figure>
             </div>
         </section>
@@ -1667,71 +1684,71 @@
                 <div class="technology-parent" id="technology-parent">
                     <div class="technology-wrap">
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/AWS.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/AWS.png">
                                 <figcaption>AWS</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/Bootstrap.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/Bootstrap.png">
                                 <figcaption>BootStrap</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/C S S.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/css.png">
                                 <figcaption>CSS</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/docker.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/docker.png">
                                 <figcaption>Docker</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/express.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/express.png">
                                 <figcaption>Express</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/GIT.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/GIT.png">
                                 <figcaption>GIT</figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="technology-wrap">
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/HTML.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/HTML.png">
                                 <figcaption>HTML</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/LINUX.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/LINUX.png">
                                 <figcaption>LINUX</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/node js.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nodeJs.png">
                                 <figcaption>NodeJS</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/react.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/react.png">
                                 <figcaption>React</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/mm.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoose.png">
                                 <figcaption>Mongoose</figcaption>
                             </figure>
                         </div>
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/mongoose.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoDb.png">
                                 <figcaption>Mongo DB</figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="technology-wrap">
                         <div class="technology">
-                            <figure class="round-icon-images"><img src="../images/rest api.png">
+                            <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/restApi.png">
                                 <figcaption>Rest APPI</figcaption>
                             </figure>
                         </div>
@@ -1741,67 +1758,67 @@
                 <div class="technology-parent-desktop">
 
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/AWS.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/AWS.png">
                             <figcaption>AWS</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/Bootstrap.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/Bootstrap.png">
                             <figcaption>BootStrap</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/C S S.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/css.png">
                             <figcaption>CSS</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/docker.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/docker.png">
                             <figcaption>Docker</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/express.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/express.png">
                             <figcaption>Express</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/GIT.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/GIT.png">
                             <figcaption>GIT</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/HTML.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/HTML.png">
                             <figcaption>HTML</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/LINUX.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/LINUX.png">
                             <figcaption>LINUX</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/node js.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nodeJs.png">
                             <figcaption>NodeJS</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/react.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/react.png">
                             <figcaption>React</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/mm.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoose.png">
                             <figcaption>Mongoose</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/mongoose.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mongoDb.png">
                             <figcaption>Mongo DB</figcaption>
                         </figure>
                     </div>
                     <div class="technology">
-                        <figure class="round-icon-images"><img src="../images/rest api.png">
+                        <figure class="round-icon-images"><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/restApi.png">
                             <figcaption>Rest APPI</figcaption>
                         </figure>
                     </div>
@@ -1834,7 +1851,7 @@
                 <h2>Projects I will build</h2>
                 <div class="projects-wrap">
                     <div>
-                        <figure><img src="../images/e commerce web appli.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/ecommerceProject.png" alt=""></figure>
                         <article>
                             <h4>Ecommerce Web App</h4>
                             <p>This will be one of the major projects of the program. It will be a full-fledged working
@@ -1843,7 +1860,7 @@
                         </article>
                     </div>
                     <div>
-                        <figure><img src="../images/online assessment.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/onlineAssesmentProject.png" alt=""></figure>
                         <article>
                             <h4>Online Assessment Web App</h4>
                             <p>Taking assessment online is one of the most popular thing right now. After building the
@@ -1851,7 +1868,7 @@
                         </article>
                     </div>
                     <div>
-                        <figure><img src="../images/chat web app.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/chatAppProject.png" alt=""></figure>
                         <article>
                             <h4>Chat Web App</h4>
                             <p>Bored of using Whatsapp? Create one and use it with your friends. You never know, your
@@ -1859,7 +1876,7 @@
                         </article>
                     </div>
                     <div>
-                        <figure><img src="../images/blog apli.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/blogProject.png" alt=""></figure>
                         <article>
                             <h4>Blog Web App</h4>
                             <p>Create your own Medium website. Through the project you will understand how React , Node
@@ -1867,7 +1884,7 @@
                         </article>
                     </div>
                     <div>
-                        <figure><img src="../images/social network apli.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/socialNetworkProject.png" alt=""></figure>
                         <article>
                             <h4>Social Network App</h4>
                             <p>Create your own Social Network App. Through the project you will understand how HTML, CSS
@@ -1875,7 +1892,7 @@
                         </article>
                     </div>
                     <div>
-                        <figure><img src="../images/dice roller.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/diceRollerProject.png" alt=""></figure>
                         <article>
                             <h4>Dice Roller</h4>
                             <p>Fascinated with how animations work? Create one of your own Dice Roller game and master
@@ -1897,7 +1914,7 @@
                 </article>
                 <div class="highlights">
                     <div>
-                        <figure><img src="../images/placement prep.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/placementPreparationIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Portfolio and Resume preparation.</h6>
                             <p>Build your outstanding profile by showcasing your robust portfolio of full stack
@@ -1905,7 +1922,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/mock interviews.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/mockInterviewIcon.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Mock Interviews</h6>
                             <p>Sharpen your interview skills through a series of mock assessments and mock interviews.
@@ -1913,7 +1930,7 @@
                         </div>
                     </div>
                     <div>
-                        <figure><img src="../images/nano tech.png" alt=""></figure>
+                        <figure><img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/nanoTech.png" alt=""></figure>
                         <div class="text-wrap">
                             <h6>Nano degree</h6>
                             <p>Complete our career track program to get a nano degree on 20+ in-demand technologies</p>
@@ -1946,7 +1963,7 @@
                     <div class="testimonial-background">
                         <div class="wrap-testimonial">
                             <div class="testimonial-image">
-                                <img id="yash" src="../images/Yash.jpg"
+                                <img id="yash" src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/Yash.jpg"
                                     alt="yash">
                             </div>
                             <figcaption>
@@ -1965,7 +1982,7 @@
                     <div class="testimonial-background">
                         <div class="wrap-testimonial">
                             <div class="testimonial-image">
-                                <img src="../images/Satyam.jpg">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/Satyam.jpg">
                             </div>
                             <figcaption>
                                 <div>
@@ -1983,7 +2000,7 @@
                     <div class="testimonial-background">
                         <div class="wrap-testimonial">
                             <div class="testimonial-image">
-                                <img src="../images/shubham.jpg">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/shubham.jpg">
                             </div>
                             <figcaption>
                                 <div>
@@ -2001,7 +2018,7 @@
                     <div class="testimonial-background">
                         <div class="wrap-testimonial">
                             <div class="testimonial-image">
-                                <img src="../images/Anubhav.jpg">
+                                <img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/Anubhav.jpg">
                             </div>
                             <figcaption>
                                 <div>

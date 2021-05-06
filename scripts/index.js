@@ -1,29 +1,3 @@
-/*function displayVideo() {
-  var element = document.getElementById("popupVideo");
-  element.style.display = "flex";
-}
-var counter = 0; // Global Variable
-
-function hideVideo() {
-  var element = document.getElementById("popupVideo");
-  element.style.display = "none";
-}
-function displayPopupForm() {
-  var element = document.getElementById("popupForm");
-  element.style.display = "flex";
-}
-function hidePopupForm() {
-  var element = document.getElementById("popupForm");
-  element.style.display = "none";
-}
-function displayCertificate() {
-  var element = document.getElementById("popupCertificate");
-  element.style.display = "flex";
-}
-function hideCertificate() {
-  var element = document.getElementById("popupCertificate");
-  element.style.display = "none";
-}*/
 
 
 function display(id) {
@@ -133,19 +107,22 @@ if(name&&youremail&&number){
             console.error('Error:', error);
           });
 
+         
+          
+            var link = document.createElement('a');
+            link.target="blank";
+            if(course=='frontend'){
+              link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Front-End-Development.pdf';
+            }
+            else{
+              link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Web-Development.pdf';
+            }
+          link.dispatchEvent(new MouseEvent('click'));
+          document.getElementById("error-message").style.display="none";
+          hidePopupForm();
+          
 
-
-        var link = document.createElement('a');
-        link.target="blank";
-        if(course=='frontend'){
-          link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Front-End-Development.pdf';
-        }
-        else{
-          link.href = 'https://konfinity-assets.s3.ap-south-1.amazonaws.com/images/Web-Development.pdf';
-        }
-      link.dispatchEvent(new MouseEvent('click'));
-      document.getElementById("error-message").style.display="none";
-      hidePopupForm();
+        
         }
   }
 }
@@ -261,18 +238,6 @@ $('.counter').each(function() {
   });
 });
 
-/*const popUpForm = document.querySelector('#popupForm');
-function onScroll(event) {
-  const current = document.documentElement.scrollTop;
-  const maxHeight = document.body.scrollHeight;
-
-  if (current > maxHeight * 0.8 && current < maxHeight * 0.9) {
-    popUpForm.style.display="flex";
-  }
-
-}
-
-window.addEventListener('scroll', event => onScroll(event));*/
 
 
 //plans
@@ -280,15 +245,15 @@ function currentSlideCurriculum(n) {
   var head = document.getElementById("allplans");
   var slides = head.getElementsByClassName("banner");
   if(n=='00'){
-    document.getElementById('activeplanmobile').innerText="Begginer";
+    document.getElementById('activeplan').innerText="Beginner";
     
       }
       else if(n=='01'){
-        document.getElementById('activeplanmobile').innerText="Advance";
+        document.getElementById('activeplan').innerText="Advance";
     
       }
       else if(n=='02'){
-        document.getElementById('activeplanmobile').innerText="Career Track";
+        document.getElementById('activeplan').innerText="Career Track";
     
       }
   for (var s = 0; s < slides.length; s++) {
@@ -306,15 +271,15 @@ currentSlideCurriculum('01');
 function showPlan(id){
 
   if(id=='00'){
-document.getElementById('activeplandesktop').innerText="Begginer";
+document.getElementById('activeplan').innerText="Beginner";
 
   }
   else if(id=='01'){
-    document.getElementById('activeplandesktop').innerText="Advance";
+    document.getElementById('activeplan').innerText="Advance";
 
   }
   else if(id=='02'){
-    document.getElementById('activeplandesktop').innerText="Career Track";
+    document.getElementById('activeplan').innerText="Career Track";
 
   }
 
@@ -374,6 +339,67 @@ for (var j = 0; j < lis.length; j++) {
   });
 }
 
+function thankyou(){
+  var name = document.getElementById("name1").value;
+  var youremail = document.getElementById("youremail1").value;
+  var number = document.getElementById("number1").value;
+  let TimeStamp = new Date();
+
+
+if(name&&youremail&&number){
+
+    var emailarray=youremail.split("@");
+    if(emailarray.length!=2){
+      document.getElementById("error-message1").style.display="block";
+      document.getElementById("error-message1").innerText="Enter valid email";
+    }else{
+      var n=number.toString();
+      if(n.length<10||n.length>10){
+        document.getElementById("error-message1").style.display="block";
+        document.getElementById("error-message1").innerText="Enter valid number";
+      }
+      else{
+
+   
+
+
+        let formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Email', youremail);
+        formData.append('PhoneNumber', number);
+        formData.append('TimeStamp', TimeStamp);
+
+        document.getElementById("thankyouWithTick").innerHTML="<h2>Thankyou</h2><div class='wrap-i'><i class='fas fa-check'></i></div><p>Your information has been received. A member of our team will be in touch with you shortly!</p>"
+
+        //append data to download curricilum sheet
+
+        fetch('https://script.google.com/macros/s/AKfycbzVa8WqhPPMZqHAIm8OdmhwtIX6BrQKr_42LPqbUwRfSc06TRs3idw61bkGE91X1bQEpA/exec', {
+          method: 'POST',
+          mode: 'cors',
+          body: formData
+        })
+          // .then((response) => response.json())
+          .then((response) => {
+            console.log("data appended successfully");
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+
+          
+
+        
+        }
+  }
+}
+else{
+  document.getElementById("error-message1").style.display="block";
+}
+
+ 
+
+}
+
 
 
 
@@ -382,7 +408,7 @@ for (var j = 0; j < lis.length; j++) {
 
 
 const scrollnav = document.querySelector('#scrollup-nav');
-const popupForm = document.querySelector('#popupForm');
+const popupForm = document.querySelector('#popupScrollForm');
 const scrollupComponent=document.querySelector('#scrollupComponent');
 const chatbox=document.querySelector('#chat-box');
 
@@ -431,7 +457,7 @@ function displayChatbot(){
     for(var i=0;i<divs.length;i++){
       divs[i].style.display="none";
     }
-    robot.innerHTML='<img src="../images/robo icon.png">'
+    robot.innerHTML='<img src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/robotIcon.png">'
   }
   else{
     for(var i=0;i<divs.length;i++){
