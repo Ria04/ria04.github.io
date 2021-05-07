@@ -245,16 +245,15 @@ function currentSlideCurriculum(n) {
   var head = document.getElementById("allplans");
   var slides = head.getElementsByClassName("banner");
   if(n=='00'){
-    document.getElementById('activeplan').innerText="Beginner";
-    
+    showPlan('00');
       }
       else if(n=='01'){
-        document.getElementById('activeplan').innerText="Advance";
-    
+        showPlan('01');
+
       }
       else if(n=='02'){
-        document.getElementById('activeplan').innerText="Career Track";
-    
+        showPlan('02');
+
       }
   for (var s = 0; s < slides.length; s++) {
     slides[s].style.display = "none";
@@ -463,7 +462,7 @@ function displayChatbot(){
     for(var i=0;i<divs.length;i++){
       divs[i].style.display="flex"
     }
-    robot.innerHTML='<img id="cross" src="../images/cross.png">'
+    robot.innerHTML='<img id="cross" src="https://konfinity-assets.s3.ap-south-1.amazonaws.com/landing/cross.png">'
 
   }
   
