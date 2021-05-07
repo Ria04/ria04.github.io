@@ -1660,4 +1660,8 @@ nav div #email {
   margin-bottom: 1rem;
 }
 
+.frontend-count {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
