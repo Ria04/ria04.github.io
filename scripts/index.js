@@ -216,27 +216,33 @@ function showFaq(id) {
 showFaq('faq1');
 
 
-$('.counter').each(function() {
-  var $this = $(this),
-      countTo = $this.attr('data-count');
-  
-  $({ countNum: $this.text()}).animate({
-    countNum: countTo
-  },
 
-  {
 
-    duration: 2000,
-    easing:'linear',
-    step: function() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function() {
-      $this.text(this.countNum);
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+   let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+     current += increment;
+     obj.textContent = current;
+     if (current == end) {
+      clearInterval(timer);
+     }
+    }, step);
+  }
+  counter("count1", 0, 22, 3000);
+  counter("count2", 0, 300, 100);
+  counter("count3", 0, 12, 3000);
+  counter("count4", 0, 15, 3000);
+  counter("count5", 6699, 6999, 100);
+  counter("count6", 0, 12, 3000);
+  counter("count7", 4699, 4999, 100);
 
-  });
-});
+ });
+ 
 
 
 
